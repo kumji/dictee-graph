@@ -1,0 +1,123 @@
+﻿source_file,row_number,field,raw_value,issue_type,detail,action_taken
+dictee_entities.csv,4,Evidence Type,Biographical(Q16),Evidence Type에 (Q##) 꼬리표 잔존,prefLabel과 같은 패턴의 꼬리표가 Evidence Type 컬럼에도 섞여 들어감 (QID 크로스워크와는 무관한 값),정규식으로 꼬리표 제거 후 사용
+dictee_entities.csv,4,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,5,Evidence Type,Textual(Q17),Evidence Type에 (Q##) 꼬리표 잔존,prefLabel과 같은 패턴의 꼬리표가 Evidence Type 컬럼에도 섞여 들어감 (QID 크로스워크와는 무관한 값),정규식으로 꼬리표 제거 후 사용
+dictee_entities.csv,5,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,6,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,7,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,8,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,9,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,11,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,12,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,13,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,15,Chapter(s),DISEUSE → ALL,Chapter(s)에 특수 토큰(→) 존재,쉼표로 구분되는 일반 목록이 아니라 전이를 나타내는 표기로 보임 — 임의로 분리하지 않음,원문 문자열 그대로 단일 항목으로 보존
+dictee_entities.csv,15,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,16,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,17,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,18,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,19,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,20,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,22,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,22,Evidence Type,Scholarly (Q 55),도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,23,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,23,Evidence Type,Scholarly,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,24,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,24,Evidence Type,Scholarly,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,25,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,25,Evidence Type,Scholarly,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,26,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,26,Evidence Type,Scholarly,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Person',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,28,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Event',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,29,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Event',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,30,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Event',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,31,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Event',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,32,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Event',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,33,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Event',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,34,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Event',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,36,Evidence Type,Direct Term (Q1),Evidence Type에 (Q##) 꼬리표 잔존,prefLabel과 같은 패턴의 꼬리표가 Evidence Type 컬럼에도 섞여 들어감 (QID 크로스워크와는 무관한 값),정규식으로 꼬리표 제거 후 사용
+dictee_entities.csv,37,Evidence Type,Synthesis(Q2),Evidence Type에 (Q##) 꼬리표 잔존,prefLabel과 같은 패턴의 꼬리표가 Evidence Type 컬럼에도 섞여 들어감 (QID 크로스워크와는 무관한 값),정규식으로 꼬리표 제거 후 사용
+dictee_entities.csv,38,Evidence Type,Modeling(Q3),Evidence Type에 (Q##) 꼬리표 잔존,prefLabel과 같은 패턴의 꼬리표가 Evidence Type 컬럼에도 섞여 들어감 (QID 크로스워크와는 무관한 값),정규식으로 꼬리표 제거 후 사용
+dictee_entities.csv,48,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,49,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,50,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,51,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,52,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,53,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,54,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,55,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,56,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,57,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,58,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,59,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,60,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,61,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,62,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,63,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,64,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,65,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Object',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,67,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,67,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Group',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,68,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,68,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Group',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,69,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,69,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Group',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,71,Evidence Type,—,Evidence Type 미기재,값이 비어있거나 자리표시자(—)만 있음,"빈 문자열로 정규화, UI에서 '미기재'로 표시"
+dictee_entities.csv,72,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,72,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Work',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,73,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,73,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Work',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,74,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,74,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Work',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,75,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,75,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Work',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,76,Chapter(s),—,Chapter 미기재,값이 비어있거나 자리표시자(—)만 있음,빈 배열로 처리
+dictee_entities.csv,76,Evidence Type,Biographical,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Work',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,77,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Work',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,78,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Work',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+dictee_entities.csv,79,Evidence Type,Textual,도메인 스키마 위반 (P8 evidenceType),property_schema_map.csv는 evidenceType(P8)의 Domain을 'Concept'로 정의하지만 이 엔티티의 Type='Work',막지 않고 그대로 반영 (연구자 판단 대기) — dictv:evidenceType 필드는 유지
+entity_qid_crosswork.csv,37,Wikibase QID,dict:concept/muse-subversion,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,38,Wikibase QID,dict:concept/novena-structure,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,39,Wikibase QID,dict:object/acupuncture-chart,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,40,Wikibase QID,dict:object/vocal-anatomy,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,41,Wikibase QID,dict:object/yu-portrait,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,42,Wikibase QID,dict:object/mother-portrait,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,43,Wikibase QID,dict:object/execution-photo,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,44,Wikibase QID,dict:object/korea-map,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,45,Wikibase QID,dict:object/therese-joan-photo,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,46,Wikibase QID,dict:object/dreyer-still,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,47,Wikibase QID,dict:object/cave-hand,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,48,Wikibase QID,dict:object/osaka-asahi-photo,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,49,Wikibase QID,dict:object/melpomene-fresco,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,50,Wikibase QID,dict:object/nile-ruins-photo,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,51,Wikibase QID,dict:object/calligraphy-nyu-nam,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,52,Wikibase QID,dict:object/calligraphy-bumo,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,53,Wikibase QID,dict:object/calligraphy-dao,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,54,Wikibase QID,dict:object/handwritten-ms,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,55,Wikibase QID,dict:object/bongseonhwa,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,56,Wikibase QID,dict:object/punctuation,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,57,Wikibase QID,dict:group/tanam-press,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,58,Wikibase QID,dict:group/uc-press,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,59,Wikibase QID,dict:group/bampfa,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,61,Wikibase QID,dict:work/apparatus,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,62,Wikibase QID,dict:work/exilee,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,63,Wikibase QID,dict:work/white-dust,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,64,Wikibase QID,dict:work/aveugle-voix,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,65,Wikibase QID,dict:work/barren-cave-mute,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,66,Wikibase QID,dict:work/dreyer-joan,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,67,Wikibase QID,dict:work/dreyer-gertrud,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+entity_qid_crosswork.csv,68,Wikibase QID,dict:work/story-of-a-soul,QID 미확보,이 엔티티는 아직 Wikibase에 매핑되지 않음,"equivalent에 추가하지 않음, 프론트엔드에서 '미등록' 배지 표시"
+dictee_relationships.csv,2,relationship_property_uri,sharesNameWith,스키마 미정의 predicate,property_schema_map.csv의 공식 P1~P18 목록에 없는 predicate,버리지 않고 dictv: 네임스페이스에 그대로 기록 (연구자 검토 대기)
+dictee_relationships.csv,3,relationship_property_uri,performsAs,스키마 미정의 predicate,property_schema_map.csv의 공식 P1~P18 목록에 없는 predicate,버리지 않고 dictv: 네임스페이스에 그대로 기록 (연구자 검토 대기)
+dictee_relationships.csv,4,relationship_property_uri,performsAs,스키마 미정의 predicate,property_schema_map.csv의 공식 P1~P18 목록에 없는 predicate,버리지 않고 dictv: 네임스페이스에 그대로 기록 (연구자 검토 대기)
+dictee_relationships.csv,7,subject_uri,https://linkedabc.com/id/person/yu-gwansoon,도메인/레인지 스키마 위반,predicate 'hasPostcolonialParallel'의 정의된 Domain='Event'이지만 실제 subject Type='Person',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,7,object_uri,https://linkedabc.com/id/person/jeanne-darc,도메인/레인지 스키마 위반,predicate 'hasPostcolonialParallel'의 정의된 Range='Event'이지만 실제 object Type='Person',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,9,relationship_property_uri,mythologicalParallelOf,스키마 미정의 predicate,property_schema_map.csv의 공식 P1~P18 목록에 없는 predicate,버리지 않고 dictv: 네임스페이스에 그대로 기록 (연구자 검토 대기)
+dictee_relationships.csv,10,relationship_property_uri,mythologicalParallelOf,스키마 미정의 predicate,property_schema_map.csv의 공식 P1~P18 목록에 없는 predicate,버리지 않고 dictv: 네임스페이스에 그대로 기록 (연구자 검토 대기)
+dictee_relationships.csv,11,relationship_property_uri,mythologicalParallelOf,스키마 미정의 predicate,property_schema_map.csv의 공식 P1~P18 목록에 없는 predicate,버리지 않고 dictv: 네임스페이스에 그대로 기록 (연구자 검토 대기)
+dictee_relationships.csv,12,relationship_property_uri,mythologicalParallelOf,스키마 미정의 predicate,property_schema_map.csv의 공식 P1~P18 목록에 없는 predicate,버리지 않고 dictv: 네임스페이스에 그대로 기록 (연구자 검토 대기)
+dictee_relationships.csv,15,subject_uri/object_uri,subject='https://linkedabc.com/id/event/gwangju-1980' object='\nhttps://linkedabc.com/id/event/march-first-1919',URI 필드 내 개행 문자,CSV 원본 셀에 줄바꿈이 섞여있음,공백 제거 후 매칭 시도 (원본 CSV 수정 권장)
+dictee_relationships.csv,23,relationship_property_uri,requiresExcavationBy,스키마 미정의 predicate,property_schema_map.csv의 공식 P1~P18 목록에 없는 predicate,버리지 않고 dictv: 네임스페이스에 그대로 기록 (연구자 검토 대기)
+dictee_relationships.csv,24,subject_uri,https://linkedabc.com/id/object/yu-portrait,도메인/레인지 스키마 위반,predicate 'performsMediation'의 정의된 Domain='Person(Diseuse)'이지만 실제 subject Type='Object',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,25,subject_uri,https://linkedabc.com/id/object/dreyer-still,도메인/레인지 스키마 위반,predicate 'hasPostcolonialParallel'의 정의된 Domain='Event'이지만 실제 subject Type='Object',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,25,object_uri,https://linkedabc.com/id/person/yu-gwansoon,도메인/레인지 스키마 위반,predicate 'hasPostcolonialParallel'의 정의된 Range='Event'이지만 실제 object Type='Person',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,26,relationship_property_uri,embodiesPunctuation,스키마 미정의 predicate,property_schema_map.csv의 공식 P1~P18 목록에 없는 predicate,버리지 않고 dictv: 네임스페이스에 그대로 기록 (연구자 검토 대기)

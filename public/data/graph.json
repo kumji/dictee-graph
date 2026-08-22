@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T05:18:49.561210+00:00",
+  "generatedAt": "2026-08-22T01:29:55.587769+00:00",
   "nodes": [
     {
       "id": "dict:person/cha-theresa",
@@ -215,9 +215,7 @@
       "description": "'Can the Subaltern Speak?' (1988). Representational crisis: Vertreten (political proxy) vs Darstellen (portrayal). Framework for Diseuse's mediation and translational-violence concept.",
       "evidenceType": "Scholarly (Q 55)",
       "pageReferences": "Theoretical framework",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": "https://dictee-lod.wikibase.cloud/wiki/Item:Q43"
     },
     {
@@ -228,9 +226,7 @@
       "description": "'Mama's Baby, Papa's Maybe: An American Grammar Book' (1987). flesh/body distinction: enslaved women as 'female but not woman,' reduced to 'zero degree of social conceptualisation.' Ungendering concept. Primary theoretical source for dict:concept/ungendering — applied to URANIA's blood/ink transformation (pp.64-65).",
       "evidenceType": "Scholarly",
       "pageReferences": "Theoretical framework",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": "https://dictee-lod.wikibase.cloud/wiki/Item:Q44"
     },
     {
@@ -241,9 +237,7 @@
       "description": "'Coloniality of Gender' (2007); 'Toward a Decolonial Feminism' (2010). Gender itself as colonial introduction. Fractured Locus: active subjectivity between colonial designation and communal memory. Framework for shamanic mediation and cyclical time concepts.",
       "evidenceType": "Scholarly",
       "pageReferences": "Theoretical framework",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": "https://dictee-lod.wikibase.cloud/wiki/Item:Q45"
     },
     {
@@ -254,9 +248,7 @@
       "description": "'Under Western Eyes' (1984). 'Discursive colonisation': Western feminism constructs homogenised 'average third-world woman' as passive victim. Framework for anti-autobiography strategy.",
       "evidenceType": "Scholarly",
       "pageReferences": "Theoretical framework",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": "https://dictee-lod.wikibase.cloud/wiki/Item:Q46"
     },
     {
@@ -267,9 +259,7 @@
       "description": "'Unsettling the Coloniality of Being/Power/Truth/Freedom' (2003), CR: The New Centennial Review 3(3): 257-337. 'Overrepresentation of Man': Western bourgeoisie's mode of being presented as coterminous with Human. Man1 (rational political subject) → Man2 (bio-economic subject). Limitation: gender treated as biologically grounded — addressed by Spillers and Lugones.",
       "evidenceType": "Scholarly",
       "pageReferences": "Theoretical framework",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": "https://dictee-lod.wikibase.cloud/wiki/Item:Q47"
     },
     {
@@ -749,9 +739,7 @@
       "description": "Independent publisher, New York. Founded by Reese Williams. Cha worked as editor. Published Dictée (1982) and Apparatus (1981). Letterpress printing.",
       "evidenceType": "Biographical",
       "pageReferences": "Core Metadata",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": null
     },
     {
@@ -762,9 +750,7 @@
       "description": "Published 2001 reprint/third edition of Dictée with BAMPFA. Returned book to print after 19 years out of print.",
       "evidenceType": "Biographical",
       "pageReferences": "Core Metadata",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": null
     },
     {
@@ -775,9 +761,7 @@
       "description": "UC Berkeley. Houses Cha's estate and archives. Rights holder for Dictée. Collaborated with UC Press on 2001 reprint.",
       "evidenceType": "Biographical",
       "pageReferences": "Core Metadata",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": null
     },
     {
@@ -801,9 +785,7 @@
       "description": "Cha-edited anthology of essays on cinema (1981, Tanam Press). Includes Baudry's 'Ideological Effects of the Basic Cinematographic Apparatus.' Framework for ERATO's split-screen structure.",
       "evidenceType": "Biographical",
       "pageReferences": "Related work",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": null
     },
     {
@@ -814,9 +796,7 @@
       "description": "1980 video/film installation. Themes of exile and temporality shared with Dictée.",
       "evidenceType": "Biographical",
       "pageReferences": "Related work",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": null
     },
     {
@@ -827,9 +807,7 @@
       "description": "1980 video. Landscape and displacement. Manchurian/Mongolian geography of Cha family exile.",
       "evidenceType": "Biographical",
       "pageReferences": "Related work",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": null
     },
     {
@@ -840,9 +818,7 @@
       "description": "1975 performance/video. Blind Voice — speech without sight, sight without speech. Anticipates Dictée's diseuse figure.",
       "evidenceType": "Biographical",
       "pageReferences": "Related work",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": null
     },
     {
@@ -853,9 +829,7 @@
       "description": "1974 performance. White wax words on paper, revealed by candlelight then burned. Cave motif. Connected to Korean shamanism (Patrick, Frieze 2003).",
       "evidenceType": "Biographical",
       "pageReferences": "Related work",
-      "chapters": [
-        "—"
-      ],
+      "chapters": [],
       "wikibaseUrl": null
     },
     {
@@ -908,22 +882,6 @@
       "status": "ORIGINAL"
     },
     {
-      "source": "dict:person/therese-lisieux",
-      "target": "dict:person/jeanne-darc",
-      "predicate": "performsAs",
-      "pageRef": "p.93",
-      "note": "Saint Thérèse pictured performing as Joan of Arc.",
-      "status": "ORIGINAL"
-    },
-    {
-      "source": "dict:person/falconetti",
-      "target": "dict:person/jeanne-darc",
-      "predicate": "performsAs",
-      "pageRef": "p.119",
-      "note": "Falconetti performs Joan of Arc in Dreyer's film.",
-      "status": "ORIGINAL"
-    },
-    {
       "source": "dict:person/cha-theresa",
       "target": "dict:person/yu-gwansoon",
       "predicate": "performsMediation",
@@ -932,11 +890,11 @@
       "status": "ORIGINAL"
     },
     {
-      "source": "dict:person/diseuse",
-      "target": "dict:person/yu-gwansoon",
-      "predicate": "performsMediation",
-      "pageRef": "p.3",
-      "note": "DISEUSE channels voices of silenced women including Yu Gwan-sun.",
+      "source": "dict:person/cha-theresa",
+      "target": "dict:person/persephone",
+      "predicate": "mythologicalParallelOf",
+      "pageRef": "pp.123,133",
+      "note": "Persephone myth as structural frame for exile/return.",
       "status": "ORIGINAL"
     },
     {
@@ -956,11 +914,19 @@
       "status": "ORIGINAL"
     },
     {
-      "source": "dict:person/cha-theresa",
-      "target": "dict:person/persephone",
-      "predicate": "mythologicalParallelOf",
-      "pageRef": "pp.123,133",
-      "note": "Persephone myth as structural frame for exile/return.",
+      "source": "dict:person/therese-lisieux",
+      "target": "dict:person/jeanne-darc",
+      "predicate": "performsAs",
+      "pageRef": "p.93",
+      "note": "Saint Thérèse pictured performing as Joan of Arc.",
+      "status": "ORIGINAL"
+    },
+    {
+      "source": "dict:person/falconetti",
+      "target": "dict:person/jeanne-darc",
+      "predicate": "performsAs",
+      "pageRef": "p.119",
+      "note": "Falconetti performs Joan of Arc in Dreyer's film.",
       "status": "ORIGINAL"
     },
     {
@@ -973,11 +939,27 @@
     },
     {
       "source": "dict:person/diseuse",
+      "target": "dict:person/yu-gwansoon",
+      "predicate": "performsMediation",
+      "pageRef": "p.3",
+      "note": "DISEUSE channels voices of silenced women including Yu Gwan-sun.",
+      "status": "ORIGINAL"
+    },
+    {
+      "source": "dict:person/diseuse",
       "target": "dict:person/sibyl",
       "predicate": "mythologicalParallelOf",
       "pageRef": "p.88",
       "note": "'diseuse de bonne aventure' linked to Sibyl as prophetic/medium figure.",
       "status": "ORIGINAL"
+    },
+    {
+      "source": "dict:person/diseuse",
+      "target": "dict:concept/translational-violence",
+      "predicate": "embodiesPunctuation",
+      "pageRef": "p.4",
+      "note": "'She would become, herself, demarcations.' — Diseuse internalizes colonial language's regulatory infrastructure.",
+      "status": "NEW"
     },
     {
       "source": "dict:person/princess-bari",
@@ -986,6 +968,22 @@
       "pageRef": "pp.165-179",
       "note": "Bari: first mudang who journeys for healing water ↔ Diseuse as textual shaman.",
       "status": "ORIGINAL"
+    },
+    {
+      "source": "dict:event/april-19-1960",
+      "target": "dict:event/march-first-1919",
+      "predicate": "isRecurrenceOf",
+      "pageRef": "p.83",
+      "note": "'Dear Mother, 4.19... eighteen years later' — 1960 as second iteration of colonial violence structure.",
+      "status": "NEW"
+    },
+    {
+      "source": "dict:event/gwangju-1980",
+      "target": "dict:event/march-first-1919",
+      "predicate": "isRecurrenceOf",
+      "pageRef": "p.87",
+      "note": "'Nothing has changed, we are at a standstill.' — 1980 structurally recurs 1919.",
+      "status": "NEW"
     },
     {
       "source": "dict:event/japanese-colonization",
@@ -1001,62 +999,6 @@
       "predicate": "silences",
       "pageRef": "pp.28-38",
       "note": "Colonial power silences Yu Gwan-sun — imprisonment and death in Seodaemun Prison.",
-      "status": "NEW"
-    },
-    {
-      "source": "dict:event/gwangju-1980",
-      "target": "dict:event/march-first-1919",
-      "predicate": "isRecurrenceOf",
-      "pageRef": "p.87",
-      "note": "'Nothing has changed, we are at a standstill.' — 1980 structurally recurs 1919.",
-      "status": "NEW"
-    },
-    {
-      "source": "dict:event/april-19-1960",
-      "target": "dict:event/march-first-1919",
-      "predicate": "isRecurrenceOf",
-      "pageRef": "p.83",
-      "note": "'Dear Mother, 4.19... eighteen years later' — 1960 as second iteration of colonial violence structure.",
-      "status": "NEW"
-    },
-    {
-      "source": "dict:object/vocal-anatomy",
-      "target": "dict:concept/translational-violence",
-      "predicate": "prefigures",
-      "pageRef": "p.74",
-      "note": "Western anatomical diagram of speech organs materializes speech as bodily labor — prefigures colonial appropriation of voice.",
-      "status": "NEW"
-    },
-    {
-      "source": "dict:object/acupuncture-chart",
-      "target": "dict:concept/untranslatability",
-      "predicate": "prefigures",
-      "pageRef": "p.63",
-      "note": "Eastern meridian chart vs. Western anatomy — two incommensurable knowledge systems approach the same question.",
-      "status": "NEW"
-    },
-    {
-      "source": "dict:object/melpomene-fresco",
-      "target": "dict:concept/muse-subversion",
-      "predicate": "subverts",
-      "pageRef": "p.138",
-      "note": "Comedy chapter (THALIA) opens with Tragedy's image — genre expectation deliberately violated.",
-      "status": "NEW"
-    },
-    {
-      "source": "dict:object/calligraphy-nyu-nam",
-      "target": "dict:concept/ungendering",
-      "predicate": "subverts",
-      "pageRef": "pp.26-27",
-      "note": "女男 (Woman-Man) reverses conventional 男女 — father's calligraphy inscribes alternative gender grammar, countering colonial ungendering.",
-      "status": "NEW"
-    },
-    {
-      "source": "dict:object/korea-map",
-      "target": "dict:concept/diasporic-experience",
-      "predicate": "prefigures",
-      "pageRef": "p.78",
-      "note": "Divided peninsula map: 'SHE opposes Her' — geographic division as visual anchor for diasporic displacement.",
       "status": "NEW"
     },
     {
@@ -1076,11 +1018,35 @@
       "status": "NEW"
     },
     {
+      "source": "dict:object/acupuncture-chart",
+      "target": "dict:concept/untranslatability",
+      "predicate": "prefigures",
+      "pageRef": "p.63",
+      "note": "Eastern meridian chart vs. Western anatomy — two incommensurable knowledge systems approach the same question.",
+      "status": "NEW"
+    },
+    {
+      "source": "dict:object/vocal-anatomy",
+      "target": "dict:concept/translational-violence",
+      "predicate": "prefigures",
+      "pageRef": "p.74",
+      "note": "Western anatomical diagram of speech organs materializes speech as bodily labor — prefigures colonial appropriation of voice.",
+      "status": "NEW"
+    },
+    {
       "source": "dict:object/yu-portrait",
       "target": "dict:person/yu-gwansoon",
       "predicate": "performsMediation",
       "pageRef": "p.24",
       "note": "1919 Japanese police record card photo repurposed as memorial icon — colonial documentation becomes site of mediation.",
+      "status": "NEW"
+    },
+    {
+      "source": "dict:object/korea-map",
+      "target": "dict:concept/diasporic-experience",
+      "predicate": "prefigures",
+      "pageRef": "p.78",
+      "note": "Divided peninsula map: 'SHE opposes Her' — geographic division as visual anchor for diasporic displacement.",
       "status": "NEW"
     },
     {
@@ -1092,11 +1058,19 @@
       "status": "NEW"
     },
     {
-      "source": "dict:person/diseuse",
-      "target": "dict:concept/translational-violence",
-      "predicate": "embodiesPunctuation",
-      "pageRef": "p.4",
-      "note": "'She would become, herself, demarcations.' — Diseuse internalizes colonial language's regulatory infrastructure.",
+      "source": "dict:object/melpomene-fresco",
+      "target": "dict:concept/muse-subversion",
+      "predicate": "subverts",
+      "pageRef": "p.138",
+      "note": "Comedy chapter (THALIA) opens with Tragedy's image — genre expectation deliberately violated.",
+      "status": "NEW"
+    },
+    {
+      "source": "dict:object/calligraphy-nyu-nam",
+      "target": "dict:concept/ungendering",
+      "predicate": "subverts",
+      "pageRef": "pp.26-27",
+      "note": "女男 (Woman-Man) reverses conventional 男女 — father's calligraphy inscribes alternative gender grammar, countering colonial ungendering.",
       "status": "NEW"
     }
   ]

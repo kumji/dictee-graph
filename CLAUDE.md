@@ -8,8 +8,6 @@
 
 **이건 프로토타입이다.** Wikibase 반영, 다중 작품 확장, 실시간 동기화는 이번 스코프에 없다.
 지금 가진 정적 CSV 스냅샷으로 "그래프가 실제로 어떻게 보이는지" 빠르게 확인하는 게 목표다.
-원본 데이터를 임의로 처리하게 되는 경우에 output log 파일을 생성해서 추후에 데이터를 보완하거나 연구자와 논의 후 의도대로 처리할 수 있도록 기록한다.
-터미널에 원본 데이터가 그대로 매칭된 확률을 보여줘서 데이터 정합성과 진척사항을 알 수 있도록 한다.
 
 ---
 
@@ -60,109 +58,152 @@
 
 ---
 
-## 4. 데이터 파이프라인 (빌드 타임에 CSV → JSON 변환)
+## 4. 데이터 파이프라인 (2단계: CSV → 진짜 JSON-LD → Cytoscape용 평면 JSON)
 
-이 프로젝트는 CSV를 런타임에 파싱하지 않는다. **빌드 전에 Node/Python 스크립트로 `public/data/graph.json` 하나를 미리 만들어둔다.**
-이유: CSV 파싱 로직을 브라우저에 넣으면 번들이 커지고, 데이터 정제(중복 제거, 방향 정리, dangling reference 처리)를 매번 클라이언트에서 할 이유가 없다.
+⚠️ **이전 버전 문서는 CSV를 곧바로 Cytoscape용 평면 JSON(`graph.json`)으로 변환했다. 이건 이 그래프 뷰어 하나에는
+충분했지만, 프로젝트 원래 목표("CSV를 JSON-LD로 변환해 LOD화")를 만족시키지 못했다 — `graph.json`은 Linked Art
+`@context`도, `@id`도 없는 Cytoscape 전용 임시 포맷이라 Wikibase나 다른 LOD 시스템과 상호운용이 안 된다.**
+그래서 파이프라인을 두 단계로 나눈다:
+
+```
+data/*.csv
+   ↓ ① scripts/build-jsonld.py
+public/data/graph.jsonld     ← 진짜 JSON-LD (Linked Art @context, @id, dictv: 커스텀 predicate)
+                                 이게 프로젝트의 "진짜" 산출물 — 인용·재사용·향후 Wikibase 연동용
+   ↓ ② scripts/build-graph-json.py
+public/data/graph.json       ← ①을 Cytoscape 전용으로 한 번 더 평평하게 변환한 파생 뷰
+                                 이건 순전히 "이 웹페이지 하나를 그리기 위한" 내부용 파일
+```
+
+②는 ①의 파생물일 뿐이므로, **②가 CSV를 직접 읽는 일은 없다.** CSV를 아는 코드는 ①에만 존재한다.
 
 ### 입력 파일 (프로젝트 `data/` 폴더에 둘 것)
 ```
 data/
 ├── dictee_entities.csv              ← 67개 엔티티 (Entity ID, Type, prefLabel 등)
 ├── dictee_relationships.csv         ← 25개 확정 관계 (subject_uri, predicate, object_uri)
-└── entity_qid_crosswalk.csv         ← dict_id ↔ Wikibase QID 대조표 (이미 만들어둔 것)
+├── entity_qid_crosswalk.csv         ← dict_id ↔ Wikibase QID 대조표
+└── property_schema_map.csv          ← 연구자가 제공한 공식 predicate 스키마 (P1~P18, 도메인/레인지 정의)
 ```
 
-### 변환 스크립트: `scripts/build-graph-json.py`
+---
 
-**처리 규칙 (반드시 이대로 구현할 것):**
+### 4-1. ① `scripts/build-jsonld.py` — CSV → 진짜 JSON-LD
 
-1. **엔티티 로딩**
-   - `Entity ID` → node `id` (예: `dict:person/cha-theresa`)
-   - `Type` → node `group` (색상 매핑에 사용)
-   - `prefLabel (en)`, `prefLabel (ko)` → node `label_en`, `label_ko` (⚠️ `(Q18)` 같은 꼬리표는 정규식으로 제거 — `en`/`ko` 양쪽 다 확인할 것, 지난번 이 부분에서 실제로 버그가 났었음)
-   - `Definition / Scope Note` → node `description`
-   - `Evidence Type`, `Page References`, `Chapter(s)` → node의 부가 필드로 유지
-   - crosswalk CSV에서 QID 조회 → 있으면 `wikibaseUrl: "https://dictee-lod.wikibase.cloud/wiki/Item:Q{n}"` 필드 추가 (없으면 `null`, UI에서 "Wikibase 미등록"으로 표시)
-
-2. **관계 로딩**
-   - `subject_uri`/`object_uri`에서 `/id/` 뒤 슬러그만 추출 (`person/cha-theresa`)
-   - 이 슬러그에 `dict:` 접두어를 붙여서 엔티티의 `id`와 매칭
-   - **매칭 실패(dangling reference)는 에러를 던지지 말고 콘솔에 경고만 출력하고 해당 엣지는 스킵할 것** — 데이터가 계속 수정되는 중이라 완벽하지 않을 수 있음
-   - `relationship_property_uri`의 마지막 세그먼트(`performsMediation` 등) → edge `predicate`
-   - `page_ref`, `note`, `STATUS` → edge의 부가 필드로 유지
-
-3. **출력 형식** (`public/data/graph.json`):
+**컨텍스트**: Linked Art 공식 컨텍스트 + 이 프로젝트 전용 `dictv:` 네임스페이스를 함께 선언.
 ```json
-{
-  "generatedAt": "2026-08-21T00:00:00Z",
-  "nodes": [
-    {
-      "id": "dict:person/cha-theresa",
-      "label_en": "Theresa Hak Kyung Cha",
-      "label_ko": "차학경",
-      "group": "Person",
-      "description": "Author (1951-1982). Born Busan during Korean War...",
-      "evidenceType": "Biographical",
-      "pageReferences": "Entire work",
-      "chapters": ["ALL"],
-      "wikibaseUrl": "https://dictee-lod.wikibase.cloud/wiki/Item:Q18"
-    }
-  ],
-  "edges": [
-    {
-      "source": "dict:person/cha-theresa",
-      "target": "dict:person/therese-lisieux",
-      "predicate": "sharesNameWith",
-      "pageRef": "ERATO",
-      "note": "Cha explores multiple Theresa/Thérèse figures...",
-      "status": "ORIGINAL"
-    }
-  ]
-}
+"@context": [
+  "https://linked.art/ns/v1/linked-art.json",
+  { "dict": "https://dictee-lod.wikibase.cloud/entity/",
+    "dictv": "https://dictee-lod.wikibase.cloud/prop/direct/" }
+]
 ```
 
-4. **실행 방법**: `python3 scripts/build-graph-json.py` — `npm run build` 전에 수동 실행 (또는 `package.json`의 `prebuild` 훅에 연결, 이번 프로토타입에선 수동 실행으로 충분)
+**클래스 매핑** (`Type` 컬럼 → `@type`):
+| Type | @type |
+|---|---|
+| Person | `Person` |
+| Event | `Period` |
+| Concept | `Type` |
+| Group | `Group` |
+| Object | `HumanMadeObject` (단, `Linked Art Class`가 `LinguisticObject`인 행은 그대로 `LinguisticObject`) |
+| Work | `HumanMadeObject`/`LinguisticObject` (CSV의 `Linked Art Class` 컬럼 값을 그대로 사용) |
 
-### 4-1. 매칭 실패 로깅 + 매칭률 리포트 (필수 요구사항)
+**Predicate 매핑 — `property_schema_map.csv`의 공식 스키마(P1~P18)를 그대로 따른다.** 이전에 워크북에서 임의로
+만들었던 `authorOf`, `allegoricalParallelOf` 같은 predicate는 전부 폐기하고 아래 공식 목록만 쓴다:
 
-CSV 데이터가 계속 수정되는 중이라 완벽하게 매칭되지 않는 게 정상이다. **매칭 실패나 임의 처리(fallback)가
-한 건이라도 발생하면 절대 조용히 넘어가지 말고, 아래 두 가지를 반드시 남긴다:**
+| P# | Property | Domain | Range | 비고 |
+|---|---|---|---|---|
+| P2 | `broader` | Concept | Concept | SKOS 그대로 |
+| P4 | `subverts` | Object | Concept |  |
+| P5 | `isPartIn` | Person | Chapter |  |
+| P6 | `refersTo` | Any | Any | 범용 약한 연결자 |
+| P7 | `critiques` | Person | Concept |  |
+| P8 | `evidenceType` | Concept | Evidence Type | Concepts CSV(④)의 canonical 값 |
+| P9 | `composedOf` | Work | Chapter |  |
+| P10 | `creator` | **Work → Person** | | ⚠️ 방향 확정: Work가 주어. 예: `dict:work/dictee --creator--> dict:person/cha-theresa` (Person이 주어가 아님) |
+| P11 | `hasNarrator` | Work | Person(Diseuse) |  |
+| P12 | `narrates` | Person(Diseuse) | Chapter | P3 `channels`는 DEPRECATED — 이 predicate로 통일 |
+| P13 | `hasExchangeableIdentity` | Person | Person | symmetric |
+| P14 | `hasPostcolonialParallel` | Event | Event | symmetric. ⚠️ 실제 관계 데이터에 Person↔Person, Object↔Person으로도 쓰인 사례 있음 — 스키마 위반이니 4-1-1 로그에 남기고 값은 그대로 반영 (연구자 판단 대기) |
+| P15 | `performsMediation` | Person(Diseuse) | Person | ⚠️ 마찬가지로 Object가 주어인 사례 있음 — 로그만 남기고 반영 |
+| P16 | `prefigures` | Any(Object/Concept) | Any(Concept) |  |
+| P17 | `silences` | Event/Concept | Person |  |
+| P18 | `isRecurrenceOf` | Event | Event |  |
 
-**① 로그 파일 (`logs/build-graph-{timestamp}.log.csv`)**
-매칭 실패·fallback이 발생할 때마다 한 행씩 기록. 컬럼:
+`P1 Evidence Type`, `P3 channels`는 DEPRECATED — 새 JSON-LD에는 만들지 않는다.
+스키마에 아예 없는 predicate(`sharesNameWith`, `performsAs`, `mythologicalParallelOf`, `requiresExcavationBy`,
+`embodiesPunctuation` 등)는 **버리지 말고 `dictv:` 네임스페이스에 그대로 살려서 넣되**, 4-1-1 로그에
+"스키마 미정의 predicate"로 기록한다 — 연구자가 나중에 공식 스키마에 편입할지 결정할 수 있게.
+
+**속성 매핑 (엔티티)**:
+| CSV 컬럼 | JSON-LD 속성 |
+|---|---|
+| `Entity ID` | `@id` (`dict:` 접두어 그대로 유지) |
+| `prefLabel (en)`/`(ko)` | `identified_by: [{type:"Name", content, language}]` (⚠️ `(Q18)` 꼬리표는 en/ko 둘 다 정규식으로 제거) |
+| `Primary URI` | `equivalent: [{id: ...}]` (Mapping Status가 `matched`/`closeMatch`일 때만) |
+| `Definition / Scope Note` | `referred_to_by: [{type:"LinguisticObject", content, classified_as:"description"}]` |
+| `Chapter(s)` | `dictv:isPartIn` 배열로 분리 (`ALL`/`—`/`→` 특수 토큰은 4-1-1 로그에 남기고 원문 그대로 보존) |
+
+**도메인/레인지 검증**: 관계 하나를 JSON-LD로 쓰기 전에 subject/object의 실제 `Type`이 위 표의 Domain/Range와
+맞는지 검사한다. 안 맞아도 **막지 않고 그대로 반영하되, 반드시 로그에 남긴다** (아래 4-1-1).
+
+**출력**: `public/data/graph.jsonld` — 엔티티는 `@graph` 배열의 노드, 관계는 각 엔티티의 `dictv:{predicate}` 필드로 표현.
+
+---
+
+### 4-1-1. 로깅 + 매칭률 리포트 (①·② 공통 요구사항)
+
+CSV 데이터가 계속 수정되는 중이라 완벽하게 매칭/검증되지 않는 게 정상이다. **매칭 실패, 임의 처리(fallback),
+스키마 위반이 한 건이라도 발생하면 절대 조용히 넘어가지 말고, 두 스크립트 모두 아래 두 가지를 남긴다:**
+
+**① 로그 파일** — `logs/build-jsonld-{timestamp}.log.csv` / `logs/build-graph-{timestamp}.log.csv` (스크립트별로 분리)
 | 컬럼 | 내용 |
 |---|---|
-| `source_file` | 어느 CSV에서 발생했는지 (`dictee_entities.csv` 등) |
-| `row_number` | 그 CSV의 몇 번째 행인지 (사람이 원본 파일 열어서 바로 찾을 수 있게) |
+| `source_file` | 어느 CSV에서 발생했는지 |
+| `row_number` | 그 CSV의 몇 번째 행인지 |
 | `field` | 어느 컬럼에서 문제가 났는지 |
-| `raw_value` | 원본 값 그대로 (가공하지 않은 값) |
-| `issue_type` | 문제 종류 (예: "매칭 실패 (dangling reference)", "QID 미확보", "URI 필드 내 개행 문자") |
+| `raw_value` | 원본 값 그대로 |
+| `issue_type` | 문제 종류 (예: "매칭 실패 (dangling reference)", "QID 미확보", "도메인/레인지 스키마 위반", "스키마 미정의 predicate") |
 | `detail` | 왜 문제인지 설명 |
-| `action_taken` | 코드가 실제로 어떻게 처리했는지 (스킵/null 처리 등 — 침묵 처리 금지, 반드시 명시) |
+| `action_taken` | 코드가 실제로 어떻게 처리했는지 (스킵/null 처리/그대로 반영 등 — 침묵 처리 금지, 반드시 명시) |
 
-**② 터미널 요약 (스크립트 실행 시 항상 출력)**
+**② 터미널 요약** (스크립트 실행 시 항상 출력, 두 스크립트 모두 동일 포맷):
 ```
 ========================================================
-그래프 빌드 결과 요약
+JSON-LD 빌드 결과 요약 (build-jsonld.py)
 ========================================================
-엔티티 CSV 원본 행:      67건
-  -> 그래프 노드로 변환:  67건  (100.0%)
-  -> Wikibase QID 확보:  36건  (53.7%)
+엔티티 CSV 원본 행:        67건  ->  JSON-LD 노드:  67건  (100.0%)
+Wikibase QID 확보:         36건  (53.7%)
 --------------------------------------------------------
-관계 CSV 원본 행:        25건
-  -> 그래프 엣지로 변환:  25건  (100.0%)
-  -> 매칭 실패/스킵:      0건  (0.0%)
+관계 CSV 원본 행:          25건  ->  JSON-LD 관계:  25건  (100.0%)
+  스키마 위반 (반영은 함):  3건  (12.0%)
+  스키마 미정의 predicate:  9건  (36.0%)
 --------------------------------------------------------
-발생한 이슈 총 32건 -> 상세 내용: logs/build-graph-20260821-050709.log.csv
+발생한 이슈 총 N건 -> 상세 내용: logs/build-jsonld-20260821-xxxxxx.log.csv
 ========================================================
-graph.json 저장 완료: public/data/graph.json
+graph.jsonld 저장 완료: public/data/graph.jsonld
 ```
-퍼센티지는 항상 "원본 CSV 행 수 대비"로 계산 (그래프에 실제 반영된 것 기준으로 나누면 분모가 왜곡됨).
+퍼센티지는 항상 "원본 CSV 행 수 대비"로 계산.
 
-**참고 구현**: `scripts/build-graph-json.py`는 이미 이 로깅 요구사항을 반영해서 작성해뒀다 (별도 첨부 파일).
-실제 데이터로 실행 검증 완료: 엔티티 100%, 관계 100% 매칭, QID 확보 53.7% (31개 엔티티가 아직 Wikibase 미등록 —
-이건 코드 버그가 아니라 실제 데이터 상태이며, 로그에 전부 개별 기록됨).
+**참고 구현**: `scripts/build-graph-json.py`(② 단계, CSV 직접 읽던 구버전)는 이미 이 로깅 요구사항을 반영해서
+작성 및 실행 검증까지 마쳤다 (별도 첨부 파일 — 단, ①이 추가되면 이 스크립트는 CSV 대신 `graph.jsonld`를 읽도록
+입력만 바꾸면 되고 로깅 로직은 그대로 재사용 가능하다). ①(`build-jsonld.py`)은 이번에 새로 작성해야 한다.
+
+### 4-2. ② `scripts/build-graph-json.py` — graph.jsonld → Cytoscape용 평면 JSON
+
+입력이 CSV 3종에서 **`public/data/graph.jsonld` 하나**로 바뀐다는 것만 구버전과 다르다. 처리 규칙:
+
+1. `graph.jsonld`의 `@graph` 배열을 순회하며 각 노드를 평평한 객체로 변환:
+   - `@id` → `id`, `@type` → `group`
+   - `identified_by`에서 language별 Name 추출 → `label_en`/`label_ko`
+   - `referred_to_by`의 description → `description`
+   - `equivalent`가 있으면 QID 추출 → `wikibaseUrl`
+2. 각 노드의 `dictv:{predicate}` 필드를 순회하며 엣지 배열 생성 (`source`/`target`/`predicate`)
+3. 출력 형식은 구버전과 동일 (`public/data/graph.json`, nodes/edges 배열) — Cytoscape 쪽 코드(`GraphCanvas.tsx`)는 수정 불필요
+
+**실행 순서**: `python3 scripts/build-jsonld.py` → `python3 scripts/build-graph-json.py` → `npm run build`
+(둘 다 `npm run build` 전에 수동 실행. 이번 프로토타입에선 순서만 지키면 되고 자동 체이닝은 불필요)
 
 ---
 
@@ -221,12 +262,15 @@ dictee-graph/
 ├── data/
 │   ├── dictee_entities.csv
 │   ├── dictee_relationships.csv
-│   └── entity_qid_crosswalk.csv
+│   ├── entity_qid_crosswalk.csv
+│   └── property_schema_map.csv
 ├── scripts/
-│   └── build-graph-json.py
+│   ├── build-jsonld.py         ← ① CSV → graph.jsonld (진짜 JSON-LD, 이번에 새로 작성)
+│   └── build-graph-json.py     ← ② graph.jsonld → graph.json (Cytoscape용, 입력만 CSV에서 jsonld로 교체)
 ├── public/
 │   └── data/
-│       └── graph.json          ← 빌드 스크립트 산출물 (git에 커밋해서 GitHub Pages가 바로 서빙)
+│       ├── graph.jsonld        ← ①의 산출물 — 프로젝트의 "진짜" 결과물, git에 커밋
+│       └── graph.json          ← ②의 산출물 — 그래프 뷰어 전용 파생 파일, git에 커밋 (GitHub Pages가 서빙)
 ├── src/
 │   ├── components/
 │   │   ├── GraphCanvas.tsx     ← Cytoscape 래핑
