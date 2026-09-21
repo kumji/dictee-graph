@@ -11,24 +11,20 @@ interface Props {
   graph: GraphData
   lang: Lang
   activeTypes: Set<string>
-  activeChapter: string | null
   highlightedId: string | null
   onSelectNode: (node: GraphNode) => void
   onSelectEdge: (edge: GraphEdge) => void
   onCyReady: (cy: Core) => void
 }
 
-function nodeMatchesFilters(node: GraphNode, activeTypes: Set<string>, activeChapter: string | null) {
-  const typeOk = activeTypes.size === 0 || activeTypes.has(node.group)
-  const chapterOk = !activeChapter || node.chapters.includes(activeChapter) || node.chapters.includes('ALL')
-  return typeOk && chapterOk
+function nodeMatchesFilters(node: GraphNode, activeTypes: Set<string>) {
+  return activeTypes.size === 0 || activeTypes.has(node.group)
 }
 
 export default function GraphCanvas({
   graph,
   lang,
   activeTypes,
-  activeChapter,
   highlightedId,
   onSelectNode,
   onSelectEdge,
@@ -71,6 +67,7 @@ export default function GraphCanvas({
         predicate: e.predicate,
       }
       if (isModeling) data.isModeling = true
+      if (e.schemaViolation) data.schemaViolation = true
       return { data }
     })
     return [...nodeEls, ...edgeEls]
@@ -81,18 +78,18 @@ export default function GraphCanvas({
     if (!cy) return
     cy.nodes().forEach((n) => {
       const node = nodeById.get(n.id())
-      const match = node ? nodeMatchesFilters(node, activeTypes, activeChapter) : true
+      const match = node ? nodeMatchesFilters(node, activeTypes) : true
       n.toggleClass('dimmed', !match)
     })
     cy.edges().forEach((e) => {
       const src = nodeById.get(e.source().id())
       const tgt = nodeById.get(e.target().id())
       const match =
-        (src ? nodeMatchesFilters(src, activeTypes, activeChapter) : true) &&
-        (tgt ? nodeMatchesFilters(tgt, activeTypes, activeChapter) : true)
+        (src ? nodeMatchesFilters(src, activeTypes) : true) &&
+        (tgt ? nodeMatchesFilters(tgt, activeTypes) : true)
       e.toggleClass('dimmed', !match)
     })
-  }, [activeTypes, activeChapter, nodeById, elements])
+  }, [activeTypes, nodeById, elements])
 
   useEffect(() => {
     const cy = cyRef.current

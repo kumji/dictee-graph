@@ -12,7 +12,6 @@ export default function App() {
   const [error, setError] = useState<string | null>(null)
   const [lang, setLang] = useState<Lang>('en')
   const [activeTypes, setActiveTypes] = useState<Set<string>>(new Set())
-  const [activeChapter, setActiveChapter] = useState<string | null>(null)
   const [selection, setSelection] = useState<Selection>(null)
   const [highlightedId, setHighlightedId] = useState<string | null>(null)
 
@@ -29,13 +28,6 @@ export default function App() {
   const types = useMemo(() => {
     if (!graph) return []
     return Array.from(new Set(graph.nodes.map((n) => n.group))).sort()
-  }, [graph])
-
-  const chapters = useMemo(() => {
-    if (!graph) return []
-    const set = new Set<string>()
-    graph.nodes.forEach((n) => n.chapters.forEach((c) => c !== 'ALL' && set.add(c)))
-    return Array.from(set).sort()
   }, [graph])
 
   const toggleType = (type: string) => {
@@ -72,9 +64,6 @@ export default function App() {
         types={types}
         activeTypes={activeTypes}
         onToggleType={toggleType}
-        chapters={chapters}
-        activeChapter={activeChapter}
-        onChangeChapter={setActiveChapter}
         lang={lang}
         onToggleLang={() => setLang((l) => (l === 'en' ? 'ko' : 'en'))}
       />
@@ -84,7 +73,6 @@ export default function App() {
             graph={graph}
             lang={lang}
             activeTypes={activeTypes}
-            activeChapter={activeChapter}
             highlightedId={highlightedId}
             onSelectNode={(n) => setSelection({ type: 'node', data: n })}
             onSelectEdge={(e) => setSelection({ type: 'edge', data: e })}

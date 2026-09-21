@@ -3,8 +3,6 @@ public/data/graph.jsonld -> public/data/graph.json 변환 (② 단계, Cytoscape
 
 이 스크립트는 CSV를 직접 읽지 않는다 — CSV를 아는 코드는 build-jsonld.py(①)에만 있다.
 graph.jsonld의 @graph 노드를 평평한 nodes/edges 배열로 펼치기만 한다.
-graph.json의 형태(§4 예시)는 구버전과 동일하게 유지해서 프론트엔드(GraphCanvas.tsx 등) 코드는
-수정할 필요가 없다.
 
 실행: python3 scripts/build-jsonld.py 를 먼저 실행한 뒤 -> python3 scripts/build-graph-json.py
 """
@@ -20,7 +18,14 @@ LOG_DIR = ROOT / "logs"
 
 JSONLD_PATH = OUT_DIR / "graph.jsonld"
 
-WIKIBASE_HOST = "dictee-lod.wikibase.cloud"
+# 노드 속성으로 이미 처리되는 키들 — dict:{predicate} 등 나머지 list 필드는 전부 엣지로 취급한다
+# (①이 predicate를 property_schema_map.csv의 실제 네임스페이스(dict:/skos:/schema:/dct:)로
+#  기록하므로, "dict:"로 시작하는 키만 보는 게 아니라 알려진 속성 키를 제외한 나머지를 엣지로 본다)
+NON_EDGE_KEYS = {
+    "@id", "@type", "identified_by", "referred_to_by",
+    "dictrel:entityType", "dictrel:documentedIn",
+    "equivalent", "skos:broader", "skos:closeMatch", "dict:evidenceType",
+}
 
 
 class IssueLogger:
@@ -56,12 +61,16 @@ def label_for(identified_by: list, lang: str) -> str:
     return ""
 
 
-def wikibase_url(equivalent: list) -> str | None:
+def equivalent_uri(equivalent: list) -> str | None:
     for entry in equivalent or []:
         eid = entry.get("id", "")
-        if WIKIBASE_HOST in eid:
+        if eid:
             return eid
     return None
+
+
+def uri_list(field: list) -> list:
+    return [e.get("id") for e in (field or []) if e.get("id")]
 
 
 def flatten_node(node: dict) -> dict:
@@ -69,12 +78,13 @@ def flatten_node(node: dict) -> dict:
         "id": node["@id"],
         "label_en": label_for(node.get("identified_by"), "en"),
         "label_ko": label_for(node.get("identified_by"), "ko"),
-        "group": node.get("dictv:entityType", node.get("@type", "")),
+        "group": node.get("dictrel:entityType", node.get("@type", "")),
         "description": (node.get("referred_to_by") or [{}])[0].get("content", ""),
-        "evidenceType": node.get("dictv:evidenceType", ""),
-        "pageReferences": node.get("dictv:pageReferences", ""),
-        "chapters": node.get("dictv:isPartIn", []),
-        "wikibaseUrl": wikibase_url(node.get("equivalent")),
+        "evidenceType": node.get("dict:evidenceType", ""),
+        "equivalentUri": equivalent_uri(node.get("equivalent")),
+        "broader": uri_list(node.get("skos:broader")),
+        "closeMatch": uri_list(node.get("skos:closeMatch")),
+        "documentedIn": node.get("dictrel:documentedIn", []),
     }
 
 
@@ -82,15 +92,15 @@ def extract_edges(node: dict, node_ids: set, logger: IssueLogger) -> list:
     edges = []
     subj_id = node["@id"]
     for key, value in node.items():
-        if not key.startswith("dictv:") or not isinstance(value, list):
+        if key in NON_EDGE_KEYS or not isinstance(value, list):
             continue
-        predicate = key[len("dictv:"):]
+        predicate = key.split(":", 1)[-1]
         for entry in value:
             if not isinstance(entry, dict) or "id" not in entry:
                 continue
             obj_id = entry["id"]
             if obj_id not in node_ids:
-                logger.log(JSONLD_PATH.name, "-", "dictv:" + predicate, f"{subj_id} -> {obj_id}",
+                logger.log(JSONLD_PATH.name, "-", key, f"{subj_id} -> {obj_id}",
                            "매칭 실패 (dangling reference)",
                            f"'{obj_id}'에 해당하는 노드를 graph.jsonld의 @graph에서 찾을 수 없음",
                            "이 엣지를 그래프에서 스킵")
@@ -99,9 +109,8 @@ def extract_edges(node: dict, node_ids: set, logger: IssueLogger) -> list:
                 "source": subj_id,
                 "target": obj_id,
                 "predicate": predicate,
-                "pageRef": entry.get("dictv:pageRef", ""),
-                "note": entry.get("dictv:note", ""),
-                "status": entry.get("dictv:status", ""),
+                "documentedIn": entry.get("dictrel:documentedIn", []),
+                "schemaViolation": bool(entry.get("dictrel:schemaViolation", False)),
             })
     return edges
 
@@ -138,13 +147,13 @@ def main():
     log_path = LOG_DIR / f"build-graph-{timestamp}.log.csv"
     logger.write(log_path)
 
-    n_with_qid = sum(1 for n in nodes if n["wikibaseUrl"])
+    n_with_equivalent = sum(1 for n in nodes if n["equivalentUri"])
 
     print("=" * 56)
     print("그래프 빌드 결과 요약 (build-graph-json.py, graph.jsonld 기반)")
     print("=" * 56)
     print(f"graph.jsonld 노드:       {len(graph_nodes)}건  ->  그래프 노드:  {len(nodes)}건  (100.0%)")
-    print(f"  -> Wikibase QID 확보:  {n_with_qid}건  ({(n_with_qid / len(nodes) * 100) if nodes else 0:.1f}%)")
+    print(f"  -> 외부 URI 매핑:      {n_with_equivalent}건  ({(n_with_equivalent / len(nodes) * 100) if nodes else 0:.1f}%)")
     print("-" * 56)
     print(f"  -> 그래프 엣지:        {len(edges)}건")
     if logger.rows:

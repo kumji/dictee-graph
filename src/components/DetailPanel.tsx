@@ -34,32 +34,58 @@ export default function DetailPanel({ lang, selection }: Props) {
             <dd className="text-gray-800">{n.evidenceType || '미기재'}</dd>
           </div>
           <div>
-            <dt className="font-medium text-gray-500">Page Reference</dt>
-            <dd className="text-gray-800">{n.pageReferences || '—'}</dd>
-          </div>
-          <div>
-            <dt className="font-medium text-gray-500">Chapter(s)</dt>
-            <dd className="text-gray-800">{n.chapters.join(', ') || '—'}</dd>
-          </div>
-          <div>
-            <dt className="font-medium text-gray-500">Wikibase</dt>
+            <dt className="font-medium text-gray-500">외부 권위 연결</dt>
             <dd>
-              {n.wikibaseUrl ? (
+              {n.equivalentUri ? (
                 <a
-                  href={n.wikibaseUrl}
+                  href={n.equivalentUri}
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-600 underline"
                 >
-                  {n.wikibaseUrl}
+                  {n.equivalentUri}
                 </a>
               ) : (
-                <span className="inline-block rounded bg-gray-200 px-2 py-0.5 text-xs text-gray-600">
-                  Wikibase 미등록
-                </span>
+                <span className="text-gray-500">외부 권위 연결 없음</span>
               )}
             </dd>
           </div>
+          {n.broader.length > 0 && (
+            <div>
+              <dt className="font-medium text-gray-500">Broader</dt>
+              <dd className="space-y-1">
+                {n.broader.map((uri) => (
+                  <a
+                    key={uri}
+                    href={uri}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block break-all text-blue-600 underline"
+                  >
+                    {uri}
+                  </a>
+                ))}
+              </dd>
+            </div>
+          )}
+          {n.closeMatch.length > 0 && (
+            <div>
+              <dt className="font-medium text-gray-500">Close Match</dt>
+              <dd className="space-y-1">
+                {n.closeMatch.map((uri) => (
+                  <a
+                    key={uri}
+                    href={uri}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block break-all text-blue-600 underline"
+                  >
+                    {uri}
+                  </a>
+                ))}
+              </dd>
+            </div>
+          )}
         </dl>
       </aside>
     )
@@ -72,17 +98,11 @@ export default function DetailPanel({ lang, selection }: Props) {
       <p className="mt-1 text-xs text-gray-500">
         {e.source} → {e.target}
       </p>
-      {e.note && <p className="mt-2 text-sm text-gray-600">{e.note}</p>}
-      <dl className="mt-4 space-y-2 text-sm">
-        <div>
-          <dt className="font-medium text-gray-500">Page Ref</dt>
-          <dd className="text-gray-800">{e.pageRef || '—'}</dd>
-        </div>
-        <div>
-          <dt className="font-medium text-gray-500">Status</dt>
-          <dd className="text-gray-800">{e.status || '—'}</dd>
-        </div>
-      </dl>
+      {e.schemaViolation && (
+        <p className="mt-2 text-xs text-gray-500">
+          스키마상 Domain/Range 예외 — 연구자 판단 대기 중인 관계입니다.
+        </p>
+      )}
     </aside>
   )
 }
