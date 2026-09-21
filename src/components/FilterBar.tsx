@@ -4,9 +4,6 @@ interface Props {
   types: string[]
   activeTypes: Set<string>
   onToggleType: (type: string) => void
-  chapters: string[]
-  activeChapter: string | null
-  onChangeChapter: (chapter: string | null) => void
   lang: 'en' | 'ko'
   onToggleLang: () => void
 }
@@ -15,9 +12,6 @@ export default function FilterBar({
   types,
   activeTypes,
   onToggleType,
-  chapters,
-  activeChapter,
-  onChangeChapter,
   lang,
   onToggleLang,
 }: Props) {
@@ -45,22 +39,6 @@ export default function FilterBar({
             </button>
           )
         })}
-      </div>
-
-      <div className="flex items-center gap-2">
-        <span className="font-medium text-gray-500">Chapter</span>
-        <select
-          value={activeChapter ?? ''}
-          onChange={(evt) => onChangeChapter(evt.target.value || null)}
-          className="rounded border border-gray-300 px-2 py-0.5"
-        >
-          <option value="">전체</option>
-          {chapters.map((c) => (
-            <option key={c} value={c}>
-              {c}
-            </option>
-          ))}
-        </select>
       </div>
 
       <button

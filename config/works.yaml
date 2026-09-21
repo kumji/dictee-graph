@@ -1,0 +1,12 @@
+# 작품 레지스트리 (CLAUDE.md §4-0)
+# 새 작품을 추가할 때는 이 파일과 data/ 폴더만 수정한다 — scripts/*.py는 건드리지 않는다.
+# property_schema_map.csv는 작품별 파일이 아니라 전체 프로젝트가 공유하는 단일 스키마다.
+works:
+  - work_id: dictee
+    title: "Dictée"
+    entities_csv: "data/dictee_entities.csv"
+    relationships_csv: "data/dictee_relationships.csv"
+  # - work_id: exilee
+  #   title: "Exilée and Temps Morts"
+  #   entities_csv: "data/exilee_entities.csv"
+  #   relationships_csv: "data/exilee_relationships.csv"

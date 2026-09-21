@@ -7,18 +7,18 @@ export interface GraphNode {
   group: NodeGroup | string
   description: string
   evidenceType: string
-  pageReferences: string
-  chapters: string[]
-  wikibaseUrl: string | null
+  equivalentUri: string | null
+  broader: string[]
+  closeMatch: string[]
+  documentedIn: string[]
 }
 
 export interface GraphEdge {
   source: string
   target: string
   predicate: string
-  pageRef: string
-  note: string
-  status: string
+  documentedIn: string[]
+  schemaViolation: boolean
 }
 
 export interface GraphData {

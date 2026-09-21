@@ -74,6 +74,14 @@ export const cytoscapeStylesheet: StylesheetJsonBlock[] = [
     },
   },
   {
+    selector: 'edge[schemaViolation]',
+    style: {
+      'line-color': '#D1D5DB',
+      'target-arrow-color': '#D1D5DB',
+      width: 2,
+    },
+  },
+  {
     selector: 'edge.dimmed',
     style: {
       opacity: 0.15,

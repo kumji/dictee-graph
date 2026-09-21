@@ -1,0 +1,39 @@
+name: Deploy branch preview
+
+# main is deployed separately (see deploy.yml on main) straight to the
+# GitHub Pages site root. Every other branch gets its own subpath under
+# the same site — https://kumji.github.io/dictee-graph/preview/<branch>/ —
+# so main and a feature branch can be viewed side by side.
+on:
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compute branch slug and base path
+        id: slug
+        run: |
+          slug=$(echo "${GITHUB_REF_NAME}" | tr '/' '-')
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"
+          echo "base_path=/dictee-graph/preview/$slug/" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          VITE_BASE_PATH: ${{ steps.slug.outputs.base_path }}
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          destination_dir: preview/${{ steps.slug.outputs.slug }}
+          keep_files: true
