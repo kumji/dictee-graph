@@ -25,3 +25,5 @@ sharesNameWith,dict:sharesNameWith,Person,Person,고유,이름을 공유하는 �
 performsAs,dict:performsAs,Person,Person,고유,"한 인물이 다른 인물로서 연기/수행하는 비대칭 관계. 예: therese-lisieux→jeanne-darc (1895년 연극), falconetti→jeanne-darc (드레이어 영화). performsMediation(P15)이 디쇠즈의 매개 행위라면, performsAs는 구체적 인물 역할 수행. JSON-LD 직렬화: dict:performsAs"
 requiresExcavationBy,dict:requiresExcavationBy,Concept,Person or Concept,고유,매장된 개념이 특정 행위자 또는 실천을 통해 발굴/활성화되는 관계. 예: shamanic-mediation→cyclical-time (디쇠즈의 호명을 통해 순환적 시간이 접근 가능해짐). Lugones(2010) 순환적 시간관의 데이터 모델적 실천. JSON-LD 직렬화: dict:requiresExcavationBy
 embodiesPunctuation,dict:embodiesPunctuation,Person,Concept or Type,고유,"디쇠즈가 언어의 구두점을 신체적 조건으로 내면화하는 관계. ""She would become, herself, demarcations."" (p.4). 식민 언어의 규제 인프라가 신체를 통해 수행되는 방식을 인코딩. translational-violence와 연결: 구두점 내면화 = 번역 폭력의 신체적 현현. JSON-LD 직렬화: dict:embodiesPunctuation"
+publisher,dct:publisher,Work,Group,Dublin Core,Dublin Core dct:publisher. 표준 방향(Work→Agent) 준수: 작품 → 출판 주체(Group).
+holds,schema:holds,Group,Work,Schema.org,Schema.org schema:holds. 소장/권리 보유 기관(Group) → 작품(Work).

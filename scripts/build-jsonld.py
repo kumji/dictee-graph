@@ -86,12 +86,17 @@ def load_works(logger: IssueLogger) -> list[dict]:
     return works
 
 
-def load_property_schema(logger: IssueLogger) -> dict:
-    """property_schema_map.csv -> {predicate: {"Property (with namespace)", "Domain", "Range", ...}}.
+def load_property_schema(logger: IssueLogger) -> tuple[dict, dict]:
+    """property_schema_map.csv -> ({predicate: {"Property (with namespace)", "Domain", "Range", ...}}, by_namespaced).
 
     작품별 파일이 아니라 프로젝트 전체가 공유하는 단일 스키마 (CLAUDE.md §4-0).
     앞뒤에 제목/범례 같은 자유 서식 행이 섞여 있어서(연구자가 직접 정리한 문서),
     'Property'로 시작하는 실제 헤더 행을 찾아서 그 지점부터 데이터로 읽는다.
+
+    두 번째 반환값 by_namespaced는 "Property (with namespace)" 값(예: dct:creator,
+    schema:mentions) -> short name(예: creator, mentions) 역방향 조회용. relationship CSV에
+    relationship_property_uri가 구 표기(dict:rel/{shortName})와 신규 표기(이미 네임스페이스가
+    붙은 형태)로 섞여 들어올 때 같은 predicate로 정규화하는 데 쓴다.
     """
     if not SCHEMA_CSV.exists():
         logger.log(SCHEMA_CSV.name, 0, "-", "-",
@@ -100,7 +105,7 @@ def load_property_schema(logger: IssueLogger) -> dict:
                    "도메인/레인지 검증 및 '스키마 미정의 predicate' 로깅을 이번 실행에서는 생략 — "
                    "모든 predicate를 dict: 네임스페이스에 원본 이름 그대로 기록. "
                    "파일이 추가되면 다음 실행부터 자동으로 검증됨")
-        return {}
+        return {}, {}
 
     with open(SCHEMA_CSV, encoding="utf-8-sig") as f:
         rows = list(csv.reader(f))
@@ -111,7 +116,7 @@ def load_property_schema(logger: IssueLogger) -> dict:
                    "predicate 스키마 파일 형식 인식 실패",
                    "'Property'로 시작하는 헤더 행을 찾지 못함",
                    "도메인/레인지 검증을 생략하고 스키마 없는 것으로 처리")
-        return {}
+        return {}, {}
 
     header = rows[header_idx]
     schema = {}
@@ -122,7 +127,13 @@ def load_property_schema(logger: IssueLogger) -> dict:
         prop = (row.get("Property") or "").strip()
         if prop:
             schema[prop] = row
-    return schema
+
+    by_namespaced = {}
+    for prop, row in schema.items():
+        namespaced = (row.get("Property (with namespace)") or "").strip()
+        if namespaced:
+            by_namespaced[namespaced] = prop
+    return schema, by_namespaced
 
 
 def build_entity_node(row: dict, i: int, csv_name: str, work_id: str,
@@ -297,7 +308,7 @@ def ingest_work_entities(work: dict, property_schema: dict, logger: IssueLogger,
 
 
 def ingest_work_relationships(work: dict, id_remap: dict, master_entities: dict,
-                               property_schema: dict, logger: IssueLogger):
+                               property_schema: dict, by_namespaced: dict, logger: IssueLogger):
     """작품 하나의 relationships_csv를 읽어 (subject_id, namespaced_key, entry) 리스트를 만든다.
 
     실제로 master_entities에 붙이는 건 main()의 몫 — 이 함수는 CSV 한 편을 해석하기만 한다.
@@ -361,21 +372,30 @@ def ingest_work_relationships(work: dict, id_remap: dict, master_entities: dict,
                            "이 관계(행 전체)를 JSON-LD에서 스킵")
             continue
 
-        predicate = row.get("relationship_property_uri", "").strip().split("/")[-1]
-        if not predicate:
+        raw_pred = row.get("relationship_property_uri", "").strip()
+        if not raw_pred:
             logger.log(csv_name, i, "relationship_property_uri",
                        row.get("relationship_property_uri", ""),
                        "predicate 없음", "관계 유형을 알 수 없음", "이 관계를 JSON-LD에서 스킵")
             continue
 
+        # relationship_property_uri에는 두 표기가 섞여 있다: 구 표기 dict:rel/{shortName},
+        # 신규 표기는 이미 네임스페이스가 붙은 형태(schema:mentions, dct:creator 등)를 그대로 쓴다.
+        # by_namespaced로 역조회해서 같은 predicate를 하나의 short name으로 정규화한다 —
+        # 안 그러면 같은 관계가 'prefigures'/'dict:prefigures'처럼 서로 다른 엣지 타입으로 쪼개진다.
+        if raw_pred.startswith("dict:rel/"):
+            predicate = raw_pred[len("dict:rel/"):]
+        else:
+            predicate = by_namespaced.get(raw_pred, raw_pred)
+
         violation = False
         if property_schema:
             schema_row = property_schema.get(predicate)
             namespaced = (schema_row.get("Property (with namespace)") if schema_row else "") \
-                or f"dict:{predicate}"
+                or (raw_pred if ":" in raw_pred else f"dict:{predicate}")
             if not schema_row:
                 n_undefined_predicates += 1
-                logger.log(csv_name, i, "relationship_property_uri", predicate,
+                logger.log(csv_name, i, "relationship_property_uri", raw_pred,
                            "스키마 미정의 predicate",
                            "property_schema_map.csv의 공식 목록에 없는 predicate",
                            f"버리지 않고 '{namespaced}'로 그대로 기록 (연구자 검토 대기)")
@@ -401,7 +421,7 @@ def ingest_work_relationships(work: dict, id_remap: dict, master_entities: dict,
                                f"실제 object Type='{obj_type}'",
                                "막지 않고 그대로 반영 (연구자 판단 대기)")
         else:
-            namespaced = f"dict:{predicate}"
+            namespaced = raw_pred if ":" in raw_pred else f"dict:{predicate}"
 
         entry = {"id": obj_id, "dictrel:documentedIn": [work_id]}
         if violation:
@@ -418,7 +438,7 @@ def main():
 
     logger = IssueLogger()
     works = load_works(logger)
-    property_schema = load_property_schema(logger)
+    property_schema, by_namespaced = load_property_schema(logger)
 
     master_entities: dict = {}
     master_by_uri: dict = {}
@@ -438,7 +458,7 @@ def main():
         n_entity_rows += rows
 
         rel_rows, edges, n_v, n_u, n_d = ingest_work_relationships(
-            work, id_remap, master_entities, property_schema, logger
+            work, id_remap, master_entities, property_schema, by_namespaced, logger
         )
         n_rel_rows += rel_rows
         n_schema_violations += n_v

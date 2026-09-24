@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T08:19:55.999887+00:00",
+  "generatedAt": "2026-09-24T12:50:08.504816+00:00",
   "nodes": [
     {
       "id": "dict:person/cha-theresa",
@@ -513,6 +513,20 @@
       ]
     },
     {
+      "id": "dict:concept/muse-subversion",
+      "label_en": "Muse Subversion",
+      "label_ko": "뮤즈 전복",
+      "group": "Concept",
+      "description": "Traditional Muses reclaimed as active channels for silenced women across colonial and gendered histories. Each Muse no longer represents a single genre but an unstable intersection of colonial history, martyrdom, and shamanism. THALIA (Comedy) opens with MELPOMENE (Tragedy) fresco — genre expectation deliberately violated.",
+      "evidenceType": "Modeling",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
       "id": "dict:object/acupuncture-chart",
       "label_en": "Acupuncture Meridian Chart",
       "label_ko": "경락도",
@@ -810,12 +824,12 @@
     },
     {
       "id": "dict:group/uc-press",
-      "label_en": "University of California, Berkeley",
+      "label_en": "University of California Press",
       "label_ko": "UC 프레스",
       "group": "Group",
       "description": "Published 2001 reprint/third edition of Dictée with BAMPFA. Returned book to print after 19 years out of print.",
       "evidenceType": "Biographical",
-      "equivalentUri": "https://www.wikidata.org/wiki/Q168756",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q1816033",
       "broader": [],
       "closeMatch": [],
       "documentedIn": [
@@ -880,6 +894,33 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "hasFamilyRelation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:person/cha-hyungsang",
+      "predicate": "hasFamilyRelation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:person/cha-haksang",
+      "predicate": "hasFamilyRelation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
       "source": "dict:person/yu-gwansoon",
       "target": "dict:person/jeanne-darc",
       "predicate": "hasPostcolonialParallel",
@@ -925,6 +966,15 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:person/cha-haksang",
+      "target": "dict:event/april-19-1960",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
       "source": "dict:person/diseuse",
       "target": "dict:person/yu-gwansoon",
       "predicate": "performsMediation",
@@ -952,9 +1002,72 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:person/diseuse",
+      "target": "dict:object/punctuation",
+      "predicate": "embodiesPunctuation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": true
+    },
+    {
       "source": "dict:person/princess-bari",
       "target": "dict:person/diseuse",
       "predicate": "mythologicalParallelOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/spivak",
+      "target": "dict:concept/translational-violence",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/spillers",
+      "target": "dict:concept/ungendering",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/lugones",
+      "target": "dict:concept/fractured-locus",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/lugones",
+      "target": "dict:concept/cyclical-time",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/mohanty",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/wynter",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "critiques",
       "documentedIn": [
         "dictee"
       ],
@@ -970,9 +1083,45 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:event/april-19-1960",
+      "target": "dict:person/cha-haksang",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/korean-war-1950",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "silences",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/korean-war-1950",
+      "target": "dict:event/march-first-1919",
+      "predicate": "isRecurrenceOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
       "source": "dict:event/gwangju-1980",
       "target": "dict:event/march-first-1919",
       "predicate": "isRecurrenceOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/gwangju-1980",
+      "target": "dict:person/cha-theresa",
+      "predicate": "mentions",
       "documentedIn": [
         "dictee"
       ],
@@ -991,6 +1140,51 @@
       "source": "dict:event/japanese-colonization",
       "target": "dict:person/yu-gwansoon",
       "predicate": "silences",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/gojong-funeral-1919",
+      "target": "dict:event/march-first-1919",
+      "predicate": "hasPostcolonialParallel",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/cha-family-exile-1962",
+      "target": "dict:event/japanese-colonization",
+      "predicate": "isRecurrenceOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/cha-family-exile-1962",
+      "target": "dict:event/korean-war-1950",
+      "predicate": "isRecurrenceOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/cha-family-exile-1962",
+      "target": "dict:person/cha-theresa",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/cha-family-exile-1962",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "mentions",
       "documentedIn": [
         "dictee"
       ],
@@ -1024,9 +1218,54 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:concept/translational-violence",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "broader",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
       "source": "dict:concept/shamanic-mediation",
       "target": "dict:concept/cyclical-time",
       "predicate": "requiresExcavationBy",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/shamanic-mediation",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "broader",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/fractured-locus",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "broader",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/ungendering",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "broader",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/muse-subversion",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "broader",
       "documentedIn": [
         "dictee"
       ],
@@ -1053,16 +1292,61 @@
     {
       "source": "dict:object/yu-portrait",
       "target": "dict:person/yu-gwansoon",
-      "predicate": "performsMediation",
+      "predicate": "mentions",
       "documentedIn": [
         "dictee"
       ],
-      "schemaViolation": true
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/mother-portrait",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/execution-photo",
+      "target": "dict:concept/translational-violence",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
     },
     {
       "source": "dict:object/korea-map",
       "target": "dict:concept/diasporic-experience",
       "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/korea-map",
+      "target": "dict:event/gwangju-1980",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/korea-map",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/therese-joan-photo",
+      "target": "dict:person/therese-lisieux",
+      "predicate": "mentions",
       "documentedIn": [
         "dictee"
       ],
@@ -1078,9 +1362,153 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:object/dreyer-still",
+      "target": "dict:person/gertrud",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/cave-hand",
+      "target": "dict:concept/untranslatability",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/osaka-asahi-photo",
+      "target": "dict:event/gojong-funeral-1919",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/melpomene-fresco",
+      "target": "dict:concept/diasporic-experience",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/melpomene-fresco",
+      "target": "dict:concept/muse-subversion",
+      "predicate": "subverts",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/nile-ruins-photo",
+      "target": "dict:concept/cyclical-time",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
       "source": "dict:object/calligraphy-nyu-nam",
       "target": "dict:concept/ungendering",
       "predicate": "subverts",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/calligraphy-bumo",
+      "target": "dict:person/cha-hyungsang",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/calligraphy-dao",
+      "target": "dict:person/cha-hyungsang",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/handwritten-ms",
+      "target": "dict:concept/translational-violence",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/bongseonhwa",
+      "target": "dict:concept/untranslatability",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/punctuation",
+      "target": "dict:concept/translational-violence",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:group/bampfa",
+      "target": "dict:work/dictee",
+      "predicate": "holds",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:person/cha-theresa",
+      "predicate": "creator",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:person/diseuse",
+      "predicate": "hasNarrator",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:group/tanam-press",
+      "predicate": "publisher",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:group/uc-press",
+      "predicate": "publisher",
       "documentedIn": [
         "dictee"
       ],

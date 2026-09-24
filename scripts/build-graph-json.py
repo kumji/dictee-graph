@@ -24,7 +24,7 @@ JSONLD_PATH = OUT_DIR / "graph.jsonld"
 NON_EDGE_KEYS = {
     "@id", "@type", "identified_by", "referred_to_by",
     "dictrel:entityType", "dictrel:documentedIn",
-    "equivalent", "skos:broader", "skos:closeMatch", "dict:evidenceType",
+    "equivalent", "skos:closeMatch", "dict:evidenceType",
 }
 
 
@@ -69,11 +69,17 @@ def equivalent_uri(equivalent: list) -> str | None:
     return None
 
 
-def uri_list(field: list) -> list:
-    return [e.get("id") for e in (field or []) if e.get("id")]
+def uri_list(field: list, node_ids: set) -> list:
+    """skos:broader/closeMatch 값 중 내부 엔티티가 아니라 진짜 외부 어휘 URI만 남긴다.
+
+    skos:broader는 엔티티 CSV의 broader URI 컬럼(항상 외부 URI)뿐 아니라 관계 CSV의
+    predicate로도 쓰일 수 있어(Concept -> Concept), 내부 엔티티를 가리키는 경우가 섞여 있다.
+    내부를 가리키는 값은 extract_edges에서 그래프 엣지로 처리하므로 여기서는 제외한다.
+    """
+    return [e.get("id") for e in (field or []) if e.get("id") and e["id"] not in node_ids]
 
 
-def flatten_node(node: dict) -> dict:
+def flatten_node(node: dict, node_ids: set) -> dict:
     return {
         "id": node["@id"],
         "label_en": label_for(node.get("identified_by"), "en"),
@@ -82,13 +88,19 @@ def flatten_node(node: dict) -> dict:
         "description": (node.get("referred_to_by") or [{}])[0].get("content", ""),
         "evidenceType": node.get("dict:evidenceType", ""),
         "equivalentUri": equivalent_uri(node.get("equivalent")),
-        "broader": uri_list(node.get("skos:broader")),
-        "closeMatch": uri_list(node.get("skos:closeMatch")),
+        "broader": uri_list(node.get("skos:broader"), node_ids),
+        "closeMatch": uri_list(node.get("skos:closeMatch"), node_ids),
         "documentedIn": node.get("dictrel:documentedIn", []),
     }
 
 
 def extract_edges(node: dict, node_ids: set, logger: IssueLogger) -> list:
+    """엔티티 노드의 predicate-키 list 필드들을 엣지로 펼친다.
+
+    skos:broader는 특별 취급: 내부 엔티티(Concept -> Concept)를 가리키면 엣지로 만들고,
+    외부 어휘 URI를 가리키면 flatten_node의 'broader' 표시 필드 몫이므로 조용히 건너뛴다
+    (외부 URI를 dangling reference로 잘못 로깅하지 않도록 dangling 체크 이전에 분리).
+    """
     edges = []
     subj_id = node["@id"]
     for key, value in node.items():
@@ -99,6 +111,8 @@ def extract_edges(node: dict, node_ids: set, logger: IssueLogger) -> list:
             if not isinstance(entry, dict) or "id" not in entry:
                 continue
             obj_id = entry["id"]
+            if key == "skos:broader" and obj_id not in node_ids:
+                continue  # 외부 어휘 URI — flatten_node의 broader 필드에서 이미 표시됨
             if obj_id not in node_ids:
                 logger.log(JSONLD_PATH.name, "-", key, f"{subj_id} -> {obj_id}",
                            "매칭 실패 (dangling reference)",
@@ -129,7 +143,7 @@ def main():
     graph_nodes = jsonld.get("@graph", [])
     node_ids = {n["@id"] for n in graph_nodes}
 
-    nodes = [flatten_node(n) for n in graph_nodes]
+    nodes = [flatten_node(n, node_ids) for n in graph_nodes]
     edges = []
     for n in graph_nodes:
         edges.extend(extract_edges(n, node_ids, logger))

@@ -1,28 +1,73 @@
- ,relationship_property_uri,object_uri,page_ref,note
-dict:person/cha-theresa,dict:rel/sharesNameWith,dict:person/therese-lisieux,ERATO,Cha explores multiple Theresa/Thérèse figures; supports name-lineage projection.
-dict:person/therese-lisieux,dict:rel/performsAs,dict:person/jeanne-darc,p.93,Saint Thérèse pictured performing as Joan of Arc.
-dict:person/falconetti,dict:rel/performsAs,dict:person/jeanne-darc,p.119,Falconetti performs Joan of Arc in Dreyer's film.
-dict:person/cha-theresa,dict:rel/performsMediation,dict:person/yu-gwansoon,pp.24-38,Cha as authorial mediator for Yu Gwan-sun's silenced voice.
-dict:person/diseuse,dict:rel/performsMediation,dict:person/yu-gwansoon,p.3,DISEUSE channels voices of silenced women including Yu Gwan-sun.
-dict:person/yu-gwansoon,dict:rel/hasPostcolonialParallel,dict:person/jeanne-darc,p.28,'Korean Joan of Arc' — ritual naming linking both figures.
-dict:person/yu-gwansoon,dict:rel/hasExchangeableIdentity,dict:person/empress-myeongseong,CLIO,Cha conflates Empress assassination date into 1919 frame of Yu.
-dict:person/cha-theresa,dict:rel/mythologicalParallelOf,dict:person/persephone,"pp.123,133",Persephone myth as structural frame for exile/return.
-dict:person/huh-hyungsoon,dict:rel/mythologicalParallelOf,dict:person/demeter,p.133,Demeter as mother figure paralleling Huh Hyung Soon's waiting in exile.
-dict:person/diseuse,dict:rel/mythologicalParallelOf,dict:person/sibyl,p.88,'diseuse de bonne aventure' linked to Sibyl as prophetic/medium figure.
-dict:person/princess-bari,dict:rel/mythologicalParallelOf,dict:person/diseuse,pp.165-179,Bari: first mudang who journeys for healing water ↔ Diseuse as textual shaman.
-dict:event/japanese-colonization,dict:rel/silences,dict:person/huh-hyungsoon,p.45,'They say you spoke in tongue forbidden' — Japanese colonial rule forecloses mother's Korean.
-dict:event/japanese-colonization,dict:rel/silences,dict:person/yu-gwansoon,pp.28-38,Colonial power silences Yu Gwan-sun — imprisonment and death in Seodaemun Prison.
-dict:event/gwangju-1980,dict:rel/isRecurrenceOf,dict:event/march-first-1919,p.87,"'Nothing has changed, we are at a standstill.' — 1980 structurally recurs 1919."
-dict:event/april-19-1960,dict:rel/isRecurrenceOf,dict:event/march-first-1919,p.83,"'Dear Mother, 4.19... eighteen years later' — 1960 as second iteration of colonial violence structure."
-dict:object/vocal-anatomy,dict:rel/prefigures,dict:concept/translational-violence,p.74,Western anatomical diagram of speech organs materializes speech as bodily labor — prefigures colonial appropriation of voice.
-dict:object/acupuncture-chart,dict:rel/prefigures,dict:concept/untranslatability,p.63,Eastern meridian chart vs. Western anatomy — two incommensurable knowledge systems approach the same question.
-dict:object/melpomene-fresco,dict:rel/subverts,dict:concept/muse-subversion,p.138,Comedy chapter (THALIA) opens with Tragedy's image — genre expectation deliberately violated.
-dict:object/calligraphy-nyu-nam,dict:rel/subverts,dict:concept/ungendering,pp.26-27,"女男 (Woman-Man) reverses conventional 男女 — father's calligraphy inscribes alternative gender grammar, countering colonial ungendering."
-dict:object/korea-map,dict:rel/prefigures,dict:concept/diasporic-experience,p.78,Divided peninsula map: 'SHE opposes Her' — geographic division as visual anchor for diasporic displacement.
-dict:concept/translational-violence,dict:rel/prefigures,dict:concept/untranslatability,—,Translational violence (colonial/institutional) creates the conditions for untranslatability (linguistic/semantic).
-dict:concept/shamanic-mediation,dict:rel/requiresExcavationBy,dict:concept/cyclical-time,p.123,Shamanic mediation operates through cyclical time: dead time requires diseuse's invocation to become accessible.
-dict:object/yu-portrait,dict:rel/performsMediation,dict:person/yu-gwansoon,p.24,1919 Japanese police record card photo repurposed as memorial icon — colonial documentation becomes site of mediation.
-dict:object/dreyer-still,dict:rel/hasPostcolonialParallel,dict:person/yu-gwansoon,p.119,"Falconetti's silent face in close-up — foreclosed speech visualized, parallel to Yu Gwan-sun's silenced voice."
-dict:person/diseuse,dict:rel/embodiesPunctuation,dict:concept/translational-violence,p.4,"'She would become, herself, demarcations.' — Diseuse internalizes colonial language's regulatory infrastructure."
-dict:concept/translational-violence,dict:rel/silences,dict:person/huh-hyungsoon,CALLIOPE pp.45-59,"식민적 언어 폭력(일본어 강제, 한국어 금지)이 허형순의 언어적 주체성을 침묵시킴. ""They say you spoke in tongue forbidden"" (p.45). Spillers flesh/body 구분 및 Lugones colonial-gender-system과 연동."
-dict:concept/translational-violence,dict:rel/silences,dict:person/diseuse,DISEUSE pp.3-4,"번역 폭력이 디쇠즈의 발화 조건 자체를 구성. 디쇠즈는 온전한 언어가 아닌 파편(""noise, groan, bits torn from words"")으로만 말할 수 있음. 번역 불가능성이 신체적 조건으로 내면화된 상태."
+subject_uri,relationship_property_uri,object_uri,page_ref,note,REVISED
+dict:person/cha-theresa,dict:rel/sharesNameWith,dict:person/therese-lisieux,ERATO,Cha explores multiple Theresa/Thérèse figures; supports name-lineage projection.,
+dict:person/therese-lisieux,dict:rel/performsAs,dict:person/jeanne-darc,p.93,Saint Thérèse pictured performing as Joan of Arc.,
+dict:person/falconetti,dict:rel/performsAs,dict:person/jeanne-darc,p.119,Falconetti performs Joan of Arc in Dreyer's film.,
+dict:person/cha-theresa,dict:rel/performsMediation,dict:person/yu-gwansoon,pp.24-38,Cha as authorial mediator for Yu Gwan-sun's silenced voice.,
+dict:person/diseuse,dict:rel/performsMediation,dict:person/yu-gwansoon,p.3,DISEUSE channels voices of silenced women including Yu Gwan-sun.,
+dict:person/yu-gwansoon,dict:rel/hasPostcolonialParallel,dict:person/jeanne-darc,p.28,'Korean Joan of Arc' — ritual naming linking both figures.,
+dict:person/yu-gwansoon,dict:rel/hasExchangeableIdentity,dict:person/empress-myeongseong,CLIO,Cha conflates Empress assassination date into 1919 frame of Yu.,
+dict:person/cha-theresa,dict:rel/mythologicalParallelOf,dict:person/persephone,"pp.123,133",Persephone myth as structural frame for exile/return.,
+dict:person/huh-hyungsoon,dict:rel/mythologicalParallelOf,dict:person/demeter,p.133,Demeter as mother figure paralleling Huh Hyung Soon's waiting in exile.,
+dict:person/diseuse,dict:rel/mythologicalParallelOf,dict:person/sibyl,p.88,'diseuse de bonne aventure' linked to Sibyl as prophetic/medium figure.,
+dict:person/princess-bari,dict:rel/mythologicalParallelOf,dict:person/diseuse,pp.165-179,Bari: first mudang who journeys for healing water ↔ Diseuse as textual shaman.,
+dict:event/japanese-colonization,dict:rel/silences,dict:person/huh-hyungsoon,p.45,'They say you spoke in tongue forbidden' — Japanese colonial rule forecloses mother's Korean.,
+dict:event/japanese-colonization,dict:rel/silences,dict:person/yu-gwansoon,pp.28-38,Colonial power silences Yu Gwan-sun — imprisonment and death in Seodaemun Prison.,
+dict:event/gwangju-1980,dict:rel/isRecurrenceOf,dict:event/march-first-1919,p.87,"'Nothing has changed, we are at a standstill.' — 1980 structurally recurs 1919.",
+dict:event/april-19-1960,dict:rel/isRecurrenceOf,dict:event/march-first-1919,p.83,"'Dear Mother, 4.19... eighteen years later' — 1960 as second iteration of colonial violence structure.",
+dict:object/vocal-anatomy,dict:rel/prefigures,dict:concept/translational-violence,p.74,Western anatomical diagram of speech organs materializes speech as bodily labor.,
+dict:object/acupuncture-chart,dict:rel/prefigures,dict:concept/untranslatability,p.63,Eastern meridian chart vs. Western anatomy — two incommensurable knowledge systems.,
+dict:object/calligraphy-nyu-nam,dict:rel/subverts,dict:concept/ungendering,pp.26-27,女男 reverses conventional 男女 — father's calligraphy inscribes alternative gender grammar.,
+dict:object/korea-map,dict:rel/prefigures,dict:concept/diasporic-experience,p.78,Divided peninsula map: 'SHE opposes Her' — geographic division as diasporic displacement.,
+dict:concept/translational-violence,dict:rel/prefigures,dict:concept/untranslatability,—,Translational violence creates the conditions for untranslatability.,
+dict:concept/shamanic-mediation,dict:rel/requiresExcavationBy,dict:concept/cyclical-time,p.123,Shamanic mediation operates through cyclical time.,
+dict:object/dreyer-still,dict:rel/hasPostcolonialParallel,dict:person/yu-gwansoon,p.119,"Falconetti's silent face — foreclosed speech visualized, parallel to Yu Gwan-sun's silenced voice.",
+dict:person/diseuse,dict:rel/embodiesPunctuation,dict:concept/translational-violence,p.4,"'She would become, herself, demarcations.'",
+dict:concept/translational-violence,dict:rel/silences,dict:person/huh-hyungsoon,CALLIOPE pp.45-59,Colonial language violence silences Huh Hyungsoon's linguistic subjectivity.,
+dict:concept/translational-violence,dict:rel/silences,dict:person/diseuse,DISEUSE pp.3-4,Translational violence constitutes the very conditions of Diseuse's speech.,
+dict:work/dictee,dct:creator,dict:person/cha-theresa,Entire work,Work→Person direct relation.,
+dict:work/dictee,dict:hasNarrator,dict:person/diseuse,pp.3-4,Diseuse as third narrative position — neither author nor character.,
+dict:work/dictee,dct:publisher,dict:group/tanam-press,Imprint,Tanam Press 1982 first edition.,FLIPPED
+dict:group/bampfa,schema:holds,dict:work/dictee,—,BAMPFA holds Cha archive and Dictee rights.,
+dict:person/spillers,dict:critiques,dict:concept/ungendering,—,Spillers (1987) flesh/body distinction is the direct theoretical source for ungendering.,
+dict:person/lugones,dict:critiques,dict:concept/fractured-locus,—,Lugones (2010) coined Fractured Locus directly.,
+dict:person/lugones,dict:critiques,dict:concept/cyclical-time,—,Lugones (2010) primary theoretical source for cyclical time.,
+dict:person/mohanty,dict:critiques,dict:concept/postcolonial-feminism,—,Under Western Eyes (1984): discursive colonization of Third World women.,
+dict:person/spivak,dict:critiques,dict:concept/translational-violence,—,Spivak's epistemic violence concept is the theoretical foundation of translational-violence.,
+dict:person/wynter,dict:critiques,dict:concept/postcolonial-feminism,—,Unsettling the Coloniality (2003): overrepresentation of Man critique.,
+dict:person/cha-theresa,dict:hasFamilyRelation,dict:person/huh-hyungsoon,—,Mother-daughter relation.,
+dict:person/cha-theresa,dict:hasFamilyRelation,dict:person/cha-hyungsang,—,Father-daughter relation.,
+dict:person/cha-theresa,dict:hasFamilyRelation,dict:person/cha-haksang,—,Sibling relation.,
+dict:event/korean-war-1950,dict:silences,dict:person/huh-hyungsoon,p.83,Korean War as historical condition of Huh Hyungsoon's displacement.,
+dict:event/korean-war-1950,dict:isRecurrenceOf,dict:event/march-first-1919,p.83,Korean War as second recurrence of colonial violence structure after 1919.,
+dict:event/gojong-funeral-1919,dict:hasPostcolonialParallel,dict:event/march-first-1919,p.122,Emperor Gojong's funeral (3/3) and March 1st Movement (3/1) in non-hierarchical juxtaposition.,
+dict:event/cha-family-exile-1962,dict:isRecurrenceOf,dict:event/japanese-colonization,Biographical,1962 exile as structural recurrence of Japanese colonial forced displacement.,
+dict:object/yu-portrait,schema:mentions,dict:person/yu-gwansoon,p.24,1919 Japanese police record card photo depicts Yu Gwan-sun. Colonial document repurposed as memorial icon.,
+dict:object/mother-portrait,schema:mentions,dict:person/huh-hyungsoon,p.44,Huh Hyungsoon portrait (c.1940). Visual anchor for CALLIOPE chapter.,
+dict:object/execution-photo,dict:prefigures,dict:concept/translational-violence,p.39,1904 La vie illustrée execution photo. Imperial media consuming colonial violence.,
+dict:object/therese-joan-photo,schema:mentions,dict:person/therese-lisieux,p.93,1895 photo: Thérèse costumed as Joan of Arc. Visual evidence of identity layering.,
+dict:object/osaka-asahi-photo,schema:mentions,dict:event/gojong-funeral-1919,p.122,March 3 1919 Osaka Asahi Shimbun photo. Emperor Gojong's funeral gathering in Seoul.,
+dict:object/cave-hand,dict:prefigures,dict:concept/untranslatability,p.134,27000-year-old hand stencil. Pre-linguistic mark — temporal depth of untranslatability.,
+dict:object/bongseonhwa,dict:prefigures,dict:concept/untranslatability,p.46,Bong Sun Hwa: Korean folk song embedded untranslated in English text.,
+dict:object/handwritten-ms,dict:prefigures,dict:concept/translational-violence,pp.40-41,Handwritten manuscript with visible deletions. Writing as labor — material prefiguration of translational violence.,
+dict:object/calligraphy-bumo,schema:mentions,dict:person/cha-hyungsang,pp.54-55,父母 calligraphy by Cha Hyung Sang. Visual anchor for CALLIOPE chapter.,
+dict:object/calligraphy-dao,schema:mentions,dict:person/cha-hyungsang,pp.154-173,Daoist concepts calligraphy by Cha Hyung Sang. Cosmological framework.,
+dict:object/nile-ruins-photo,dict:prefigures,dict:concept/cyclical-time,POLYMNIA opening,1857 Nile ruins photo. Temporal stratigraphy — visual prefiguration of cyclical time.,
+dict:concept/translational-violence,skos:broader,dict:concept/postcolonial-feminism,—,Translational violence is a sub-concept within the postcolonial feminist framework.,
+dict:concept/ungendering,skos:broader,dict:concept/postcolonial-feminism,—,Ungendering is a sub-concept within the postcolonial feminist framework.,
+dict:concept/fractured-locus,skos:broader,dict:concept/postcolonial-feminism,—,Fractured Locus is a sub-concept within the postcolonial feminist framework.,
+dict:concept/shamanic-mediation,skos:broader,dict:concept/postcolonial-feminism,—,Shamanic mediation operates within the postcolonial feminist interpretive frame.,
+dict:object/korea-map,schema:mentions,dict:event/gwangju-1980,p.78,분단 지도가 MELPOMENE 챕터에서 광주항쟁 맥락과 연결,ADDED
+dict:object/korea-map,schema:mentions,dict:person/huh-hyungsoon,p.78,"Korean peninsula division map as the geopolitical condition of Huh Hyungsoon's displacement — born in Manchuria, exiled within Korea during Japanese colonization, displaced to Busan during Korean War, finally exiled to US in 1962. The divided map embodies the structural impossibility of return.",ADDED
+dict:person/cha-haksang,schema:mentions,dict:event/april-19-1960,p.84,Cha Haksang participated in April 19 Revolution demonstrations. Tutor warning: 'they are killing any student in uniform',ADDED
+dict:event/cha-family-exile-1962,schema:mentions,dict:person/cha-theresa,Biographical,1962 exile: Cha (age 11-12) follows mother to Hawaii then San Francisco,ADDED
+dict:event/cha-family-exile-1962,schema:mentions,dict:person/huh-hyungsoon,Biographical,1962 exile: Huh Hyungsoon departs first with son Hak Sung,ADDED
+dict:event/gwangju-1980,schema:mentions,dict:person/cha-theresa,p.87,"Cha returned to Korea 1980 and witnessed Gwangju aftermath. 'Nothing has changed, we are at a standstill.'",ADDED
+dict:event/april-19-1960,schema:mentions,dict:person/cha-haksang,p.84,April Revolution directly connected to Cha family's subsequent exile to US,ADDED
+dict:event/cha-family-exile-1962,dict:isRecurrenceOf,dict:event/korean-war-1950,Biographical,Family exile as second displacement after Korean War refuge in Busan,ADDED
+dict:person/diseuse,dict:embodiesPunctuation,dict:object/punctuation,p.4,"Diseuse internalizes punctuation as bodily condition — 'She would become, herself, demarcations'",ADDED
+dict:object/punctuation,dict:prefigures,dict:concept/translational-violence,pp.1-2,Punctuation as colonial language's regulatory infrastructure = material prefiguration of translational violence,ADDED
+dict:work/dictee,dct:publisher,dict:group/uc-press,2001 reprint,UC Press published 2001 reprint with BAMPFA,ADDED
+dict:object/dreyer-still,schema:mentions,dict:person/gertrud,ERATO,Gertrud (Dreyer 1964) left-page narrative in ERATO split-screen. Name chain: Cha → Thérèse → Joan → Falconetti → Gertrud,ADDED
+dict:object/melpomene-fresco,dict:prefigures,dict:concept/diasporic-experience,p.138,Tragedy Muse image opens Comedy chapter — genre subversion visualizes mother-daughter separation (Demeter-Persephone) and incomplete return structuring THALIA,ADDED
+dict:object/melpomene-fresco,dict:subverts,dict:concept/muse-subversion,p.138,Comedy chapter opens with Tragedy image — genre expectation violated,ADDED
+dict:concept/muse-subversion,skos:broader,dict:concept/postcolonial-feminism,—,Muse subversion operates within postcolonial feminist frame,ADDED
