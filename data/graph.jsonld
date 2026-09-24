@@ -9,7 +9,7 @@
       "dct": "http://purl.org/dc/terms/"
     }
   ],
-  "generatedAt": "2026-09-21T08:19:55.969461+00:00",
+  "generatedAt": "2026-09-24T12:50:08.472935+00:00",
   "@graph": [
     {
       "@id": "dict:person/cha-theresa",
@@ -62,6 +62,26 @@
       "dict:mythologicalParallelOf": [
         {
           "id": "dict:person/persephone",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "dict:hasFamilyRelation": [
+        {
+          "id": "dict:person/huh-hyungsoon",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:person/cha-hyungsang",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:person/cha-haksang",
           "dictrel:documentedIn": [
             "dictee"
           ]
@@ -355,7 +375,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical"
+      "dict:evidenceType": "Biographical",
+      "schema:mentions": [
+        {
+          "id": "dict:event/april-19-1960",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:person/diseuse",
@@ -406,6 +434,13 @@
           "dictrel:documentedIn": [
             "dictee"
           ]
+        },
+        {
+          "id": "dict:object/punctuation",
+          "dictrel:documentedIn": [
+            "dictee"
+          ],
+          "dictrel:schemaViolation": true
         }
       ]
     },
@@ -608,7 +643,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Scholarly"
+      "dict:evidenceType": "Scholarly",
+      "dict:critiques": [
+        {
+          "id": "dict:concept/translational-violence",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:person/spillers",
@@ -652,7 +695,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Scholarly"
+      "dict:evidenceType": "Scholarly",
+      "dict:critiques": [
+        {
+          "id": "dict:concept/ungendering",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:person/lugones",
@@ -693,7 +744,21 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Scholarly"
+      "dict:evidenceType": "Scholarly",
+      "dict:critiques": [
+        {
+          "id": "dict:concept/fractured-locus",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:concept/cyclical-time",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:person/mohanty",
@@ -734,7 +799,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Scholarly"
+      "dict:evidenceType": "Scholarly",
+      "dict:critiques": [
+        {
+          "id": "dict:concept/postcolonial-feminism",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:person/wynter",
@@ -775,7 +848,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Scholarly"
+      "dict:evidenceType": "Scholarly",
+      "dict:critiques": [
+        {
+          "id": "dict:concept/postcolonial-feminism",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:event/march-first-1919",
@@ -849,6 +930,14 @@
             "dictee"
           ]
         }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:person/cha-haksang",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
       ]
     },
     {
@@ -882,7 +971,23 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "dict:silences": [
+        {
+          "id": "dict:person/huh-hyungsoon",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "dict:isRecurrenceOf": [
+        {
+          "id": "dict:event/march-first-1919",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:event/gwangju-1980",
@@ -919,6 +1024,14 @@
       "dict:isRecurrenceOf": [
         {
           "id": "dict:event/march-first-1919",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:person/cha-theresa",
           "dictrel:documentedIn": [
             "dictee"
           ]
@@ -998,7 +1111,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "dict:hasPostcolonialParallel": [
+        {
+          "id": "dict:event/march-first-1919",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:event/cha-family-exile-1962",
@@ -1026,7 +1147,35 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical"
+      "dict:evidenceType": "Biographical",
+      "dict:isRecurrenceOf": [
+        {
+          "id": "dict:event/japanese-colonization",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:event/korean-war-1950",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:person/cha-theresa",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:person/huh-hyungsoon",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:concept/postcolonial-feminism",
@@ -1114,6 +1263,14 @@
             "dictee"
           ]
         }
+      ],
+      "skos:broader": [
+        {
+          "id": "dict:concept/postcolonial-feminism",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
       ]
     },
     {
@@ -1155,6 +1312,14 @@
             "dictee"
           ]
         }
+      ],
+      "skos:broader": [
+        {
+          "id": "dict:concept/postcolonial-feminism",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
       ]
     },
     {
@@ -1183,7 +1348,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Direct Term"
+      "dict:evidenceType": "Direct Term",
+      "skos:broader": [
+        {
+          "id": "dict:concept/postcolonial-feminism",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:concept/cyclical-time",
@@ -1239,7 +1412,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Direct Term"
+      "dict:evidenceType": "Direct Term",
+      "skos:broader": [
+        {
+          "id": "dict:concept/postcolonial-feminism",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:concept/diasporic-experience",
@@ -1301,6 +1482,42 @@
         }
       ],
       "dict:evidenceType": "Direct Term"
+    },
+    {
+      "@id": "dict:concept/muse-subversion",
+      "@type": "Type",
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Muse Subversion",
+          "language": "en"
+        },
+        {
+          "type": "Name",
+          "content": "뮤즈 전복",
+          "language": "ko"
+        }
+      ],
+      "dictrel:entityType": "Concept",
+      "dictrel:documentedIn": [
+        "dictee"
+      ],
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "content": "Traditional Muses reclaimed as active channels for silenced women across colonial and gendered histories. Each Muse no longer represents a single genre but an unstable intersection of colonial history, martyrdom, and shamanism. THALIA (Comedy) opens with MELPOMENE (Tragedy) fresco — genre expectation deliberately violated.",
+          "classified_as": "description"
+        }
+      ],
+      "dict:evidenceType": "Modeling",
+      "skos:broader": [
+        {
+          "id": "dict:concept/postcolonial-feminism",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/acupuncture-chart",
@@ -1411,13 +1628,12 @@
         }
       ],
       "dict:evidenceType": "Textual",
-      "dict:performsMediation": [
+      "schema:mentions": [
         {
           "id": "dict:person/yu-gwansoon",
           "dictrel:documentedIn": [
             "dictee"
-          ],
-          "dictrel:schemaViolation": true
+          ]
         }
       ]
     },
@@ -1452,7 +1668,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "schema:mentions": [
+        {
+          "id": "dict:person/huh-hyungsoon",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/execution-photo",
@@ -1485,7 +1709,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "dict:prefigures": [
+        {
+          "id": "dict:concept/translational-violence",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/korea-map",
@@ -1526,6 +1758,20 @@
             "dictee"
           ]
         }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:event/gwangju-1980",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:person/huh-hyungsoon",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
       ]
     },
     {
@@ -1559,7 +1805,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "schema:mentions": [
+        {
+          "id": "dict:person/therese-lisieux",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/dreyer-still",
@@ -1600,6 +1854,14 @@
             "dictee"
           ]
         }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:person/gertrud",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
       ]
     },
     {
@@ -1633,7 +1895,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "dict:prefigures": [
+        {
+          "id": "dict:concept/untranslatability",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/osaka-asahi-photo",
@@ -1666,7 +1936,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "schema:mentions": [
+        {
+          "id": "dict:event/gojong-funeral-1919",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/melpomene-fresco",
@@ -1704,7 +1982,23 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "dict:prefigures": [
+        {
+          "id": "dict:concept/diasporic-experience",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "dict:subverts": [
+        {
+          "id": "dict:concept/muse-subversion",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/nile-ruins-photo",
@@ -1737,7 +2031,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "dict:prefigures": [
+        {
+          "id": "dict:concept/cyclical-time",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/calligraphy-nyu-nam",
@@ -1811,7 +2113,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "schema:mentions": [
+        {
+          "id": "dict:person/cha-hyungsang",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/calligraphy-dao",
@@ -1844,7 +2154,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "schema:mentions": [
+        {
+          "id": "dict:person/cha-hyungsang",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/handwritten-ms",
@@ -1877,7 +2195,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "dict:prefigures": [
+        {
+          "id": "dict:concept/translational-violence",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/bongseonhwa",
@@ -1905,7 +2231,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "dict:prefigures": [
+        {
+          "id": "dict:concept/untranslatability",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:object/punctuation",
@@ -1933,7 +2267,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dict:evidenceType": "Textual",
+      "dict:prefigures": [
+        {
+          "id": "dict:concept/translational-violence",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:group/tanam-press",
@@ -1969,7 +2311,7 @@
       "identified_by": [
         {
           "type": "Name",
-          "content": "University of California, Berkeley",
+          "content": "University of California Press",
           "language": "en"
         },
         {
@@ -1984,7 +2326,7 @@
       ],
       "equivalent": [
         {
-          "id": "https://www.wikidata.org/wiki/Q168756"
+          "id": "https://www.wikidata.org/wiki/Q1816033"
         }
       ],
       "referred_to_by": [
@@ -2027,7 +2369,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical"
+      "dict:evidenceType": "Biographical",
+      "schema:holds": [
+        {
+          "id": "dict:work/dictee",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:work/dictee",
@@ -2058,6 +2408,36 @@
           "type": "LinguisticObject",
           "content": "Theresa Hak Kyung Cha, Dictée. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
           "classified_as": "description"
+        }
+      ],
+      "dct:creator": [
+        {
+          "id": "dict:person/cha-theresa",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "dict:hasNarrator": [
+        {
+          "id": "dict:person/diseuse",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "dct:publisher": [
+        {
+          "id": "dict:group/tanam-press",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:group/uc-press",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
         }
       ]
     }
