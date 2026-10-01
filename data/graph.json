@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T12:50:08.504816+00:00",
+  "generatedAt": "2026-10-01T11:30:21.600058+00:00",
   "nodes": [
     {
       "id": "dict:person/cha-theresa",
@@ -263,40 +263,6 @@
       ]
     },
     {
-      "id": "dict:person/mohanty",
-      "label_en": "Chandra Talpade Mohanty",
-      "label_ko": "모한티",
-      "group": "Person",
-      "description": "Chandra Talpade Mohanty, feminist theorist. Best known for 'Under Western Eyes' (1984), which critiques the discursive colonization of third-world women by Western feminist scholarship.",
-      "evidenceType": "Scholarly",
-      "equivalentUri": "https://www.wikidata.org/wiki/Q1086920",
-      "broader": [],
-      "closeMatch": [
-        "https://homosaurus.org/v3/homoit0003616",
-        "https://homosaurus.org/v3/homoit0002039"
-      ],
-      "documentedIn": [
-        "dictee"
-      ]
-    },
-    {
-      "id": "dict:person/wynter",
-      "label_en": "Sylvia Wynter",
-      "label_ko": "윈터",
-      "group": "Person",
-      "description": "Sylvia Wynter, Jamaican writer and scholar. Best known for 'Unsettling the Coloniality of Being/Power/Truth/Freedom' (2003), which critiques the Western overrepresentation of a particular mode of being as universally Human.",
-      "evidenceType": "Scholarly",
-      "equivalentUri": "https://www.wikidata.org/wiki/Q3507232",
-      "broader": [],
-      "closeMatch": [
-        "https://homosaurus.org/v3/homoit0003616",
-        "https://homosaurus.org/v3/homoit0002039"
-      ],
-      "documentedIn": [
-        "dictee"
-      ]
-    },
-    {
       "id": "dict:event/march-first-1919",
       "label_en": "March First Movement",
       "label_ko": "3·1운동",
@@ -429,7 +395,7 @@
       "label_en": "Shamanic mediation",
       "label_ko": "샤머니즘적 매개",
       "group": "Concept",
-      "description": "A researcher-developed interpretive concept describing the authorial strategy in Dictée whereby the speaker empties the self to channel the voices of absent or silenced women. The term draws an analogy with shamanic mediation as a structural model, though it is not a term used in Cha's text itself. ",
+      "description": "A researcher-developed interpretive concept describing the authorial strategy in Dictee whereby the speaker empties the self to channel the voices of absent or silenced women. The term draws an analogy with shamanic mediation as a structural model, though it is not a term used in Cha's text itself. ",
       "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
@@ -813,7 +779,7 @@
       "label_en": "Tanam Press",
       "label_ko": "타남 프레스",
       "group": "Group",
-      "description": "Independent publisher, New York. Founded by Reese Williams. Cha worked as editor. Published Dictée (1982) and Apparatus (1981). Letterpress printing.",
+      "description": "Independent publisher, New York. Founded by Reese Williams. Cha worked as editor. Published Dictee (1982) and Apparatus (1981). Letterpress printing.",
       "evidenceType": "Biographical",
       "equivalentUri": null,
       "broader": [],
@@ -827,7 +793,7 @@
       "label_en": "University of California Press",
       "label_ko": "UC 프레스",
       "group": "Group",
-      "description": "Published 2001 reprint/third edition of Dictée with BAMPFA. Returned book to print after 19 years out of print.",
+      "description": "Published 2001 reprint/third edition of Dictee with BAMPFA. Returned book to print after 19 years out of print.",
       "evidenceType": "Biographical",
       "equivalentUri": "https://www.wikidata.org/wiki/Q1816033",
       "broader": [],
@@ -841,7 +807,7 @@
       "label_en": "Berkeley Art Museum & Pacific Film Archive",
       "label_ko": "BAMPFA",
       "group": "Group",
-      "description": "UC Berkeley. Houses Cha's estate and archives. Rights holder for Dictée. Collaborated with UC Press on 2001 reprint.",
+      "description": "UC Berkeley. Houses Cha's estate and archives. Rights holder for Dictee. Collaborated with UC Press on 2001 reprint.",
       "evidenceType": "Biographical",
       "equivalentUri": "http://www.wikidata.org/entity/Q2900855",
       "broader": [],
@@ -852,10 +818,10 @@
     },
     {
       "id": "dict:work/dictee",
-      "label_en": "Dictée",
+      "label_en": "Dictee",
       "label_ko": "딕테",
       "group": "Work",
-      "description": "Theresa Hak Kyung Cha, Dictée. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
+      "description": "Theresa Hak Kyung Cha, Dictee. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
       "evidenceType": "",
       "equivalentUri": "https://www.wikidata.org/wiki/Q5273943",
       "broader": [],
@@ -921,6 +887,33 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:event/gwangju-1980",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:event/korean-war-1950",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:concept/diasporic-experience",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
       "source": "dict:person/yu-gwansoon",
       "target": "dict:person/jeanne-darc",
       "predicate": "hasPostcolonialParallel",
@@ -933,6 +926,15 @@
       "source": "dict:person/yu-gwansoon",
       "target": "dict:person/empress-myeongseong",
       "predicate": "hasExchangeableIdentity",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/yu-gwansoon",
+      "target": "dict:event/march-first-1919",
+      "predicate": "mentions",
       "documentedIn": [
         "dictee"
       ],
@@ -966,8 +968,44 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:person/huh-hyungsoon",
+      "target": "dict:event/cha-family-exile-1962",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/huh-hyungsoon",
+      "target": "dict:concept/diasporic-experience",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-hyungsang",
+      "target": "dict:event/cha-family-exile-1962",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
       "source": "dict:person/cha-haksang",
       "target": "dict:event/april-19-1960",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-haksang",
+      "target": "dict:event/cha-family-exile-1962",
       "predicate": "mentions",
       "documentedIn": [
         "dictee"
@@ -982,6 +1020,15 @@
         "dictee"
       ],
       "schemaViolation": false
+    },
+    {
+      "source": "dict:person/diseuse",
+      "target": "dict:concept/shamanic-mediation",
+      "predicate": "performsMediation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": true
     },
     {
       "source": "dict:person/diseuse",
@@ -1003,12 +1050,21 @@
     },
     {
       "source": "dict:person/diseuse",
-      "target": "dict:object/punctuation",
-      "predicate": "embodiesPunctuation",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "critiques",
       "documentedIn": [
         "dictee"
       ],
-      "schemaViolation": true
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/diseuse",
+      "target": "dict:concept/ungendering",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
     },
     {
       "source": "dict:person/princess-bari",
@@ -1020,6 +1076,15 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:person/princess-bari",
+      "target": "dict:concept/shamanic-mediation",
+      "predicate": "mythologicalParallelOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": true
+    },
+    {
       "source": "dict:person/spivak",
       "target": "dict:concept/translational-violence",
       "predicate": "critiques",
@@ -1029,8 +1094,26 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:person/spivak",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
       "source": "dict:person/spillers",
       "target": "dict:concept/ungendering",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/spillers",
+      "target": "dict:concept/postcolonial-feminism",
       "predicate": "critiques",
       "documentedIn": [
         "dictee"
@@ -1056,27 +1139,9 @@
       "schemaViolation": false
     },
     {
-      "source": "dict:person/mohanty",
+      "source": "dict:person/lugones",
       "target": "dict:concept/postcolonial-feminism",
       "predicate": "critiques",
-      "documentedIn": [
-        "dictee"
-      ],
-      "schemaViolation": false
-    },
-    {
-      "source": "dict:person/wynter",
-      "target": "dict:concept/postcolonial-feminism",
-      "predicate": "critiques",
-      "documentedIn": [
-        "dictee"
-      ],
-      "schemaViolation": false
-    },
-    {
-      "source": "dict:event/april-19-1960",
-      "target": "dict:event/march-first-1919",
-      "predicate": "isRecurrenceOf",
       "documentedIn": [
         "dictee"
       ],
@@ -1095,24 +1160,6 @@
       "source": "dict:event/korean-war-1950",
       "target": "dict:person/huh-hyungsoon",
       "predicate": "silences",
-      "documentedIn": [
-        "dictee"
-      ],
-      "schemaViolation": false
-    },
-    {
-      "source": "dict:event/korean-war-1950",
-      "target": "dict:event/march-first-1919",
-      "predicate": "isRecurrenceOf",
-      "documentedIn": [
-        "dictee"
-      ],
-      "schemaViolation": false
-    },
-    {
-      "source": "dict:event/gwangju-1980",
-      "target": "dict:event/march-first-1919",
-      "predicate": "isRecurrenceOf",
       "documentedIn": [
         "dictee"
       ],
@@ -1148,25 +1195,7 @@
     {
       "source": "dict:event/gojong-funeral-1919",
       "target": "dict:event/march-first-1919",
-      "predicate": "hasPostcolonialParallel",
-      "documentedIn": [
-        "dictee"
-      ],
-      "schemaViolation": false
-    },
-    {
-      "source": "dict:event/cha-family-exile-1962",
-      "target": "dict:event/japanese-colonization",
-      "predicate": "isRecurrenceOf",
-      "documentedIn": [
-        "dictee"
-      ],
-      "schemaViolation": false
-    },
-    {
-      "source": "dict:event/cha-family-exile-1962",
-      "target": "dict:event/korean-war-1950",
-      "predicate": "isRecurrenceOf",
+      "predicate": "mentions",
       "documentedIn": [
         "dictee"
       ],
@@ -1184,6 +1213,15 @@
     {
       "source": "dict:event/cha-family-exile-1962",
       "target": "dict:person/huh-hyungsoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/cha-family-exile-1962",
+      "target": "dict:concept/diasporic-experience",
       "predicate": "mentions",
       "documentedIn": [
         "dictee"
@@ -1211,6 +1249,15 @@
     {
       "source": "dict:concept/translational-violence",
       "target": "dict:person/diseuse",
+      "predicate": "silences",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/translational-violence",
+      "target": "dict:person/cha-theresa",
       "predicate": "silences",
       "documentedIn": [
         "dictee"
@@ -1254,9 +1301,36 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:concept/fractured-locus",
+      "target": "dict:person/yu-gwansoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/cyclical-time",
+      "target": "dict:person/persephone",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
       "source": "dict:concept/ungendering",
       "target": "dict:concept/postcolonial-feminism",
       "predicate": "broader",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/ungendering",
+      "target": "dict:object/vocal-anatomy",
+      "predicate": "mentions",
       "documentedIn": [
         "dictee"
       ],
@@ -1309,8 +1383,8 @@
     },
     {
       "source": "dict:object/execution-photo",
-      "target": "dict:concept/translational-violence",
-      "predicate": "prefigures",
+      "target": "dict:event/japanese-colonization",
+      "predicate": "mentions",
       "documentedIn": [
         "dictee"
       ],
@@ -1389,6 +1463,15 @@
       "schemaViolation": false
     },
     {
+      "source": "dict:object/osaka-asahi-photo",
+      "target": "dict:person/yu-gwansoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
       "source": "dict:object/melpomene-fresco",
       "target": "dict:concept/diasporic-experience",
       "predicate": "prefigures",
@@ -1419,6 +1502,15 @@
       "source": "dict:object/calligraphy-nyu-nam",
       "target": "dict:concept/ungendering",
       "predicate": "subverts",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/calligraphy-nyu-nam",
+      "target": "dict:person/cha-hyungsang",
+      "predicate": "mentions",
       "documentedIn": [
         "dictee"
       ],

@@ -9,7 +9,7 @@
       "dct": "http://purl.org/dc/terms/"
     }
   ],
-  "generatedAt": "2026-09-24T12:50:08.472935+00:00",
+  "generatedAt": "2026-10-01T11:30:09.634976+00:00",
   "@graph": [
     {
       "@id": "dict:person/cha-theresa",
@@ -86,6 +86,26 @@
             "dictee"
           ]
         }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:event/gwangju-1980",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:event/korean-war-1950",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:concept/diasporic-experience",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
       ]
     },
     {
@@ -131,6 +151,14 @@
       "dict:hasExchangeableIdentity": [
         {
           "id": "dict:person/empress-myeongseong",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:event/march-first-1919",
           "dictrel:documentedIn": [
             "dictee"
           ]
@@ -319,6 +347,20 @@
             "dictee"
           ]
         }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:event/cha-family-exile-1962",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:concept/diasporic-experience",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
       ]
     },
     {
@@ -347,7 +389,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical"
+      "dict:evidenceType": "Biographical",
+      "schema:mentions": [
+        {
+          "id": "dict:event/cha-family-exile-1962",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:person/cha-haksang",
@@ -379,6 +429,12 @@
       "schema:mentions": [
         {
           "id": "dict:event/april-19-1960",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:event/cha-family-exile-1962",
           "dictrel:documentedIn": [
             "dictee"
           ]
@@ -418,6 +474,13 @@
           "dictrel:documentedIn": [
             "dictee"
           ]
+        },
+        {
+          "id": "dict:concept/shamanic-mediation",
+          "dictrel:documentedIn": [
+            "dictee"
+          ],
+          "dictrel:schemaViolation": true
         }
       ],
       "dict:mythologicalParallelOf": [
@@ -434,13 +497,20 @@
           "dictrel:documentedIn": [
             "dictee"
           ]
-        },
+        }
+      ],
+      "dict:critiques": [
         {
-          "id": "dict:object/punctuation",
+          "id": "dict:concept/postcolonial-feminism",
           "dictrel:documentedIn": [
             "dictee"
-          ],
-          "dictrel:schemaViolation": true
+          ]
+        },
+        {
+          "id": "dict:concept/ungendering",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
         }
       ]
     },
@@ -477,6 +547,13 @@
           "dictrel:documentedIn": [
             "dictee"
           ]
+        },
+        {
+          "id": "dict:concept/shamanic-mediation",
+          "dictrel:documentedIn": [
+            "dictee"
+          ],
+          "dictrel:schemaViolation": true
         }
       ]
     },
@@ -650,6 +727,12 @@
           "dictrel:documentedIn": [
             "dictee"
           ]
+        },
+        {
+          "id": "dict:concept/postcolonial-feminism",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
         }
       ]
     },
@@ -699,6 +782,12 @@
       "dict:critiques": [
         {
           "id": "dict:concept/ungendering",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:concept/postcolonial-feminism",
           "dictrel:documentedIn": [
             "dictee"
           ]
@@ -757,99 +846,7 @@
           "dictrel:documentedIn": [
             "dictee"
           ]
-        }
-      ]
-    },
-    {
-      "@id": "dict:person/mohanty",
-      "@type": "Person",
-      "identified_by": [
-        {
-          "type": "Name",
-          "content": "Chandra Talpade Mohanty",
-          "language": "en"
         },
-        {
-          "type": "Name",
-          "content": "모한티",
-          "language": "ko"
-        }
-      ],
-      "dictrel:entityType": "Person",
-      "dictrel:documentedIn": [
-        "dictee"
-      ],
-      "equivalent": [
-        {
-          "id": "https://www.wikidata.org/wiki/Q1086920"
-        }
-      ],
-      "skos:closeMatch": [
-        {
-          "id": "https://homosaurus.org/v3/homoit0003616"
-        },
-        {
-          "id": "https://homosaurus.org/v3/homoit0002039"
-        }
-      ],
-      "referred_to_by": [
-        {
-          "type": "LinguisticObject",
-          "content": "Chandra Talpade Mohanty, feminist theorist. Best known for 'Under Western Eyes' (1984), which critiques the discursive colonization of third-world women by Western feminist scholarship.",
-          "classified_as": "description"
-        }
-      ],
-      "dict:evidenceType": "Scholarly",
-      "dict:critiques": [
-        {
-          "id": "dict:concept/postcolonial-feminism",
-          "dictrel:documentedIn": [
-            "dictee"
-          ]
-        }
-      ]
-    },
-    {
-      "@id": "dict:person/wynter",
-      "@type": "Person",
-      "identified_by": [
-        {
-          "type": "Name",
-          "content": "Sylvia Wynter",
-          "language": "en"
-        },
-        {
-          "type": "Name",
-          "content": "윈터",
-          "language": "ko"
-        }
-      ],
-      "dictrel:entityType": "Person",
-      "dictrel:documentedIn": [
-        "dictee"
-      ],
-      "equivalent": [
-        {
-          "id": "https://www.wikidata.org/wiki/Q3507232"
-        }
-      ],
-      "skos:closeMatch": [
-        {
-          "id": "https://homosaurus.org/v3/homoit0003616"
-        },
-        {
-          "id": "https://homosaurus.org/v3/homoit0002039"
-        }
-      ],
-      "referred_to_by": [
-        {
-          "type": "LinguisticObject",
-          "content": "Sylvia Wynter, Jamaican writer and scholar. Best known for 'Unsettling the Coloniality of Being/Power/Truth/Freedom' (2003), which critiques the Western overrepresentation of a particular mode of being as universally Human.",
-          "classified_as": "description"
-        }
-      ],
-      "dict:evidenceType": "Scholarly",
-      "dict:critiques": [
         {
           "id": "dict:concept/postcolonial-feminism",
           "dictrel:documentedIn": [
@@ -923,14 +920,6 @@
         }
       ],
       "dict:evidenceType": "Textual",
-      "dict:isRecurrenceOf": [
-        {
-          "id": "dict:event/march-first-1919",
-          "dictrel:documentedIn": [
-            "dictee"
-          ]
-        }
-      ],
       "schema:mentions": [
         {
           "id": "dict:person/cha-haksang",
@@ -979,14 +968,6 @@
             "dictee"
           ]
         }
-      ],
-      "dict:isRecurrenceOf": [
-        {
-          "id": "dict:event/march-first-1919",
-          "dictrel:documentedIn": [
-            "dictee"
-          ]
-        }
       ]
     },
     {
@@ -1021,14 +1002,6 @@
         }
       ],
       "dict:evidenceType": "Textual",
-      "dict:isRecurrenceOf": [
-        {
-          "id": "dict:event/march-first-1919",
-          "dictrel:documentedIn": [
-            "dictee"
-          ]
-        }
-      ],
       "schema:mentions": [
         {
           "id": "dict:person/cha-theresa",
@@ -1112,7 +1085,7 @@
         }
       ],
       "dict:evidenceType": "Textual",
-      "dict:hasPostcolonialParallel": [
+      "schema:mentions": [
         {
           "id": "dict:event/march-first-1919",
           "dictrel:documentedIn": [
@@ -1148,20 +1121,6 @@
         }
       ],
       "dict:evidenceType": "Biographical",
-      "dict:isRecurrenceOf": [
-        {
-          "id": "dict:event/japanese-colonization",
-          "dictrel:documentedIn": [
-            "dictee"
-          ]
-        },
-        {
-          "id": "dict:event/korean-war-1950",
-          "dictrel:documentedIn": [
-            "dictee"
-          ]
-        }
-      ],
       "schema:mentions": [
         {
           "id": "dict:person/cha-theresa",
@@ -1171,6 +1130,12 @@
         },
         {
           "id": "dict:person/huh-hyungsoon",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:concept/diasporic-experience",
           "dictrel:documentedIn": [
             "dictee"
           ]
@@ -1262,6 +1227,12 @@
           "dictrel:documentedIn": [
             "dictee"
           ]
+        },
+        {
+          "id": "dict:person/cha-theresa",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
         }
       ],
       "skos:broader": [
@@ -1300,7 +1271,7 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "A researcher-developed interpretive concept describing the authorial strategy in Dictée whereby the speaker empties the self to channel the voices of absent or silenced women. The term draws an analogy with shamanic mediation as a structural model, though it is not a term used in Cha's text itself. ",
+          "content": "A researcher-developed interpretive concept describing the authorial strategy in Dictee whereby the speaker empties the self to channel the voices of absent or silenced women. The term draws an analogy with shamanic mediation as a structural model, though it is not a term used in Cha's text itself. ",
           "classified_as": "description"
         }
       ],
@@ -1356,6 +1327,14 @@
             "dictee"
           ]
         }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:person/yu-gwansoon",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
       ]
     },
     {
@@ -1384,7 +1363,15 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Modeling"
+      "dict:evidenceType": "Modeling",
+      "schema:mentions": [
+        {
+          "id": "dict:person/persephone",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
     },
     {
       "@id": "dict:concept/ungendering",
@@ -1416,6 +1403,14 @@
       "skos:broader": [
         {
           "id": "dict:concept/postcolonial-feminism",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:object/vocal-anatomy",
           "dictrel:documentedIn": [
             "dictee"
           ]
@@ -1710,9 +1705,9 @@
         }
       ],
       "dict:evidenceType": "Textual",
-      "dict:prefigures": [
+      "schema:mentions": [
         {
-          "id": "dict:concept/translational-violence",
+          "id": "dict:event/japanese-colonization",
           "dictrel:documentedIn": [
             "dictee"
           ]
@@ -1943,6 +1938,12 @@
           "dictrel:documentedIn": [
             "dictee"
           ]
+        },
+        {
+          "id": "dict:person/yu-gwansoon",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
         }
       ]
     },
@@ -2076,6 +2077,14 @@
       "dict:subverts": [
         {
           "id": "dict:concept/ungendering",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "schema:mentions": [
+        {
+          "id": "dict:person/cha-hyungsang",
           "dictrel:documentedIn": [
             "dictee"
           ]
@@ -2299,7 +2308,7 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "Independent publisher, New York. Founded by Reese Williams. Cha worked as editor. Published Dictée (1982) and Apparatus (1981). Letterpress printing.",
+          "content": "Independent publisher, New York. Founded by Reese Williams. Cha worked as editor. Published Dictee (1982) and Apparatus (1981). Letterpress printing.",
           "classified_as": "description"
         }
       ],
@@ -2332,7 +2341,7 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "Published 2001 reprint/third edition of Dictée with BAMPFA. Returned book to print after 19 years out of print.",
+          "content": "Published 2001 reprint/third edition of Dictee with BAMPFA. Returned book to print after 19 years out of print.",
           "classified_as": "description"
         }
       ],
@@ -2365,7 +2374,7 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "UC Berkeley. Houses Cha's estate and archives. Rights holder for Dictée. Collaborated with UC Press on 2001 reprint.",
+          "content": "UC Berkeley. Houses Cha's estate and archives. Rights holder for Dictee. Collaborated with UC Press on 2001 reprint.",
           "classified_as": "description"
         }
       ],
@@ -2385,7 +2394,7 @@
       "identified_by": [
         {
           "type": "Name",
-          "content": "Dictée",
+          "content": "Dictee",
           "language": "en"
         },
         {
@@ -2406,7 +2415,7 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "Theresa Hak Kyung Cha, Dictée. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
+          "content": "Theresa Hak Kyung Cha, Dictee. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
           "classified_as": "description"
         }
       ],
