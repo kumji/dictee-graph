@@ -1,0 +1,1610 @@
+{
+  "generatedAt": "2026-10-01T11:30:21.600058+00:00",
+  "nodes": [
+    {
+      "id": "dict:person/cha-theresa",
+      "label_en": "Theresa Hak Kyung Cha",
+      "label_ko": "차학경",
+      "group": "Person",
+      "description": "Author (1951-1982). Born Busan during Korean War. Not singular narrator but dispersed across Diseuse and multiple women's voice.",
+      "evidenceType": "Biographical",
+      "equivalentUri": "http://www.wikidata.org/entity/Q7782868",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/yu-gwansoon",
+      "label_en": "Yu Gwan-sun",
+      "label_ko": "유관순",
+      "group": "Person",
+      "description": "Korean independence activist (1902-1920). Arrested during March 1st Movement, died in Seodaemun Prison age 17. ",
+      "evidenceType": "Textual",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q490020",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/jeanne-darc",
+      "label_en": "Joan of Arc",
+      "label_ko": "잔 다르크",
+      "group": "Person",
+      "description": "French martyr (1412-1431). Postcolonial parallel to Yu Gwan-sun: both young women martyred by imperial powers.",
+      "evidenceType": "Textual",
+      "equivalentUri": "http://www.wikidata.org/entity/Q7226",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/therese-lisieux",
+      "label_en": "Saint Thérèse of Lisieux",
+      "label_ko": "리지외의 성 테레사",
+      "group": "Person",
+      "description": "Carmelite nun (1873-1897). Author of Story of a Soul. Shares name 'Theresa' with Cha (Catholic baptismal name from Sacred Heart Convent). Performs as Joan of Arc in 1895 play.",
+      "evidenceType": "Textual",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q181715",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/empress-myeongseong",
+      "label_en": "Empress Myeongseong",
+      "label_ko": "명성황후",
+      "group": "Person",
+      "description": "Last Empress of Korea (1851-1895). ",
+      "evidenceType": "Textual",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q464503",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/falconetti",
+      "label_en": "Renée Falconetti",
+      "label_ko": "르네 팔코네티",
+      "group": "Person",
+      "description": "French actress (1892-1946). Portrays Joan of Arc in Dreyer's silent film La Passion de Jeanne d'Arc (1928). ",
+      "evidenceType": "Textual",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q440600",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/huh-hyungsoon",
+      "label_en": "Hyung Soon Huh",
+      "label_ko": "허형순",
+      "group": "Person",
+      "description": "Cha's mother (b.1922 Yongjing, Manchuria). Triple-language speaker under colonial rule: Korean forbidden, Japanese enforced, Chinese ambient. Her experience of linguistic displacement under colonial rule is a central narrative thread in the text.",
+      "evidenceType": "Biographical",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/cha-hyungsang",
+      "label_en": "Cha Hyung Sang",
+      "label_ko": "차형상",
+      "group": "Person",
+      "description": "Cha's father. Calligrapher. His brush calligraphy 女男, 父母 placed at center of pages.",
+      "evidenceType": "Biographical",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/cha-haksang",
+      "label_en": "John Hak Sung Cha",
+      "label_ko": "차학성",
+      "group": "Person",
+      "description": "Cha's older brother. Participated in April 19 Revolution demonstrations. His political activity is referenced in the text as a catalyst for the family's subsequent exile to the United States.",
+      "evidenceType": "Biographical",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/diseuse",
+      "label_en": "Diseuse",
+      "label_ko": "디쇠즈",
+      "group": "Person",
+      "description": "French: female monologue performer. Cha's textual shaman who empties self to channel 9 Muses.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/princess-bari",
+      "label_en": "Princess Bari",
+      "label_ko": "바리공주",
+      "group": "Person",
+      "description": "Korean shamanic origin myth: abandoned princess journeys to underworld for healing water to save parents, becomes first mudang (shaman)",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/persephone",
+      "label_en": "Persephone",
+      "label_ko": "페르세포네",
+      "group": "Person",
+      "description": "Greek goddess of spring and the underworld. Her myth of incomplete return from the underworld serves as a structural reference in the text.",
+      "evidenceType": "Textual",
+      "equivalentUri": "http://www.wikidata.org/entity/Q45967",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/demeter",
+      "label_en": "Demeter",
+      "label_ko": "데메테르",
+      "group": "Person",
+      "description": "Greek harvest goddess. Her nine-day search for her daughter is referenced in the text as a figure of waiting and maternal longing.",
+      "evidenceType": "Textual",
+      "equivalentUri": "http://www.wikidata.org/entity/Q40730",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/sibyl",
+      "label_en": "Sibyl",
+      "label_ko": "시빌",
+      "group": "Person",
+      "description": "Prophetess who sees truth but is not believed. Appears in the text as a figure of unheard speech.",
+      "evidenceType": "Textual",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q273320",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/gertrud",
+      "label_en": "Gertrud",
+      "label_ko": "거트루드",
+      "group": "Person",
+      "description": "Fictional character from Carl Theodor Dreyer's film Gertrud (1964). Referenced in the text through the film's narrative of an unhappy marriage.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/spivak",
+      "label_en": "Gayatri Chakravorty Spivak",
+      "label_ko": "스피박",
+      "group": "Person",
+      "description": "Gayatri Chakravorty Spivak, postcolonial theorist. Best known for 'Can the Subaltern Speak?' (1988), which examines the representational limits of Western intellectual frameworks in relation to colonized subjects.",
+      "evidenceType": "Scholarly",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q240851",
+      "broader": [],
+      "closeMatch": [
+        "https://homosaurus.org/v3/homoit0002039"
+      ],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/spillers",
+      "label_en": "Hortense Spillers",
+      "label_ko": "스필러스",
+      "group": "Person",
+      "description": "Hortense Spillers, Black feminist theorist. Best known for 'Mama's Baby, Papa's Maybe: An American Grammar Book' (1987), which theorizes the distinction between flesh and body under conditions of slavery and colonial violence.",
+      "evidenceType": "Scholarly",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q13560230",
+      "broader": [],
+      "closeMatch": [
+        "https://homosaurus.org/v3/homoit0003616",
+        "https://homosaurus.org/v3/homoit0002039",
+        "https://homosaurus.org/v3/homoit0002270"
+      ],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/lugones",
+      "label_en": "María Lugones",
+      "label_ko": "루고네스",
+      "group": "Person",
+      "description": "María Lugones, decolonial feminist philosopher. Key works include 'Coloniality of Gender' (2007) and 'Toward a Decolonial Feminism' (2010), which argue that gender itself is a colonial imposition and theorize active subjectivity within decolonial practice.",
+      "evidenceType": "Scholarly",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q6761379",
+      "broader": [],
+      "closeMatch": [
+        "https://homosaurus.org/v3/homoit0003616",
+        "https://homosaurus.org/v3/homoit0002039"
+      ],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:event/march-first-1919",
+      "label_en": "March First Movement",
+      "label_ko": "3·1운동",
+      "group": "Event",
+      "description": "Korean independence uprising against Japanese colonial rule, March 1, 1919. A foundational moment of anti-colonial resistance, referenced in the text through the figure of Yu Gwan-sun.",
+      "evidenceType": "Textual",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q482525",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:event/april-19-1960",
+      "label_en": "April Revolution",
+      "label_ko": "4·19혁명",
+      "group": "Event",
+      "description": "Student-led uprising against the Syngman Rhee government, April 19, 1960. Referenced in the text in connection with the Cha family's experience of political upheaval in Korea.",
+      "evidenceType": "Textual",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q489416",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:event/korean-war-1950",
+      "label_en": "Korean War",
+      "label_ko": "한국전쟁",
+      "group": "Event",
+      "description": "Korean War (1950–1953). Theresa Hak Kyung Cha was born during the war in Busan, where her family had taken refuge. Referenced in the text as part of the family's history of displacement.",
+      "evidenceType": "Textual",
+      "equivalentUri": "http://www.wikidata.org/entity/Q8663",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:event/gwangju-1980",
+      "label_en": "Gwangju Uprising",
+      "label_ko": "광주항쟁",
+      "group": "Event",
+      "description": "Pro-democracy uprising in Gwangju, South Korea, May 1980, brutally suppressed by military forces. Cha visited Korea shortly after and witnessed the aftermath. Referenced in the text as a moment of political crisis and historical repetition.",
+      "evidenceType": "Textual",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q174990",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:event/japanese-colonization",
+      "label_en": "Japanese Colonial Rule of Korea",
+      "label_ko": "일제강점기",
+      "group": "Event",
+      "description": "Japanese colonial rule of Korea (1910–1945). The colonial language policy — forbidding Korean while enforcing Japanese — forms a central historical context for the text's engagement with linguistic displacement and intergenerational loss.",
+      "evidenceType": "Textual",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q503585",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:event/gojong-funeral-1919",
+      "label_en": "Emperor Gojong's State Funeral",
+      "label_ko": "고종 국장",
+      "group": "Event",
+      "description": "State funeral of Emperor Gojong, March 3, 1919. The mass public gathering became a catalyst for the March 1st Movement. Referenced in the text through a contemporary newspaper photograph.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:event/cha-family-exile-1962",
+      "label_en": "Cha's Family Exile to US",
+      "label_ko": "차학경 가족 미국 망명",
+      "group": "Event",
+      "description": "The Cha family's emigration from Korea to the United States in 1962. Theresa Hak Kyung Cha, then around age eleven, subsequently settled in San Francisco. Referenced in the text as part of the family's diasporic trajectory.",
+      "evidenceType": "Biographical",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/postcolonial-feminism",
+      "label_en": "Postcolonial Feminism",
+      "label_ko": "탈식민 페미니즘",
+      "group": "Concept",
+      "description": "A critical framework that examines the intersection of colonialism, gender, and knowledge production. Associated with theorists including Spivak and Mohanty, it critiques Western feminist frameworks for their complicity in imperial structures.",
+      "evidenceType": "Direct Term",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q7234128",
+      "broader": [],
+      "closeMatch": [
+        "https://homosaurus.org/v3/homoit0003616"
+      ],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/translational-violence",
+      "label_en": "Translational Violence",
+      "label_ko": "번역 폭력",
+      "group": "Concept",
+      "description": "Epistemic violence enacted through forced linguistic assimilation across generations. Draws on Spivak's concept of epistemic violence and Fanon's analysis of colonial internalization, applied to the intergenerational linguistic displacement experienced by Cha and her mother under colonial and diasporic conditions.",
+      "evidenceType": "Synthesis",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/shamanic-mediation",
+      "label_en": "Shamanic mediation",
+      "label_ko": "샤머니즘적 매개",
+      "group": "Concept",
+      "description": "A researcher-developed interpretive concept describing the authorial strategy in Dictee whereby the speaker empties the self to channel the voices of absent or silenced women. The term draws an analogy with shamanic mediation as a structural model, though it is not a term used in Cha's text itself. ",
+      "evidenceType": "Modeling",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [
+        "https://vocab.getty.edu/aat/300055999"
+      ],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/fractured-locus",
+      "label_en": "Fractured Locus",
+      "label_ko": "균열된 장소",
+      "group": "Concept",
+      "description": "Term developed by María Lugones (2010) to describe the tension between colonial designation and active subjectivity within communal memory. Refers to the space of agency available to those positioned outside dominant social categories.",
+      "evidenceType": "Direct Term",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/cyclical-time",
+      "label_en": "Cyclical time",
+      "label_ko": "순환적 시간",
+      "group": "Concept",
+      "description": "A non-linear conception of time in which historical events recur as structural repetitions rather than sequential causes and effects. Draws on Lugones (2010). Applied in this dataset to the recurring pattern of colonial violence across different historical moments.",
+      "evidenceType": "Modeling",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/ungendering",
+      "label_en": "Ungendering",
+      "label_ko": "탈성별화",
+      "group": "Concept",
+      "description": "Term developed by Hortense Spillers (1987) to describe the exclusion of enslaved and colonized women from normative gender categories entirely. Distinct from gender nonconformity: ungendering refers to a structural violence rather than a chosen identity position.",
+      "evidenceType": "Direct Term",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/diasporic-experience",
+      "label_en": "Diasporic experience",
+      "label_ko": "디아스포라 경험",
+      "group": "Concept",
+      "description": "The condition of displacement and longing for return that cannot be fully realized. Draws primarily on Avtar Brah's concept of 'homing desire' (1996), which distinguishes between the mythologized idea of home and the possibility of literal return. Applied to multi-generational displacement across Manchuria, Korea, and the United States.",
+      "evidenceType": "Synthesis",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [
+        "https://vocab.getty.edu/aat/300417672"
+      ],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/untranslatability",
+      "label_en": "Untranslatability",
+      "label_ko": "번역불가능성",
+      "group": "Concept",
+      "description": "The impossibility of full semantic transfer between languages. Draws on Spivak's Death of a Discipline (2003) and Apter's The Translation Zone (2006). In this dataset, refers to the deliberate use of multilingual ambiguity — including French homophones and verb tense distinctions — as a strategy of resistance in Cha's text.",
+      "evidenceType": "Direct Term",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/muse-subversion",
+      "label_en": "Muse Subversion",
+      "label_ko": "뮤즈 전복",
+      "group": "Concept",
+      "description": "Traditional Muses reclaimed as active channels for silenced women across colonial and gendered histories. Each Muse no longer represents a single genre but an unstable intersection of colonial history, martyrdom, and shamanism. THALIA (Comedy) opens with MELPOMENE (Tragedy) fresco — genre expectation deliberately violated.",
+      "evidenceType": "Modeling",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/acupuncture-chart",
+      "label_en": "Acupuncture Meridian Chart",
+      "label_ko": "경락도",
+      "group": "Object",
+      "description": "Acupuncture meridian chart from the Chinese medical tradition, included in the text as a visual document. Presents speech and emotion as physiological processes located in specific organs of the body.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/vocal-anatomy",
+      "label_en": "Vocal Organ Anatomy Diagram",
+      "label_ko": "발화기관 해부도",
+      "group": "Object",
+      "description": "Western anatomical diagram of the speech organs, included in the text as a visual document. Appears alongside an Eastern meridian chart, juxtaposing two distinct knowledge systems for understanding how the body produces speech.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "https://vocab.getty.edu/aat/300054465"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/yu-portrait",
+      "label_en": "Yu Gwan-sun Portrait Photo",
+      "label_ko": "유관순 초상사진",
+      "group": "Object",
+      "description": "Photograph of Yu Gwan-sun, taken as a Japanese police record card photograph in 1919. Reproduced in the text as a memorial image. Yu Gwan-sun was a Korean independence activist who died in colonial detention.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "http://vocab.getty.edu/aat/300046300"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/mother-portrait",
+      "label_en": "Huh Hyung Soon Portrait Photo",
+      "label_ko": "허형순 초상사진",
+      "group": "Object",
+      "description": "Photograph of Huh Hyung Soon, Cha's mother, taken circa 1940 at approximately age eighteen. Reproduced in the text as an opening image. The same photograph also appears in Cha's 1977 video work Chronology.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "http://vocab.getty.edu/aat/300046300"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/execution-photo",
+      "label_en": "Korean Execution Photo",
+      "label_ko": "한국인 처형사진",
+      "group": "Object",
+      "description": "Photograph published in the French magazine La vie illustrée in 1904, depicting a Korean execution during the Russo-Japanese War. Documents colonial violence through the medium of imperial press photography.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "http://vocab.getty.edu/aat/300046300"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/korea-map",
+      "label_en": "Map of Divided Korea",
+      "label_ko": "분단 한반도 지도",
+      "group": "Object",
+      "description": "Map of the Korean peninsula showing the division line between North and South Korea. Reproduced in the text as a visual document of national division.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "http://vocab.getty.edu/aat/300028094"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/therese-joan-photo",
+      "label_en": "Thérèse as Joan of Arc Photo",
+      "label_ko": "테레사-잔다르크 사진",
+      "group": "Object",
+      "description": "Photograph taken in 1895 of Saint Thérèse of Lisieux costumed as Joan of Arc in a play she performed for her sister. Reproduced in the text as a document of performative identity.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "http://vocab.getty.edu/aat/300046300"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/dreyer-still",
+      "label_en": "Dreyer Joan of Arc Film Still",
+      "label_ko": "드레이어 스틸컷",
+      "group": "Object",
+      "description": "Film still from Carl Theodor Dreyer's La Passion de Jeanne d'Arc (1928), showing Renée Jeanne Falconetti in close-up as Joan of Arc. Reproduced in the text as a visual document of silenced speech.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "https://vocab.getty.edu/aat/300134997"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/cave-hand",
+      "label_en": "El Castillo Cave Hand Painting",
+      "label_ko": "엘 카스티요 손그림",
+      "group": "Object",
+      "description": "Hand stencil painting from El Castillo cave, Spain, estimated at approximately 27,000 years old. One of the earliest known examples of human mark-making. Reproduced in the text as a visual document.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "https://vocab.getty.edu/aat/300080208"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/osaka-asahi-photo",
+      "label_en": "Osaka Asahi Shimbun Photograph",
+      "label_ko": "오사카아사히 사진",
+      "group": "Object",
+      "description": "Photograph published in the Osaka Asahi Shimbun on March 3, 1919, showing Koreans gathered at a memorial pavilion in Seoul following Emperor Gojong's state funeral. Reproduced in the text as a document of colonial-era public mourning.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "https://vocab.getty.edu/aat/300054229"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/melpomene-fresco",
+      "label_en": "Melpomene Fresco (Getty Museum)",
+      "label_ko": "멜포메네 프레스코",
+      "group": "Object",
+      "description": "Roman fresco depicting Melpomene, the Muse of Tragedy, removing a smiling mask to reveal an unsmiling face beneath. Housed at the Getty Museum. Reproduced in the text as a visual opening to a chapter structured around comedy.",
+      "evidenceType": "Textual",
+      "equivalentUri": "https://www.getty.edu/art/collection/object/103SQ3",
+      "broader": [
+        "http://vocab.getty.edu/aat/300177433"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/nile-ruins-photo",
+      "label_en": "Egypt Nile Ruins Photo",
+      "label_ko": "나일강 유적사진",
+      "group": "Object",
+      "description": "Photograph by Francis Frith (1857) of Egyptian ruins along the Nile. Reproduced in the text as a visual document of ancient civilization and temporal depth.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "http://vocab.getty.edu/aat/300046300"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/calligraphy-nyu-nam",
+      "label_en": "Father's Calligraphy: 女男",
+      "label_ko": "아버지 서예: 여남",
+      "group": "Object",
+      "description": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering the characters 女男 (Woman-Man). The sequence reverses the conventional Korean order of 男女 (Man-Woman). Reproduced in the text as a visual document.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "https://vocab.getty.edu/aat/300266660"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/calligraphy-bumo",
+      "label_en": "Father's Calligraphy: 父母",
+      "label_ko": "아버지 서예: 부모",
+      "group": "Object",
+      "description": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering the characters 父母 (Father-Mother). Reproduced in the text as a visual document within a chapter centered on the mother's narrative.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "https://vocab.getty.edu/aat/300266660"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/calligraphy-dao",
+      "label_en": "Father's Calligraphy: Daoist Concepts",
+      "label_ko": "도교 서예",
+      "group": "Object",
+      "description": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering ten Daoist cosmological concepts including Taiji, written in Chinese characters. Reproduced in the text as a visual document of cosmological thought.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "https://vocab.getty.edu/aat/300266660"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/handwritten-ms",
+      "label_en": "Handwritten Manuscript Pages",
+      "label_ko": "필기체 원고",
+      "group": "Object",
+      "description": "Pages of English cursive handwriting with visible deletions and line breaks, reproduced in the text as a visual document. Makes visible the process of composition and revision as material labor.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [
+        "http://vocab.getty.edu/aat/300028569"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/bongseonhwa",
+      "label_en": "Bong Sun Flower (Folk Song)",
+      "label_ko": "봉선화",
+      "group": "Object",
+      "description": "Korean folk song (봉선화) about separation from family and homeland, embedded in the text without translation. The song's untranslated presence enacts a form of linguistic and cultural resistance.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:object/punctuation",
+      "label_en": "Punctuation as Text",
+      "label_ko": "문장부호의 텍스트화",
+      "group": "Object",
+      "description": "A dictation exercise in which punctuation marks — period, comma, open quotation marks — are written out as words rather than rendered as symbols. Reproduced in the text as a document of language's regulatory function made visible through instruction.",
+      "evidenceType": "Textual",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:group/tanam-press",
+      "label_en": "Tanam Press",
+      "label_ko": "타남 프레스",
+      "group": "Group",
+      "description": "Independent publisher, New York. Founded by Reese Williams. Cha worked as editor. Published Dictee (1982) and Apparatus (1981). Letterpress printing.",
+      "evidenceType": "Biographical",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:group/uc-press",
+      "label_en": "University of California Press",
+      "label_ko": "UC 프레스",
+      "group": "Group",
+      "description": "Published 2001 reprint/third edition of Dictee with BAMPFA. Returned book to print after 19 years out of print.",
+      "evidenceType": "Biographical",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q1816033",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:group/bampfa",
+      "label_en": "Berkeley Art Museum & Pacific Film Archive",
+      "label_ko": "BAMPFA",
+      "group": "Group",
+      "description": "UC Berkeley. Houses Cha's estate and archives. Rights holder for Dictee. Collaborated with UC Press on 2001 reprint.",
+      "evidenceType": "Biographical",
+      "equivalentUri": "http://www.wikidata.org/entity/Q2900855",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:work/dictee",
+      "label_en": "Dictee",
+      "label_ko": "딕테",
+      "group": "Work",
+      "description": "Theresa Hak Kyung Cha, Dictee. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
+      "evidenceType": "",
+      "equivalentUri": "https://www.wikidata.org/wiki/Q5273943",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:person/therese-lisieux",
+      "predicate": "sharesNameWith",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:person/yu-gwansoon",
+      "predicate": "performsMediation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:person/persephone",
+      "predicate": "mythologicalParallelOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "hasFamilyRelation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:person/cha-hyungsang",
+      "predicate": "hasFamilyRelation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:person/cha-haksang",
+      "predicate": "hasFamilyRelation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:event/gwangju-1980",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:event/korean-war-1950",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-theresa",
+      "target": "dict:concept/diasporic-experience",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/yu-gwansoon",
+      "target": "dict:person/jeanne-darc",
+      "predicate": "hasPostcolonialParallel",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/yu-gwansoon",
+      "target": "dict:person/empress-myeongseong",
+      "predicate": "hasExchangeableIdentity",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/yu-gwansoon",
+      "target": "dict:event/march-first-1919",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/therese-lisieux",
+      "target": "dict:person/jeanne-darc",
+      "predicate": "performsAs",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/falconetti",
+      "target": "dict:person/jeanne-darc",
+      "predicate": "performsAs",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/huh-hyungsoon",
+      "target": "dict:person/demeter",
+      "predicate": "mythologicalParallelOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/huh-hyungsoon",
+      "target": "dict:event/cha-family-exile-1962",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/huh-hyungsoon",
+      "target": "dict:concept/diasporic-experience",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-hyungsang",
+      "target": "dict:event/cha-family-exile-1962",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-haksang",
+      "target": "dict:event/april-19-1960",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/cha-haksang",
+      "target": "dict:event/cha-family-exile-1962",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/diseuse",
+      "target": "dict:person/yu-gwansoon",
+      "predicate": "performsMediation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/diseuse",
+      "target": "dict:concept/shamanic-mediation",
+      "predicate": "performsMediation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": true
+    },
+    {
+      "source": "dict:person/diseuse",
+      "target": "dict:person/sibyl",
+      "predicate": "mythologicalParallelOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/diseuse",
+      "target": "dict:concept/translational-violence",
+      "predicate": "embodiesPunctuation",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/diseuse",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/diseuse",
+      "target": "dict:concept/ungendering",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/princess-bari",
+      "target": "dict:person/diseuse",
+      "predicate": "mythologicalParallelOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/princess-bari",
+      "target": "dict:concept/shamanic-mediation",
+      "predicate": "mythologicalParallelOf",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": true
+    },
+    {
+      "source": "dict:person/spivak",
+      "target": "dict:concept/translational-violence",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/spivak",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/spillers",
+      "target": "dict:concept/ungendering",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/spillers",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/lugones",
+      "target": "dict:concept/fractured-locus",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/lugones",
+      "target": "dict:concept/cyclical-time",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:person/lugones",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "critiques",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/april-19-1960",
+      "target": "dict:person/cha-haksang",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/korean-war-1950",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "silences",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/gwangju-1980",
+      "target": "dict:person/cha-theresa",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/japanese-colonization",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "silences",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/japanese-colonization",
+      "target": "dict:person/yu-gwansoon",
+      "predicate": "silences",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/gojong-funeral-1919",
+      "target": "dict:event/march-first-1919",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/cha-family-exile-1962",
+      "target": "dict:person/cha-theresa",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/cha-family-exile-1962",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:event/cha-family-exile-1962",
+      "target": "dict:concept/diasporic-experience",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/translational-violence",
+      "target": "dict:concept/untranslatability",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/translational-violence",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "silences",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/translational-violence",
+      "target": "dict:person/diseuse",
+      "predicate": "silences",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/translational-violence",
+      "target": "dict:person/cha-theresa",
+      "predicate": "silences",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/translational-violence",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "broader",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/shamanic-mediation",
+      "target": "dict:concept/cyclical-time",
+      "predicate": "requiresExcavationBy",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/shamanic-mediation",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "broader",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/fractured-locus",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "broader",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/fractured-locus",
+      "target": "dict:person/yu-gwansoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/cyclical-time",
+      "target": "dict:person/persephone",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/ungendering",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "broader",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/ungendering",
+      "target": "dict:object/vocal-anatomy",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/muse-subversion",
+      "target": "dict:concept/postcolonial-feminism",
+      "predicate": "broader",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/acupuncture-chart",
+      "target": "dict:concept/untranslatability",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/vocal-anatomy",
+      "target": "dict:concept/translational-violence",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/yu-portrait",
+      "target": "dict:person/yu-gwansoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/mother-portrait",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/execution-photo",
+      "target": "dict:event/japanese-colonization",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/korea-map",
+      "target": "dict:concept/diasporic-experience",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/korea-map",
+      "target": "dict:event/gwangju-1980",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/korea-map",
+      "target": "dict:person/huh-hyungsoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/therese-joan-photo",
+      "target": "dict:person/therese-lisieux",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/dreyer-still",
+      "target": "dict:person/yu-gwansoon",
+      "predicate": "hasPostcolonialParallel",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/dreyer-still",
+      "target": "dict:person/gertrud",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/cave-hand",
+      "target": "dict:concept/untranslatability",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/osaka-asahi-photo",
+      "target": "dict:event/gojong-funeral-1919",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/osaka-asahi-photo",
+      "target": "dict:person/yu-gwansoon",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/melpomene-fresco",
+      "target": "dict:concept/diasporic-experience",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/melpomene-fresco",
+      "target": "dict:concept/muse-subversion",
+      "predicate": "subverts",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/nile-ruins-photo",
+      "target": "dict:concept/cyclical-time",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/calligraphy-nyu-nam",
+      "target": "dict:concept/ungendering",
+      "predicate": "subverts",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/calligraphy-nyu-nam",
+      "target": "dict:person/cha-hyungsang",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/calligraphy-bumo",
+      "target": "dict:person/cha-hyungsang",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/calligraphy-dao",
+      "target": "dict:person/cha-hyungsang",
+      "predicate": "mentions",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/handwritten-ms",
+      "target": "dict:concept/translational-violence",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/bongseonhwa",
+      "target": "dict:concept/untranslatability",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:object/punctuation",
+      "target": "dict:concept/translational-violence",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:group/bampfa",
+      "target": "dict:work/dictee",
+      "predicate": "holds",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:person/cha-theresa",
+      "predicate": "creator",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:person/diseuse",
+      "predicate": "hasNarrator",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:group/tanam-press",
+      "predicate": "publisher",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:group/uc-press",
+      "predicate": "publisher",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    }
+  ]
+}
