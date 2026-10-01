@@ -3,7 +3,7 @@
 # property_schema_map.csv는 작품별 파일이 아니라 전체 프로젝트가 공유하는 단일 스키마다.
 works:
   - work_id: dictee
-    title: "Dictée"
+    title: "Dictee"
     entities_csv: "data/dictee_entities.csv"
     relationships_csv: "data/dictee_relationships.csv"
   # - work_id: exilee

@@ -1,0 +1,9 @@
+﻿source_file,row_number,field,raw_value,issue_type,detail,action_taken
+dictee_entities.csv,66,Evidence Type,—,Evidence Type 미기재,값이 비어있거나 자리표시자(—)만 있음,"빈 문자열로 정규화, UI에서 '미기재'로 표시"
+dictee_relationships.csv,58,object_uri,dict:object/punctuation,도메인/레인지 스키마 위반,predicate 'embodiesPunctuation'의 정의된 Range='Concept or Type'이지만 실제 object Type='Object',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,72,subject,dict:person/huh-hyungsoon,도메인/레인지 스키마 위반,predicate 'prefigures'의 정의된 Domain='Any(Object/Concept)'이지만 실제 subject Type='Person',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,73,subject,dict:person/cha-theresa,도메인/레인지 스키마 위반,predicate 'prefigures'의 정의된 Domain='Any(Object/Concept)'이지만 실제 subject Type='Person',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,74,subject,dict:event/cha-family-exile-1962,도메인/레인지 스키마 위반,predicate 'prefigures'의 정의된 Domain='Any(Object/Concept)'이지만 실제 subject Type='Event',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,85,subject,dict:person/princess-bari,도메인/레인지 스키마 위반,predicate 'prefigures'의 정의된 Domain='Any(Object/Concept)'이지만 실제 subject Type='Person',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,87,subject,dict:person/diseuse,도메인/레인지 스키마 위반,predicate 'prefigures'의 정의된 Domain='Any(Object/Concept)'이지만 실제 subject Type='Person',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,88,subject,dict:person/diseuse,도메인/레인지 스키마 위반,predicate 'prefigures'의 정의된 Domain='Any(Object/Concept)'이지만 실제 subject Type='Person',막지 않고 그대로 반영 (연구자 판단 대기)
