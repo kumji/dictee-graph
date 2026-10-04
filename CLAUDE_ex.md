@@ -1,4 +1,4 @@
-# CLAUDE.md — Dictée LOD 인터랙티브 그래프 (GitHub Pages 테스트 프로토타입)
+# CLAUDE.md — LOD 인터랙티브 그래프 (GitHub Pages 테스트 프로토타입)
 
 ## 0. 이 문서의 목적
 
@@ -234,7 +234,7 @@ graph.jsonld 저장 완료: public/data/graph.jsonld
 
 ```
 ┌─────────────────────────────────────────────────┐
-│  Dictée LOD Graph          [필터: Type ▾] [Chapter ▾] [검색 🔍]│
+│  LOD Graph          [필터: Type ▾] [Chapter ▾] [검색 🔍]│
 ├───────────────────────────────┬───────────────────┤
 │                               │                   │
 │                               │  선택된 노드/엣지  │
