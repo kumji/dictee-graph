@@ -34,7 +34,7 @@ export default function DetailPanel({ lang, selection }: Props) {
             <dd className="text-gray-800">{n.evidenceType || '미기재'}</dd>
           </div>
           <div>
-            <dt className="font-medium text-gray-500">외부 권위 연결</dt>
+            <dt className="font-medium text-gray-500">externalAuthority</dt>
             <dd>
               {n.equivalentUri ? (
                 <a
@@ -46,7 +46,7 @@ export default function DetailPanel({ lang, selection }: Props) {
                   {n.equivalentUri}
                 </a>
               ) : (
-                <span className="text-gray-500">외부 권위 연결 없음</span>
+                <span className="text-gray-500">noExternalAuthority</span>
               )}
             </dd>
           </div>

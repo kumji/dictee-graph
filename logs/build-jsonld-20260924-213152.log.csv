@@ -1,0 +1,3 @@
+﻿source_file,row_number,field,raw_value,issue_type,detail,action_taken
+dictee_entities.csv,68,Evidence Type,—,Evidence Type 미기재,값이 비어있거나 자리표시자(—)만 있음,"빈 문자열로 정규화, UI에서 '미기재'로 표시"
+dictee_relationships.csv,67,object_uri,dict:object/punctuation,도메인/레인지 스키마 위반,predicate 'embodiesPunctuation'의 정의된 Range='Concept or Type'이지만 실제 object Type='Object',막지 않고 그대로 반영 (연구자 판단 대기)

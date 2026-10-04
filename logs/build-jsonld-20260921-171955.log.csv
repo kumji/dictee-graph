@@ -1,0 +1,4 @@
+﻿source_file,row_number,field,raw_value,issue_type,detail,action_taken
+dictee_entities.csv,67,Evidence Type,—,Evidence Type 미기재,값이 비어있거나 자리표시자(—)만 있음,"빈 문자열로 정규화, UI에서 '미기재'로 표시"
+dictee_relationships.csv,19,object_uri,dict:concept/muse-subversion,매칭 실패 (dangling reference),'dict:concept/muse-subversion'에 해당하는 엔티티를 어떤 작품의 엔티티 CSV에서도 찾을 수 없음,이 관계(행 전체)를 JSON-LD에서 스킵
+dictee_relationships.csv,24,subject,dict:object/yu-portrait,도메인/레인지 스키마 위반,predicate 'performsMediation'의 정의된 Domain='Person(Diseuse)'이지만 실제 subject Type='Object',막지 않고 그대로 반영 (연구자 판단 대기)

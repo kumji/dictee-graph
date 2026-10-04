@@ -1,0 +1,3 @@
+﻿source_file,row_number,field,raw_value,issue_type,detail,action_taken
+dictee_entities.csv,68,Evidence Type,—,Evidence Type 미기재,값이 비어있거나 자리표시자(—)만 있음,"빈 문자열로 정규화, UI에서 '미기재'로 표시"
+data/dictee_relationships.csv,0,-,-,관계 CSV 없음,config/works.yaml의 'dictee' 항목이 가리키는 relationships_csv가 존재하지 않음,이 작품의 관계 처리를 스킵

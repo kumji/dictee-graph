@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useRef } from 'react'
-import cytoscape, { type Core, type ElementDefinition } from 'cytoscape'
-import coseBilkent from 'cytoscape-cose-bilkent'
+import { type Core, type ElementDefinition } from 'cytoscape'
 import CytoscapeComponent from 'react-cytoscapejs'
 import type { GraphData, GraphEdge, GraphNode, Lang } from '../lib/types'
 import { cytoscapeStylesheet } from '../lib/graphStyles'
+import { startForceLayout, type ForceLayout } from '../lib/forceLayout'
 
-cytoscape.use(coseBilkent)
+// 실제 배치는 d3-force(forceLayout.ts)가 담당 — cytoscape는 렌더링만
+const PRESET_LAYOUT = { name: 'preset' }
 
 interface Props {
   graph: GraphData
@@ -31,6 +32,7 @@ export default function GraphCanvas({
   onCyReady,
 }: Props) {
   const cyRef = useRef<Core | null>(null)
+  const layoutRef = useRef<ForceLayout | null>(null)
 
   const nodeById = useMemo(() => {
     const m = new Map<string, GraphNode>()
@@ -76,6 +78,21 @@ export default function GraphCanvas({
   useEffect(() => {
     const cy = cyRef.current
     if (!cy) return
+    const layout = startForceLayout(cy)
+    layoutRef.current = layout
+    return () => {
+      layout.destroy()
+      layoutRef.current = null
+    }
+  }, [graph])
+
+  useEffect(() => {
+    layoutRef.current?.refreshLabels()
+  }, [lang])
+
+  useEffect(() => {
+    const cy = cyRef.current
+    if (!cy) return
     cy.nodes().forEach((n) => {
       const node = nodeById.get(n.id())
       const match = node ? nodeMatchesFilters(node, activeTypes) : true
@@ -109,7 +126,7 @@ export default function GraphCanvas({
       elements={elements}
       stylesheet={cytoscapeStylesheet}
       style={{ width: '100%', height: '100%' }}
-      layout={{ name: 'cose-bilkent', animate: false } as never}
+      layout={PRESET_LAYOUT as never}
       cy={(cy) => {
         if (cyRef.current === cy) return
         cyRef.current = cy

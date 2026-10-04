@@ -11,6 +11,8 @@ export const GROUP_COLORS: Record<string, string> = {
 
 const DEFAULT_COLOR = '#6B7280'
 
+export const nodeSize = (ele: cytoscape.NodeSingular) => 18 + Math.min(ele.data('degree') ?? 0, 12) * 4
+
 export const cytoscapeStylesheet: StylesheetJsonBlock[] = [
   {
     selector: 'node',
@@ -21,12 +23,40 @@ export const cytoscapeStylesheet: StylesheetJsonBlock[] = [
       'font-size': 10,
       'text-valign': 'bottom',
       'text-margin-y': 4,
-      width: (ele: cytoscape.NodeSingular) => 18 + Math.min(ele.data('degree') ?? 0, 12) * 4,
-      height: (ele: cytoscape.NodeSingular) => 18 + Math.min(ele.data('degree') ?? 0, 12) * 4,
+      width: nodeSize,
+      height: nodeSize,
       'border-width': 1.5,
       'border-color': '#ffffff',
       'text-outline-width': 2,
       'text-outline-color': '#f9fafb',
+      'transition-property': 'opacity, width, height, font-size',
+      'transition-duration': 150,
+    },
+  },
+  {
+    selector: 'node.hovered',
+    style: {
+      width: (ele: cytoscape.NodeSingular) => nodeSize(ele) * 1.5,
+      height: (ele: cytoscape.NodeSingular) => nodeSize(ele) * 1.5,
+      'font-size': 15,
+      'font-weight': 'bold',
+      'z-index': 10,
+    },
+  },
+  {
+    selector: 'node.neighbor',
+    style: {
+      width: (ele: cytoscape.NodeSingular) => nodeSize(ele) * 1.25,
+      height: (ele: cytoscape.NodeSingular) => nodeSize(ele) * 1.25,
+      'font-size': 13,
+      'font-weight': 'bold',
+      'z-index': 5,
+    },
+  },
+  {
+    selector: 'node.faded',
+    style: {
+      opacity: 0.25,
     },
   },
   {
@@ -64,6 +94,9 @@ export const cytoscapeStylesheet: StylesheetJsonBlock[] = [
       'text-background-opacity': 0.8,
       'text-background-padding': '1px',
       'text-rotation': 'autorotate',
+      'arrow-scale': 1,
+      'transition-property': 'opacity, width, font-size, arrow-scale',
+      'transition-duration': 150,
     },
   },
   {
@@ -79,6 +112,25 @@ export const cytoscapeStylesheet: StylesheetJsonBlock[] = [
       'line-color': '#D1D5DB',
       'target-arrow-color': '#D1D5DB',
       width: 2,
+    },
+  },
+  {
+    selector: 'edge.neighbor',
+    style: {
+      width: 3.5,
+      'line-color': '#4B5563',
+      'target-arrow-color': '#4B5563',
+      'arrow-scale': 1.5,
+      'font-size': 12,
+      'font-weight': 'bold',
+      color: '#111827',
+      'z-index': 5,
+    },
+  },
+  {
+    selector: 'edge.faded',
+    style: {
+      opacity: 0.15,
     },
   },
   {
