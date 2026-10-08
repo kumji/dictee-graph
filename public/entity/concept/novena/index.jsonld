@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/novena",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Novena",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "구일 기도",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "A Catholic devotion of prayer repeated over nine days. Dictee names it directly in its prologue: \"NOVENA: NINE EACH. THE RECITATION OR PRAYER AND PRACTICING OF DEVOTIONS DURING A NINE DAY PERIOD / And it begins\" (p. 19). The work frames its nine chapters, each placed under a Muse, as such a sequence of invocations.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Direct Term",
+  "dictrel:prefigures": [
+    {
+      "id": "dict:concept/muse-subversion",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

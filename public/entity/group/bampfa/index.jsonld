@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:group/bampfa",
+  "@type": "Group",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Berkeley Art Museum & Pacific Film Archive",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "BAMPFA",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Group",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "http://www.wikidata.org/entity/Q2900855"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "UC Berkeley. Houses Cha's estate and archives. Rights holder for Dictee. Collaborated with UC Press on 2001 reprint.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Biographical",
+  "schema:holds": [
+    {
+      "id": "dict:work/dictee",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/falconetti",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Renée Falconetti",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "르네 팔코네티",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q440600"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "French actress (1892-1946). Portrays Joan of Arc in Dreyer's silent film La Passion de Jeanne d'Arc (1928).",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:performsAs": [
+    {
+      "id": "dict:person/jeanne-darc",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

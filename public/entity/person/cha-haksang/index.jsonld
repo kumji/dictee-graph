@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/cha-haksang",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "John Hak Sung Cha",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "차학성",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Cha's older brother. Participated in April 19 Revolution demonstrations. His political activity is referenced in the text as a catalyst for the family's subsequent exile to the United States.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Biographical",
+  "schema:mentions": [
+    {
+      "id": "dict:event/april-19-1960",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:event/cha-family-exile-1962",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

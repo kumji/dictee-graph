@@ -1,0 +1,61 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/shamanic-mediation",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Shamanic mediation",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "샤머니즘적 매개",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "skos:closeMatch": [
+    {
+      "id": "https://vocab.getty.edu/aat/300055999"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "A researcher-developed interpretive concept describing the authorial strategy in Dictee whereby the speaker empties the self to channel the voices of absent or silenced women. The term draws an analogy with shamanic mediation as a structural model, though it is not a term used in Cha's text itself. ",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Modeling",
+  "dictrel:requiresExcavationBy": [
+    {
+      "id": "dict:concept/cyclical-time",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "skos:broader": [
+    {
+      "id": "dict:concept/postcolonial-feminism",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

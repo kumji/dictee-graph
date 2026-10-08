@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/untranslatability",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Untranslatability",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "번역불가능성",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "The remainder that resists full transfer between languages. In Dictee, untranslatability works as a textual strategy rather than a failure: French and English are set on facing pages without equivalence, so that homophones such as cygnes/signes and tense distinctions such as the imperfect j'écoutais against the simple past \"I heard\" leave a political residue that neither language can absorb. Distinct from dict:concept/translational-violence, which names the loss imposed by colonial language policy; untranslatability names what the text withholds in response. Draws on Emily Apter, Against World Literature: On the Politics of Untranslatability (2013), and Gayatri Chakravorty Spivak, \"The Politics of Translation\" (1993).",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Modeling"
+}

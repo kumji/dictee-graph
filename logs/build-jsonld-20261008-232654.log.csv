@@ -1,0 +1,6 @@
+﻿source_file,row_number,field,raw_value,issue_type,detail,action_taken
+dictee_relationships.csv,84,object_uri,dict:concept/shamanic-mediation,도메인/레인지 스키마 위반,predicate 'mythologicalParallelOf'의 정의된 Range='Person'이지만 실제 object Type='Concept',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,86,object_uri,dict:concept/shamanic-mediation,도메인/레인지 스키마 위반,predicate 'performsMediation'의 정의된 Range='Person'이지만 실제 object Type='Concept',막지 않고 그대로 반영 (연구자 판단 대기)
+dictee_relationships.csv,88,relationship_property_uri,dct:subject,스키마 미정의 predicate,property_schema_map.csv의 공식 목록에 없는 predicate,버리지 않고 'dct:subject'로 그대로 기록 (연구자 검토 대기)
+dictee_relationships.csv,89,relationship_property_uri,dct:subject,스키마 미정의 predicate,property_schema_map.csv의 공식 목록에 없는 predicate,버리지 않고 'dct:subject'로 그대로 기록 (연구자 검토 대기)
+dictee_relationships.csv,90,relationship_property_uri,dct:subject,스키마 미정의 predicate,property_schema_map.csv의 공식 목록에 없는 predicate,버리지 않고 'dct:subject'로 그대로 기록 (연구자 검토 대기)

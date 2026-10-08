@@ -1,0 +1,84 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/diseuse",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Diseuse",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "디쇠즈",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "French: female monologue performer. Cha's textual shaman who empties self to channel 9 Muses.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:performsMediation": [
+    {
+      "id": "dict:person/yu-gwansoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/shamanic-mediation",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dictrel:mythologicalParallelOf": [
+    {
+      "id": "dict:person/sibyl",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dictrel:embodiesPunctuation": [
+    {
+      "id": "dict:concept/translational-violence",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dictrel:critiques": [
+    {
+      "id": "dict:concept/postcolonial-feminism",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/ungendering",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

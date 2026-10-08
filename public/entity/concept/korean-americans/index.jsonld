@@ -1,0 +1,45 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/korean-americans",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Korean Americans",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "한국계 미국인",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/subjects/sh85073078"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "The diasporic condition of the author and her family after their emigration to the United States in 1962. In Dictee it appears as the experience of speaking from outside the homeland: the letter to the mother dated \"eighteen years later\" and the account of a return that is also a displacement. The heading names the position from which the work is written.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Synthesis"
+}

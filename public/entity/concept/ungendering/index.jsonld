@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/ungendering",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Ungendering",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "탈성별화",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Term developed by Hortense Spillers (1987) to describe the exclusion of enslaved and colonized women from normative gender categories entirely. Distinct from gender nonconformity: ungendering refers to a structural violence rather than a chosen identity position.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Modeling",
+  "skos:broader": [
+    {
+      "id": "dict:concept/postcolonial-feminism",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "schema:mentions": [
+    {
+      "id": "dict:object/vocal-anatomy",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

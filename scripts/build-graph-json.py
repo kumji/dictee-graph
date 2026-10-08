@@ -24,7 +24,7 @@ JSONLD_PATH = OUT_DIR / "graph.jsonld"
 NON_EDGE_KEYS = {
     "@id", "@type", "identified_by", "referred_to_by",
     "dictrel:entityType", "dictrel:documentedIn",
-    "equivalent", "skos:closeMatch", "dict:evidenceType",
+    "equivalent", "skos:closeMatch", "dictrel:evidenceType",
 }
 
 
@@ -86,7 +86,7 @@ def flatten_node(node: dict, node_ids: set) -> dict:
         "label_ko": label_for(node.get("identified_by"), "ko"),
         "group": node.get("dictrel:entityType", node.get("@type", "")),
         "description": (node.get("referred_to_by") or [{}])[0].get("content", ""),
-        "evidenceType": node.get("dict:evidenceType", ""),
+        "evidenceType": node.get("dictrel:evidenceType", ""),
         "equivalentUri": equivalent_uri(node.get("equivalent")),
         "broader": uri_list(node.get("skos:broader"), node_ids),
         "closeMatch": uri_list(node.get("skos:closeMatch"), node_ids),

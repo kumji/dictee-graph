@@ -1,0 +1,59 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:object/osaka-asahi-photo",
+  "@type": "HumanMadeObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Osaka Asahi Shimbun Photograph",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "오사카아사히 사진",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Object",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "skos:broader": [
+    {
+      "id": "https://vocab.getty.edu/aat/300054229"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Photograph published in the Osaka Asahi Shimbun on March 3, 1919, showing Koreans gathered at a memorial pavilion in Seoul following Emperor Gojong's state funeral. Reproduced in the text as a document of colonial-era public mourning.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "schema:mentions": [
+    {
+      "id": "dict:event/gojong-funeral-1919",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/yu-gwansoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

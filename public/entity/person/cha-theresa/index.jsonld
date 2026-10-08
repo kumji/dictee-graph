@@ -1,0 +1,109 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/cha-theresa",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Theresa Hak Kyung Cha",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "차학경",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "http://www.wikidata.org/entity/Q7782868"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Author (1951-1982). Born Busan during Korean War. Not singular narrator but dispersed across Diseuse and multiple women's voice.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Biographical",
+  "dictrel:sharesNameWith": [
+    {
+      "id": "dict:person/therese-lisieux",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dictrel:performsMediation": [
+    {
+      "id": "dict:person/yu-gwansoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dictrel:mythologicalParallelOf": [
+    {
+      "id": "dict:person/persephone",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dictrel:hasFamilyRelation": [
+    {
+      "id": "dict:person/huh-hyungsoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/cha-hyungsang",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/cha-haksang",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "schema:mentions": [
+    {
+      "id": "dict:event/gwangju-1980",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:event/korean-war-1950",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/diasporic-experience",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

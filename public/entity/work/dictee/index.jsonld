@@ -1,0 +1,100 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:work/dictee",
+  "@type": "HumanMadeObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Dictee",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "딕테",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Work",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q5273943"
+    }
+  ],
+  "skos:broader": [
+    {
+      "id": "https://vocab.getty.edu/aat/300123016"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Theresa Hak Kyung Cha, Dictee. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dct:creator": [
+    {
+      "id": "dict:person/cha-theresa",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dictrel:hasNarrator": [
+    {
+      "id": "dict:person/diseuse",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dct:publisher": [
+    {
+      "id": "dict:group/tanam-press",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:group/uc-press",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dct:subject": [
+    {
+      "id": "dict:concept/korean-americans",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/feminism-and-literature",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/korea-japanese-occupation",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

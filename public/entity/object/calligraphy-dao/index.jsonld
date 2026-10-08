@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:object/calligraphy-dao",
+  "@type": "HumanMadeObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Father's Calligraphy: Daoist Concepts",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "도교 서예",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Object",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "skos:broader": [
+    {
+      "id": "https://vocab.getty.edu/aat/300266660"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering ten Daoist cosmological concepts including Taiji, written in Chinese characters. Reproduced in the text as a visual document of cosmological thought.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "schema:mentions": [
+    {
+      "id": "dict:person/cha-hyungsang",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

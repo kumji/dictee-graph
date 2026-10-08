@@ -80,11 +80,21 @@ JSON-LD 자체를 이해하는 그래프 라이브러리는 존재하지 않는�
 data/*.csv (작품별로 여러 쌍)
    ↓ ① scripts/build-jsonld.py  ← config/works.yaml을 읽어 등록된 모든 작품을 순회
 public/data/graph.jsonld     ← 진짜 JSON-LD (모든 작품이 합쳐진 하나의 그래프)
+public/data/vocab.jsonld     ← 연구용 predicate(dictrel:) 정의 (rdf:Property + Domain/Range)
    ↓ ② scripts/build-graph-json.py
 public/data/graph.json       ← Cytoscape 전용 파생 뷰
+   ↓ ③ scripts/build-pages.py   (graph.jsonld + vocab.jsonld를 읽음)
+public/entity/{type}/{slug}/ ← 엔티티 URI 페이지 (index.html에 JSON-LD 내장 + index.jsonld)
+public/prop/{name}/          ← predicate URI 페이지
 ```
 
-②는 ①의 파생물일 뿐이므로 CSV를 직접 읽지 않는다. CSV를 아는 코드는 ①에만 존재한다.
+②·③은 ①의 파생물일 뿐이므로 CSV를 직접 읽지 않는다. CSV를 아는 코드는 ①에만 존재한다.
+
+**URI 체계 (2026-10-09 변경)**: 모든 URI는 `config/works.yaml`의 `base_uri`(현재 `https://kumji.github.io/dictee-graph/`)
+아래에 발급되고, ③이 그 주소에 실제 페이지를 만들어 GitHub Pages에서 열린다 (이전 `dictee-lod.wikibase.cloud`
+주소는 실제로 열리지 않아 폐기). CSV에서는 엔티티와 predicate 모두 `dict:` 접두어를 쓰지만, 출력에서는
+엔티티 `dict:` → `{base_uri}entity/`, 연구용 predicate `dict:x` → `dictrel:x` → `{base_uri}prop/x`로 분리한다.
+github.io 주소는 계정·저장소 이름에 묶여 있어 "영구" URI는 아니다 — "접속 가능한(dereferenceable) URI"로 표현할 것.
 
 ### 4-0. 다중 작품 확장 설계 원칙 (반드시 먼저 읽을 것)
 
@@ -169,10 +179,12 @@ write_jsonld(master_entities, master_edges)     # 작품 수와 무관하게 항
 ```json
 "@context": [
   "https://linked.art/ns/v1/linked-art.json",
-  { "dict": "https://dictee-lod.wikibase.cloud/entity/",
-    "dictrel": "https://dictee-lod.wikibase.cloud/prop/direct/" }
+  { "dict": "{base_uri}entity/",
+    "dictrel": "{base_uri}prop/",
+    "skos": "...", "schema": "...", "dct": "...", "rdf": "...", "rdfs": "..." }
 ]
 ```
+`{base_uri}`는 `config/works.yaml`에서 읽는다 (스크립트에 하드코딩 금지).
 
 **클래스 매핑** (`Type` 컬럼 → `@type`, 이전과 동일):
 | Type | @type |
@@ -284,11 +296,22 @@ graph.jsonld 저장 완료: public/data/graph.jsonld
    `identified_by`→`label_en`/`label_ko`, `referred_to_by`→`description`, `equivalent`→`equivalentUri`,
    `skos:broader`/`skos:closeMatch`→같은 이름의 배열 필드, `documentedIn`→그대로 유지 (작품별 필터는
    이번 UI 스코프 밖이지만 데이터는 미리 갖고 있는다)
-2. 각 노드의 `dict:{predicate}` 필드를 순회하며 엣지 배열 생성 (`source`/`target`/`predicate`/`documentedIn`만 —
+2. 각 노드의 predicate 필드(`dictrel:`/`skos:`/`schema:`/`dct:`)를 순회하며 엣지 배열 생성 (`source`/`target`/`predicate`/`documentedIn`만 —
    `pageRef`/`note`/`status`는 모델링 대상이 아니므로 넣지 않는다)
 3. 출력: `public/data/graph.json` (nodes/edges 배열)
 
-**실행 순서**: `python3 scripts/build-jsonld.py` → `python3 scripts/build-graph-json.py` → `npm run build`
+### 4-3. ③ `scripts/build-pages.py` — JSON-LD → 엔티티·predicate URI 페이지
+
+- 엔티티마다 `public/entity/{type}/{slug}/index.html`(사람용, `<script type="application/ld+json">` 내장)과
+  `index.jsonld`(기계용) 생성. 나가는/들어오는 관계, 외부 링크 포함
+- `vocab.jsonld`의 연구용 predicate마다 `public/prop/{name}/` 생성 — Domain/Range와 실제 사용 사례.
+  스키마 CSV의 `출처 어휘`·`표준 대응/변경사항`은 연구자 참고용이라 공개하지 않는다
+- 표준 어휘(skos/schema/dct)는 페이지를 만들지 않고 원 기관의 정의 URI로 링크
+- 실행할 때마다 `public/entity`, `public/prop`를 지우고 다시 생성 (삭제된 엔티티 페이지 자동 정리)
+- GitHub Pages는 content negotiation이 안 되므로 HTML에 JSON-LD를 내장하고 `.jsonld`를 같은 폴더에 둔다
+
+**실행 순서**: `python3 scripts/build-jsonld.py` → `python3 scripts/build-graph-json.py` →
+`python3 scripts/build-pages.py` → `npm run build` (또는 `./scripts/run-all.sh`)
 
 ---
 
@@ -352,11 +375,16 @@ dictee-graph/
 │   └── property_schema_map.csv  ← 모든 작품이 공유 (작품별 파일 아님)
 ├── scripts/
 │   ├── build-jsonld.py
-│   └── build-graph-json.py
+│   ├── build-graph-json.py
+│   ├── build-pages.py
+│   └── run-all.sh
 ├── public/
-│   └── data/
-│       ├── graph.jsonld
-│       └── graph.json
+│   ├── data/
+│   │   ├── graph.jsonld
+│   │   ├── vocab.jsonld
+│   │   └── graph.json
+│   ├── entity/                  ← ③이 생성 (직접 수정 금지)
+│   └── prop/                    ← ③이 생성 (직접 수정 금지)
 ├── src/
 │   ├── components/
 │   │   ├── GraphCanvas.tsx

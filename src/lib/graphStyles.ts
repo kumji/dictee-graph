@@ -94,6 +94,8 @@ export const cytoscapeStylesheet: StylesheetJsonBlock[] = [
       'text-background-opacity': 0.8,
       'text-background-padding': '1px',
       'text-rotation': 'autorotate',
+      // 전체 보기에서는 엣지 라벨을 숨기고, 확대하거나 호버(이웃 엣지는 글자가 커짐)하면 보이게
+      'min-zoomed-font-size': 7,
       'arrow-scale': 1,
       'transition-property': 'opacity, width, font-size, arrow-scale',
       'transition-duration': 150,

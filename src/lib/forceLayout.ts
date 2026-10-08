@@ -19,7 +19,10 @@ export const FORCE_PARAMS = {
   chargeDistanceMax: 600,
   collidePadding: 10, // 충돌 반경 여유값
   labelHalfWidthMax: 70, // 충돌 반경에 반영할 라벨 반폭 상한 (긴 라벨이 과도하게 밀어내지 않도록)
-  centerStrength: 0.05, // 연결 없는 노드가 멀리 날아가지 않도록 잡아주는 힘
+  centerStrength: 0.05, // 연결 없는 노드가 멀리 날아가지 않도록 잡아주는 힘 (긴 축은 화면 비율만큼 약해짐)
+  hubLinkBonus: 14, // 허브 노드의 엣지 길이 추가량 (× √degree) → 엣지가 몰린 곳을 넓게 펼침
+  hubChargeBonus: 0.08, // degree 1당 반발력 증가 비율
+  fitPadding: 30,
   hoverLensBoost: 45, // 호버 시 충돌 반경 추가량 → 주변 노드가 비켜나는 정도
   neighborLensBoost: 12, // 호버 시 이웃 노드(함께 확대됨)의 충돌 반경 추가량
   initialTicks: 300,
@@ -30,6 +33,7 @@ const LABEL_FONT_SIZE = 10
 interface SimNode extends SimulationNodeDatum {
   id: string
   radius: number
+  degree: number
   labelHalfWidth: number
   lensBoost: number
 }
@@ -57,6 +61,7 @@ export function startForceLayout(cy: Core): ForceLayout {
   const nodes: SimNode[] = cy.nodes().map((n) => ({
     id: n.id(),
     radius: nodeSize(n) / 2,
+    degree: n.degree(false),
     labelHalfWidth: estimateLabelWidth(String(n.data('label') ?? '')) / 2,
     lensBoost: 0,
   }))
@@ -64,6 +69,12 @@ export function startForceLayout(cy: Core): ForceLayout {
   const links: SimLink[] = cy.edges().map((e) => ({ source: e.source().id(), target: e.target().id() }))
 
   const collide = forceCollide<SimNode>(collideRadius).strength(0.9).iterations(2)
+
+  // 화면 비율에 맞춰 중심 인력을 축별로 다르게 → 둥근 덩어리 대신 캔버스 모양으로 퍼짐
+  const w = cy.width() || 1
+  const h = cy.height() || 1
+  const xStrength = FORCE_PARAMS.centerStrength * Math.min(1, (h / w) ** 2)
+  const yStrength = FORCE_PARAMS.centerStrength * Math.min(1, (w / h) ** 2)
 
   const sim: Simulation<SimNode, SimLink> = forceSimulation(nodes)
     .force(
@@ -73,13 +84,19 @@ export function startForceLayout(cy: Core): ForceLayout {
         .distance((l) => {
           const s = l.source as SimNode
           const t = l.target as SimNode
-          return s.radius + t.radius + FORCE_PARAMS.linkDistance
+          const hub = Math.sqrt(Math.max(s.degree, t.degree))
+          return s.radius + t.radius + FORCE_PARAMS.linkDistance + FORCE_PARAMS.hubLinkBonus * hub
         }),
     )
-    .force('charge', forceManyBody<SimNode>().strength(FORCE_PARAMS.chargeStrength).distanceMax(FORCE_PARAMS.chargeDistanceMax))
+    .force(
+      'charge',
+      forceManyBody<SimNode>()
+        .strength((d) => FORCE_PARAMS.chargeStrength * (1 + d.degree * FORCE_PARAMS.hubChargeBonus))
+        .distanceMax(FORCE_PARAMS.chargeDistanceMax),
+    )
     .force('collide', collide)
-    .force('x', forceX<SimNode>(0).strength(FORCE_PARAMS.centerStrength))
-    .force('y', forceY<SimNode>(0).strength(FORCE_PARAMS.centerStrength))
+    .force('x', forceX<SimNode>(0).strength(xStrength))
+    .force('y', forceY<SimNode>(0).strength(yStrength))
     .stop()
 
   // 첫 화면은 이미 자리 잡힌 상태로 보여준다
@@ -95,7 +112,11 @@ export function startForceLayout(cy: Core): ForceLayout {
     })
   }
   syncPositions()
-  cy.fit(undefined, 40)
+  cy.fit(undefined, FORCE_PARAMS.fitPadding)
+
+  // 창 크기가 바뀌면 다시 화면에 맞춤
+  const onResize = () => cy.fit(undefined, FORCE_PARAMS.fitPadding)
+  cy.on('resize', onResize)
 
   sim.on('tick', syncPositions)
 
@@ -198,6 +219,7 @@ export function startForceLayout(cy: Core): ForceLayout {
       cy.removeListener('mouseout', 'node', onOut)
       cy.removeListener('tap', 'node', onTapNode)
       cy.removeListener('tap', onTapBg)
+      cy.removeListener('resize', onResize)
     },
   }
 }

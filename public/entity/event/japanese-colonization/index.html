@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Japanese Colonial Rule of Korea — Dictée LOD</title>
+<link rel="alternate" type="application/ld+json" href="index.jsonld">
+<style>
+:root { --bg:#ffffff; --fg:#111827; --muted:#6b7280; --line:#e5e7eb; --link:#2563eb; --chip:#f3f4f6; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#111827; --fg:#f3f4f6; --muted:#9ca3af; --line:#374151; --link:#93c5fd; --chip:#1f2937; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg);
+       font:15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+nav { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+nav a { margin-right: 12px; }
+a { color: var(--link); text-decoration: none; word-break: break-all; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 26px; margin: 0; line-height: 1.3; }
+.sub { color: var(--muted); font-size: 17px; margin: 2px 0 12px; }
+.chip { display:inline-block; background:var(--chip); border-radius:999px; padding:1px 10px; font-size:12px; margin-right:6px; }
+code { font-size: 13px; word-break: break-all; }
+h2 { font-size: 15px; margin: 28px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+td, th { text-align: left; vertical-align: top; padding: 6px 8px 6px 0; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 500; width: 34%; }
+ul { padding-left: 18px; margin: 4px 0; }
+.muted { color: var(--muted); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:event/japanese-colonization",
+  "@type": "Period",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Japanese Colonial Rule of Korea",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "일제강점기",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Event",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q503585"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Japanese colonial rule of Korea (1910?1945). The colonial language policy ? forbidding Korean while enforcing Japanese ? forms a central historical context for the text's engagement with linguistic displacement and intergenerational loss.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:silences": [
+    {
+      "id": "dict:person/huh-hyungsoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/yu-gwansoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body><main>
+<nav><a href="../../../">그래프 뷰어</a><a href="../../../entity/">전체 엔티티</a><a href="../../../prop/">전체 predicate</a></nav>
+
+<h1>Japanese Colonial Rule of Korea</h1>
+<p class="sub">일제강점기</p>
+<p><span class="chip">Event</span><span class="chip">Period</span></p>
+<p class="muted">URI <code>https://kumji.github.io/dictee-graph/entity/event/japanese-colonization</code> · <a href="index.jsonld">JSON-LD</a></p>
+<p>Japanese colonial rule of Korea (1910?1945). The colonial language policy ? forbidding Korean while enforcing Japanese ? forms a central historical context for the text&#x27;s engagement with linguistic displacement and intergenerational loss.</p>
+<table><tr><th>Evidence Type</th><td>Textual</td></tr><tr><th>Documented in</th><td>dictee</td></tr><tr><th>Equivalent</th><td><a href="https://www.wikidata.org/wiki/Q503585">https://www.wikidata.org/wiki/Q503585</a></td></tr></table>
+<h2>이 엔티티에서 나가는 관계 (2)</h2><ul><li><a href="../../../prop/silences/"><code>dictrel:silences</code></a> → <a href="../../../entity/person/huh-hyungsoon/">Hyung Soon Huh · 허형순</a></li><li><a href="../../../prop/silences/"><code>dictrel:silences</code></a> → <a href="../../../entity/person/yu-gwansoon/">Yu Gwan-sun · 유관순</a></li></ul>
+<h2>이 엔티티로 들어오는 관계 (1)</h2><ul><li><a href="../../../entity/object/execution-photo/">Korean Execution Photo · 한국인 처형사진</a> → <a href="https://schema.org/mentions"><code>schema:mentions</code></a></li></ul>
+
+</main></body>
+</html>

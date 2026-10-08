@@ -1,0 +1,69 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/yu-gwansoon",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Yu Gwan-sun",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "유관순",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q490020"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Korean independence activist (1902-1920). Arrested during March 1st Movement, died in Seodaemun Prison age 17. ",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:hasPostcolonialParallel": [
+    {
+      "id": "dict:person/jeanne-darc",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dictrel:hasExchangeableIdentity": [
+    {
+      "id": "dict:person/empress-myeongseong",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "schema:mentions": [
+    {
+      "id": "dict:event/march-first-1919",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

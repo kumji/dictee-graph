@@ -1,6 +1,12 @@
 # 작품 레지스트리 (CLAUDE.md §4-0)
 # 새 작품을 추가할 때는 이 파일과 data/ 폴더만 수정한다 — scripts/*.py는 건드리지 않는다.
 # property_schema_map.csv는 작품별 파일이 아니라 전체 프로젝트가 공유하는 단일 스키마다.
+
+# 모든 URI의 기준 주소. 엔티티는 {base_uri}entity/{type}/{slug}, predicate는 {base_uri}prop/{name}
+# 으로 발급되고, build-pages.py가 그 주소에 실제 페이지를 만든다 (GitHub Pages에서 열림).
+# ⚠ 바꾸면 이미 공개된 모든 URI가 바뀐다 — 저장소 이름·계정 변경 시에만 수정.
+base_uri: "https://kumji.github.io/dictee-graph/"
+
 works:
   - work_id: dictee
     title: "Dictee"

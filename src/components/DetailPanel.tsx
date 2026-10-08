@@ -27,6 +27,14 @@ export default function DetailPanel({ lang, selection }: Props) {
           {n.group}
         </span>
         <h2 className="mt-2 text-lg font-semibold text-gray-900">{label}</h2>
+        <a
+          href={`${import.meta.env.BASE_URL}entity/${n.id.split(':').slice(1).join(':')}/`}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-1 block break-all text-xs text-blue-600 underline"
+        >
+          {n.id}
+        </a>
         {n.description && <p className="mt-2 text-sm text-gray-600">{n.description}</p>}
         <dl className="mt-4 space-y-2 text-sm">
           <div>

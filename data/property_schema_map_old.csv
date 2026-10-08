@@ -1,0 +1,29 @@
+,Dictee LOD — Property Schema Map (혼합 스키마 매핑),,,,
+,,,,,
+,,,,,
+Property,Property (with namespace),Domain,Range,출처 어휘,표준 대응/변경사항
+broader,skos:broader,Concept,Concept or External URI (AAT/LCSH/Homosaurus),https://www.w3.org/TR/skos-reference/#broader,"SKOS broader 그대로 차용. 엔티티 간 계층 관계(decolonial-feminism ⊂ postcolonial-feminism) 및 외부 통제어휘 상위 개념 연결(Object → Getty AAT, Concept → LCSH)에 적용. JSON-LD 직렬화: skos:broader"
+subverts,dict:subverts,Object/Any,Concept or Type,고유, Linked.Art의 classified_as의 분류 부여 구조를 '분류를 부여하며 동시에 위반한다'는 의미로 변형. 예: melpomene-fresco subverts muse-subversion
+isPartOf,dict:isPartIn,Person,Chapter,https://schema.org/isPartOf,bf:hasPart의 역관계(inverse) — 인물이 텍스트 구조 안에 귀속되는 위치를 서지적 관계로 처리
+mentions,schema:mentions,Any,Any,Schema.org,schema:mentions / about류의 범용 약한 연결자. 표준 매핑이 불필요한 가벼운 참조에 한정
+critiques,dict:critiques,Person(Scholarly),Concept,Linked.art 확장,Linked.Art의 평가/근거 부여 구조를 이론가-개념 관계로 확장. 이론가를 분석 프레임 행위자로 명시
+evidenceType,dict:evidenceType,Concept | Person | Event | Object | Group | Work,Evidence Type(Q1-3),고유,"4개 표준 어디에도 '진술의 인식론적 근거 강도'를 표시하는 메타 프로퍼티 없음. Direct Term/Synthesis/Modeling 구분을 강제 — 해석과 기술의 혼합을 가시화. 원래 Concept 전용 설계에서 확장: 타입별 적용 Evidence Type — Concept(Direct Term/Synthesis/Modeling), Person(Biographical/Textual/Scholarly), Event(Textual/Biographical), Object(Textual), Group/Work(Biographical/Textual)"
+composedOf,dict:composedOf,Work,Chapter,본연구 고유 발명,BIBFRAME bf:hasPart를 변형. '9개 챕터의 합 = 작품 전체'라는 환원적 독해를 막기 위함.
+creator,dct:creator,Work,Person,Dublin Core (dct:creator),BIBFRAME Contribution(사건) 모델 대신 직접 관계 선택. 창작을 별도 사건으로 매개하지 않고 작품-작가 직접 관계로 단순화 — 사후 출간이라는 특수성을 반영. ⚠ 방향: Work→Person 표준 준수
+hasNarrator,dict:hasNarrator,Work,Person(Diseuse),본 연구 고유 발명,BIBFRAME/Linked.Art 어디에도 '서사자(narrator)'라는 행위자 범주 없음. 디쇠즈가 작가도 등장인물도 아닌 제3의 서사적 위치임을 표준이 포착 못해 직접 발명
+narrates,dict:narrates,Person(Diseuse),Chapter,본 연구 고유 발명,위와 동일한 이유로 독자적 발명. channels(P3)와의 중복 정리 후 단일 표준 관계로 채택
+hasExchangeableIdentity,dict:hasExchangeableIdentity,Person,Person,본 연구 고유 발명 (symmetric),4개 표준 어디에도 대응 없음. Mohanty/Lugones 비판의 데이터 모델적 실천 — 어느 한쪽도 다른 쪽의 하위개념이 되지 않는 대칭 관계를 직접 설계
+hasPostcolonialParallel,dict:hasPostcolonialParallel,Any,Any,본 연구 고유 발명 (symmetric),"3·1운동/4·19/광주항쟁을 선형 인과 없이 비계층적으로 병치하기 위해 직접 설계. isRecurrenceOf(비대칭)와 역할 분리. 실제 사용에서 Person-Person, Object-Person 관계에도 적용됨 — Domain/Range를 Any로 확장"
+performsMediation,dict:performsMediation,Person(Diseuse),Person,CIDOC CRM (변형),CRM의 E7_Activity가 P11_had_participant로 행위자를 매개하는 구조를 Person-Person 직접관계로 압축 — 매개를 별도 사건이 아닌 디쇠즈의 존재 양태로 처리
+prefigures,dict:prefigures,Any(Object/Concept),Any(Concept),CIDOC CRM (변형),isRecurrenceOf의 역관계(inverse)로 짝지어짐. CRM의 시간/연상 관계를 비대칭으로 변형
+silences,dict:silences,Event/Concept,Person,CIDOC CRM (변형),"CRM의 E5_Event 결과발생 구조 차용, 그러나 CRM은 인과의 정치적 방향을 명시 안 함. 고정 방향(Event→Person)으로 권력관계를 강제 인코딩. scopeNote: 구조적 침묵(제도)만 해당"
+isRecurrenceOf,dict:isRecurrenceOf,Event,Event,CIDOC CRM (변형),CRM의 시간 관계는 대칭적인데 본 연구는 의도적으로 비대칭 설계 — 순환적 시간관(cyclical-time)을 인코딩하기 위해 CRM의 중립적 시간 모델을 거부
+hasFamilyRelation,dict:hasFamilyRelation,Person,Person,고유,Wikibase P21로 등록. 차학경 가족 구성원 간 관계 표시
+closeMatch,skos:closeMatch,Any,External URI,https://www.w3.org/TR/skos-reference/#closeMatch,"skos:closeMatch — 의미적으로 매우 유사하나 완전히 동일하지 않은 외부 어휘 URI. owl:sameAs(Primary URI)와 구분: sameAs는 완전 동일, closeMatch는 유사 개념. 적용 어휘: Homosaurus(LGBTQ+ 개념), Wikidata(개념 매핑). 복수 URI는 세미콜론(;)으로 구분. JSON-LD 직렬화: skos:closeMatch (배열 처리)"
+mythologicalParallelOf,dict:mythologicalParallelOf,Person,Person,고유,"Person 엔티티 간 신화적 병행 관계. 역사적/전기적 인물과 신화적 인물의 구조적 대응을 표현. 예: cha-theresa↔persephone, huh-hyungsoon↔demeter, diseuse↔sibyl, princess-bari↔diseuse. hasPostcolonialParallel(P14)이 역사적 사건 간 병치라면, mythologicalParallelOf는 인물-신화 간 대응. JSON-LD 직렬화: dict:mythologicalParallelOf"
+sharesNameWith,dict:sharesNameWith,Person,Person,고유,이름을 공유하는 인물 간 대칭 관계. 이름 연쇄(name chain) 구조를 데이터로 표현. 예: cha-theresa↔therese-lisieux (두 인물 모두 Theresa/Thérèse). hasExchangeableIdentity(P13)과 달리 정체성 교환이 아닌 명명 공유에 한정. JSON-LD 직렬화: dict:sharesNameWith
+performsAs,dict:performsAs,Person,Person,고유,"한 인물이 다른 인물로서 연기/수행하는 비대칭 관계. 예: therese-lisieux→jeanne-darc (1895년 연극), falconetti→jeanne-darc (드레이어 영화). performsMediation(P15)이 디쇠즈의 매개 행위라면, performsAs는 구체적 인물 역할 수행. JSON-LD 직렬화: dict:performsAs"
+requiresExcavationBy,dict:requiresExcavationBy,Concept,Person or Concept,고유,매장된 개념이 특정 행위자 또는 실천을 통해 발굴/활성화되는 관계. 예: shamanic-mediation→cyclical-time (디쇠즈의 호명을 통해 순환적 시간이 접근 가능해짐). Lugones(2010) 순환적 시간관의 데이터 모델적 실천. JSON-LD 직렬화: dict:requiresExcavationBy
+embodiesPunctuation,dict:embodiesPunctuation,Person,Concept or Type,고유,"디쇠즈가 언어의 구두점을 신체적 조건으로 내면화하는 관계. ""She would become, herself, demarcations."" (p.4). 식민 언어의 규제 인프라가 신체를 통해 수행되는 방식을 인코딩. translational-violence와 연결: 구두점 내면화 = 번역 폭력의 신체적 현현. JSON-LD 직렬화: dict:embodiesPunctuation"
+publisher,dct:publisher,Work,Group,Dublin Core,Dublin Core dct:publisher. 표준 방향(Work→Agent) 준수: 작품 → 출판 주체(Group).
+holds,schema:holds,Group,Work,Schema.org,Schema.org schema:holds. 소장/권리 보유 기관(Group) → 작품(Work).

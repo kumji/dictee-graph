@@ -30,16 +30,36 @@ LOG_DIR = ROOT / "logs"
 WORKS_YAML = ROOT / "config" / "works.yaml"
 SCHEMA_CSV = ROOT / "data" / "property_schema_map.csv"
 
-CONTEXT = [
-    "https://linked.art/ns/v1/linked-art.json",
-    {
-        "dict": "https://dictee-lod.wikibase.cloud/entity/",
-        "dictrel": "https://dictee-lod.wikibase.cloud/prop/direct/",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "schema": "https://schema.org/",
-        "dct": "http://purl.org/dc/terms/",
-    },
-]
+DEFAULT_BASE_URI = "https://kumji.github.io/dictee-graph/"
+
+# 파이프라인이 직접 정의하는 메타 속성 (property_schema_map.csv 밖) — vocab.jsonld에 함께 싣는다
+META_PROPERTIES = {
+    "entityType": "Entity type as entered by the researcher (Person/Event/Concept/Object/Group/Work).",
+    "documentedIn": "Work(s) whose analysis documents this entity or relationship (work_id from config/works.yaml).",
+    "schemaViolation": "Marks a relationship whose subject/object type falls outside the predicate's Domain/Range.",
+}
+
+
+def make_context(base_uri: str) -> list:
+    # CSV에서는 엔티티와 predicate 모두 dict: 접두어를 쓰지만, 출력에서는 엔티티(dict: -> entity/)와
+    # predicate(dictrel: -> prop/)를 분리한다. 변환은 publish_key()가 담당.
+    return [
+        "https://linked.art/ns/v1/linked-art.json",
+        {
+            "dict": f"{base_uri}entity/",
+            "dictrel": f"{base_uri}prop/",
+            "skos": "http://www.w3.org/2004/02/skos/core#",
+            "schema": "https://schema.org/",
+            "dct": "http://purl.org/dc/terms/",
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        },
+    ]
+
+
+def publish_key(namespaced: str) -> str:
+    """CSV 표기의 predicate(dict:prefigures) -> 출력용 키(dictrel:prefigures). 표준 어휘는 그대로."""
+    return "dictrel:" + namespaced[len("dict:"):] if namespaced.startswith("dict:") else namespaced
 
 
 class IssueLogger:
@@ -74,7 +94,8 @@ def clean_label(label: str) -> str:
     return re.sub(r"\s*\(Q\d+\)\s*$", "", label or "").strip()
 
 
-def load_works(logger: IssueLogger) -> list[dict]:
+def load_works(logger: IssueLogger) -> tuple[list[dict], str]:
+    """-> (works, base_uri)"""
     if not WORKS_YAML.exists():
         print(f"오류: {WORKS_YAML.relative_to(ROOT)}가 없습니다. 작품을 최소 1개 등록해야 합니다.")
         sys.exit(1)
@@ -83,7 +104,15 @@ def load_works(logger: IssueLogger) -> list[dict]:
     if not works:
         print(f"오류: {WORKS_YAML.relative_to(ROOT)}에 등록된 작품이 없습니다.")
         sys.exit(1)
-    return works
+    base_uri = (config.get("base_uri") or "").strip()
+    if not base_uri:
+        logger.log(WORKS_YAML.name, 0, "base_uri", "-",
+                   "base_uri 미설정", "config/works.yaml에 base_uri가 없음",
+                   f"기본값 '{DEFAULT_BASE_URI}' 사용")
+        base_uri = DEFAULT_BASE_URI
+    if not base_uri.endswith("/"):
+        base_uri += "/"
+    return works, base_uri
 
 
 def load_property_schema(logger: IssueLogger) -> tuple[dict, dict]:
@@ -220,7 +249,7 @@ def build_entity_node(row: dict, i: int, csv_name: str, work_id: str,
                            f"property_schema_map.csv는 evidenceType의 Domain을 '{domain}'로 정의하지만 "
                            f"이 엔티티의 Type='{row['Type']}'",
                            "막지 않고 그대로 반영 (연구자 판단 대기)")
-        node["dict:evidenceType"] = evidence_type
+        node["dictrel:evidenceType"] = evidence_type
 
     return node
 
@@ -426,9 +455,43 @@ def ingest_work_relationships(work: dict, id_remap: dict, master_entities: dict,
         entry = {"id": obj_id, "dictrel:documentedIn": [work_id]}
         if violation:
             entry["dictrel:schemaViolation"] = True
-        edges.append((subj_id, namespaced, entry))
+        edges.append((subj_id, publish_key(namespaced), entry))
 
     return total_rows, edges, n_schema_violations, n_undefined_predicates, n_dangling
+
+
+def build_vocab(property_schema: dict, master_entities: dict) -> list[dict]:
+    """연구용 predicate(dictrel:) 정의 목록 -> vocab.jsonld의 @graph.
+
+    표준 어휘(skos:/schema:/dct:)는 원 기관의 정의가 있으므로 싣지 않는다.
+    스키마 CSV의 '출처 어휘', '표준 대응/변경사항'은 연구자 참고용 컬럼(CLAUDE.md §4)이라 읽지 않고,
+    Property 이름과 Domain/Range만 공개한다.
+    """
+    vocab: dict[str, dict] = {}
+    for prop, row in property_schema.items():
+        key = publish_key((row.get("Property (with namespace)") or "").strip())
+        if not key.startswith("dictrel:"):
+            continue
+        domain = (row.get("Domain") or "").strip()
+        range_ = (row.get("Range") or "").strip()
+        vocab[key] = {
+            "@id": key,
+            "@type": "rdf:Property",
+            "rdfs:label": prop,
+            "rdfs:comment": f"Domain: {domain or '-'} / Range: {range_ or '-'}",
+        }
+    for name, comment in META_PROPERTIES.items():
+        key = f"dictrel:{name}"
+        vocab.setdefault(key, {"@id": key, "@type": "rdf:Property",
+                               "rdfs:label": name, "rdfs:comment": comment})
+    # 데이터에 쓰였지만 스키마에 없는 predicate도 URI가 열리도록 최소 정의를 남긴다 (로그에는 이미 기록됨)
+    for node in master_entities.values():
+        for key in node:
+            if key.startswith("dictrel:") and key not in vocab:
+                vocab[key] = {"@id": key, "@type": "rdf:Property",
+                              "rdfs:label": key[len("dictrel:"):],
+                              "rdfs:comment": "Not yet defined in property_schema_map.csv."}
+    return list(vocab.values())
 
 
 def main():
@@ -437,7 +500,8 @@ def main():
         return
 
     logger = IssueLogger()
-    works = load_works(logger)
+    works, base_uri = load_works(logger)
+    context = make_context(base_uri)
     property_schema, by_namespaced = load_property_schema(logger)
 
     master_entities: dict = {}
@@ -472,12 +536,17 @@ def main():
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     graph = {
-        "@context": CONTEXT,
+        "@context": context,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "@graph": list(master_entities.values()),
     }
     out_path = OUT_DIR / "graph.jsonld"
     out_path.write_text(json.dumps(graph, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    vocab = build_vocab(property_schema, master_entities)
+    vocab_path = OUT_DIR / "vocab.jsonld"
+    vocab_path.write_text(json.dumps({"@context": context, "@graph": vocab},
+                                     ensure_ascii=False, indent=2), encoding="utf-8")
 
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     log_path = LOG_DIR / f"build-jsonld-{timestamp}.log.csv"
@@ -509,6 +578,7 @@ def main():
     print(f"발생한 이슈 총 {len(logger.rows)}건 -> 상세 내용: {log_path.relative_to(ROOT)}")
     print("=" * 56)
     print(f"graph.jsonld 저장 완료: {out_path.relative_to(ROOT)}")
+    print(f"vocab.jsonld 저장 완료: {vocab_path.relative_to(ROOT)}  (연구용 predicate {len(vocab)}종)")
 
 
 if __name__ == "__main__":

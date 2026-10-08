@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/cha-hyungsang",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Cha Hyung Sang",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "차형상",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Cha's father. Calligrapher. His brush calligraphy 女男, 父母 placed at center of pages.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Biographical",
+  "schema:mentions": [
+    {
+      "id": "dict:event/cha-family-exile-1962",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

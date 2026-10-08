@@ -1,0 +1,59 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/spivak",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Gayatri Chakravorty Spivak",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "스피박",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q240851"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Gayatri Chakravorty Spivak, postcolonial theorist. Best known for 'Can the Subaltern Speak?' (1988), which examines the representational limits of Western intellectual frameworks in relation to colonized subjects.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Scholarly",
+  "dictrel:critiques": [
+    {
+      "id": "dict:concept/translational-violence",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/postcolonial-feminism",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

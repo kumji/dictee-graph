@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:event/korean-war-1950",
+  "@type": "Period",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Korean War",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "한국전쟁",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Event",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "http://www.wikidata.org/entity/Q8663"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Korean War (1950?1953). Theresa Hak Kyung Cha was born during the war in Busan, where her family had taken refuge. Referenced in the text as part of the family's history of displacement.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:silences": [
+    {
+      "id": "dict:person/huh-hyungsoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}
