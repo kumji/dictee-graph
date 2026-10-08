@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T14:22:13.741934+00:00",
+  "generatedAt": "2026-10-08T15:29:25.408920+00:00",
   "nodes": [
     {
       "id": "dict:person/cha-theresa",
@@ -62,7 +62,7 @@
       "label_en": "Empress Myeongseong",
       "label_ko": "명성황후",
       "group": "Person",
-      "description": "Last Empress of Korea (1851-1895). ",
+      "description": "Last Empress of Korea (1851-1895).",
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q464503",
       "broader": [],
@@ -76,7 +76,7 @@
       "label_en": "Renée Falconetti",
       "label_ko": "르네 팔코네티",
       "group": "Person",
-      "description": "French actress (1892-1946). Portrays Joan of Arc in Dreyer's silent film La Passion de Jeanne d'Arc (1928). ",
+      "description": "French actress (1892-1946). Portrays Joan of Arc in Dreyer's silent film La Passion de Jeanne d'Arc (1928).",
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q440600",
       "broader": [],
@@ -220,9 +220,7 @@
       "evidenceType": "Scholarly",
       "equivalentUri": "https://www.wikidata.org/wiki/Q240851",
       "broader": [],
-      "closeMatch": [
-        "https://homosaurus.org/v3/homoit0002039"
-      ],
+      "closeMatch": [],
       "documentedIn": [
         "dictee"
       ]
@@ -236,11 +234,7 @@
       "evidenceType": "Scholarly",
       "equivalentUri": "https://www.wikidata.org/wiki/Q13560230",
       "broader": [],
-      "closeMatch": [
-        "https://homosaurus.org/v3/homoit0003616",
-        "https://homosaurus.org/v3/homoit0002039",
-        "https://homosaurus.org/v3/homoit0002270"
-      ],
+      "closeMatch": [],
       "documentedIn": [
         "dictee"
       ]
@@ -254,10 +248,7 @@
       "evidenceType": "Scholarly",
       "equivalentUri": "https://www.wikidata.org/wiki/Q6761379",
       "broader": [],
-      "closeMatch": [
-        "https://homosaurus.org/v3/homoit0003616",
-        "https://homosaurus.org/v3/homoit0002039"
-      ],
+      "closeMatch": [],
       "documentedIn": [
         "dictee"
       ]
@@ -295,7 +286,7 @@
       "label_en": "Korean War",
       "label_ko": "한국전쟁",
       "group": "Event",
-      "description": "Korean War (1950–1953). Theresa Hak Kyung Cha was born during the war in Busan, where her family had taken refuge. Referenced in the text as part of the family's history of displacement.",
+      "description": "Korean War (1950?1953). Theresa Hak Kyung Cha was born during the war in Busan, where her family had taken refuge. Referenced in the text as part of the family's history of displacement.",
       "evidenceType": "Textual",
       "equivalentUri": "http://www.wikidata.org/entity/Q8663",
       "broader": [],
@@ -323,7 +314,7 @@
       "label_en": "Japanese Colonial Rule of Korea",
       "label_ko": "일제강점기",
       "group": "Event",
-      "description": "Japanese colonial rule of Korea (1910–1945). The colonial language policy — forbidding Korean while enforcing Japanese — forms a central historical context for the text's engagement with linguistic displacement and intergenerational loss.",
+      "description": "Japanese colonial rule of Korea (1910?1945). The colonial language policy ? forbidding Korean while enforcing Japanese ? forms a central historical context for the text's engagement with linguistic displacement and intergenerational loss.",
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q503585",
       "broader": [],
@@ -366,7 +357,7 @@
       "label_ko": "탈식민 페미니즘",
       "group": "Concept",
       "description": "A critical framework that examines the intersection of colonialism, gender, and knowledge production. Associated with theorists including Spivak and Mohanty, it critiques Western feminist frameworks for their complicity in imperial structures.",
-      "evidenceType": "Direct Term",
+      "evidenceType": "Modeling",
       "equivalentUri": "https://www.wikidata.org/wiki/Q7234128",
       "broader": [],
       "closeMatch": [
@@ -411,8 +402,8 @@
       "label_en": "Fractured Locus",
       "label_ko": "균열된 장소",
       "group": "Concept",
-      "description": "Term developed by María Lugones (2010) to describe the tension between colonial designation and active subjectivity within communal memory. Refers to the space of agency available to those positioned outside dominant social categories.",
-      "evidenceType": "Direct Term",
+      "description": "Term developed by Mar?a Lugones (2010) to describe the tension between colonial designation and active subjectivity within communal memory. Refers to the space of agency available to those positioned outside dominant social categories.",
+      "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
       "closeMatch": [],
@@ -440,7 +431,7 @@
       "label_ko": "탈성별화",
       "group": "Concept",
       "description": "Term developed by Hortense Spillers (1987) to describe the exclusion of enslaved and colonized women from normative gender categories entirely. Distinct from gender nonconformity: ungendering refers to a structural violence rather than a chosen identity position.",
-      "evidenceType": "Direct Term",
+      "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
       "closeMatch": [],
@@ -469,8 +460,8 @@
       "label_en": "Untranslatability",
       "label_ko": "번역불가능성",
       "group": "Concept",
-      "description": "The impossibility of full semantic transfer between languages. Draws on Spivak's Death of a Discipline (2003) and Apter's The Translation Zone (2006). In this dataset, refers to the deliberate use of multilingual ambiguity — including French homophones and verb tense distinctions — as a strategy of resistance in Cha's text.",
-      "evidenceType": "Direct Term",
+      "description": "The remainder that resists full transfer between languages. In Dictee, untranslatability works as a textual strategy rather than a failure: French and English are set on facing pages without equivalence, so that homophones such as cygnes/signes and tense distinctions such as the imperfect j'écoutais against the simple past \"I heard\" leave a political residue that neither language can absorb. Distinct from dict:concept/translational-violence, which names the loss imposed by colonial language policy; untranslatability names what the text withholds in response. Draws on Emily Apter, Against World Literature: On the Politics of Untranslatability (2013), and Gayatri Chakravorty Spivak, \"The Politics of Translation\" (1993).",
+      "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
       "closeMatch": [],
@@ -483,7 +474,7 @@
       "label_en": "Muse Subversion",
       "label_ko": "뮤즈 전복",
       "group": "Concept",
-      "description": "Traditional Muses reclaimed as active channels for silenced women across colonial and gendered histories. Each Muse no longer represents a single genre but an unstable intersection of colonial history, martyrdom, and shamanism. THALIA (Comedy) opens with MELPOMENE (Tragedy) fresco — genre expectation deliberately violated.",
+      "description": "Traditional Muses reclaimed as active channels for silenced women across colonial and gendered histories. Each Muse no longer represents a single genre but an unstable intersection of colonial history, martyrdom, and shamanism. THALIA (Comedy) opens with MELPOMENE (Tragedy) fresco ? genre expectation deliberately violated.",
       "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
@@ -591,7 +582,7 @@
       "label_en": "Thérèse as Joan of Arc Photo",
       "label_ko": "테레사-잔다르크 사진",
       "group": "Object",
-      "description": "Photograph taken in 1895 of Saint Thérèse of Lisieux costumed as Joan of Arc in a play she performed for her sister. Reproduced in the text as a document of performative identity.",
+      "description": "Photograph taken in 1895 of Saint Th?r?se of Lisieux costumed as Joan of Arc in a play she performed for her sister. Reproduced in the text as a document of performative identity.",
       "evidenceType": "Textual",
       "equivalentUri": null,
       "broader": [
@@ -765,7 +756,7 @@
       "label_en": "Punctuation as Text",
       "label_ko": "문장부호의 텍스트화",
       "group": "Object",
-      "description": "A dictation exercise in which punctuation marks — period, comma, open quotation marks — are written out as words rather than rendered as symbols. Reproduced in the text as a document of language's regulatory function made visible through instruction.",
+      "description": "A dictation exercise in which punctuation marks ? period, comma, open quotation marks ? are written out as words rather than rendered as symbols. Reproduced in the text as a document of language's regulatory function made visible through instruction.",
       "evidenceType": "Textual",
       "equivalentUri": null,
       "broader": [],
@@ -793,7 +784,7 @@
       "label_en": "University of California Press",
       "label_ko": "UC 프레스",
       "group": "Group",
-      "description": "Published 2001 reprint/third edition of Dictee with BAMPFA. Returned book to print after 19 years out of print.",
+      "description": "Published 2001 reprint/third edition of Dictee with BAMPFA.",
       "evidenceType": "Biographical",
       "equivalentUri": "https://www.wikidata.org/wiki/Q1816033",
       "broader": [],
@@ -822,8 +813,80 @@
       "label_ko": "딕테",
       "group": "Work",
       "description": "Theresa Hak Kyung Cha, Dictee. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
-      "evidenceType": "",
+      "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q5273943",
+      "broader": [
+        "https://vocab.getty.edu/aat/300123016"
+      ],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/korean-americans",
+      "label_en": "Korean Americans",
+      "label_ko": "한국계 미국인",
+      "group": "Concept",
+      "description": "The diasporic condition of the author and her family after their emigration to the United States in 1962. In Dictee it appears as the experience of speaking from outside the homeland: the letter to the mother dated \"eighteen years later\" and the account of a return that is also a displacement. The heading names the position from which the work is written.",
+      "evidenceType": "Synthesis",
+      "equivalentUri": "http://id.loc.gov/authorities/subjects/sh85073078",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/feminism-and-literature",
+      "label_en": "Feminism and literature",
+      "label_ko": "페미니즘과 문학",
+      "group": "Concept",
+      "description": "The work's critical appropriation of a male-centered literary tradition. Dictee borrows the nine Muses, traditionally passive sources of inspiration for male poets, and turns them into frames through which silenced women speak, mediated by the Diseuse (p. 3). Women omitted from official history (Yu Gwan-sun, the author's mother, Thérèse of Lisieux) become its speaking subjects.",
+      "evidenceType": "Modeling",
+      "equivalentUri": "http://id.loc.gov/authorities/subjects/sh85047747",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/korea-japanese-occupation",
+      "label_en": "Korea--History--Japanese occupation, 1910-1945",
+      "label_ko": "한국사, 일제강점기(1910~1945)",
+      "group": "Concept",
+      "description": "The historical frame of Japanese colonial rule that structures the first chapters of Dictee. It appears in the figure of Yu Gwan-sun and the 1919 independence movement and in the enforced loss of the Korean language experienced by the author's mother: \"They say you spoke in tongue forbidden.\"",
+      "evidenceType": "Synthesis",
+      "equivalentUri": "http://id.loc.gov/authorities/subjects/sh2019100105",
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/novena",
+      "label_en": "Novena",
+      "label_ko": "구일 기도",
+      "group": "Concept",
+      "description": "A Catholic devotion of prayer repeated over nine days. Dictee names it directly in its prologue: \"NOVENA: NINE EACH. THE RECITATION OR PRAYER AND PRACTICING OF DEVOTIONS DURING A NINE DAY PERIOD / And it begins\" (p. 19). The work frames its nine chapters, each placed under a Muse, as such a sequence of invocations.",
+      "evidenceType": "Direct Term",
+      "equivalentUri": null,
+      "broader": [],
+      "closeMatch": [],
+      "documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/dead-time",
+      "label_en": "Dead Time",
+      "label_ko": "죽은 시간",
+      "group": "Concept",
+      "description": "The work's own name for time that has stopped and been buried: \"Dead time. Hollow depression interred invalid / to resurgence, resistant to memory. Waits.\" (ELITERE). Time here is not a line that passes but a site to be excavated, which the Diseuse is called upon to break open.",
+      "evidenceType": "Direct Term",
+      "equivalentUri": null,
       "broader": [],
       "closeMatch": [],
       "documentedIn": [
@@ -1028,7 +1091,7 @@
       "documentedIn": [
         "dictee"
       ],
-      "schemaViolation": true
+      "schemaViolation": false
     },
     {
       "source": "dict:person/diseuse",
@@ -1082,7 +1145,7 @@
       "documentedIn": [
         "dictee"
       ],
-      "schemaViolation": true
+      "schemaViolation": false
     },
     {
       "source": "dict:person/spivak",
@@ -1601,6 +1664,51 @@
       "source": "dict:work/dictee",
       "target": "dict:group/uc-press",
       "predicate": "publisher",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:concept/korean-americans",
+      "predicate": "subject",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:concept/feminism-and-literature",
+      "predicate": "subject",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:work/dictee",
+      "target": "dict:concept/korea-japanese-occupation",
+      "predicate": "subject",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/novena",
+      "target": "dict:concept/muse-subversion",
+      "predicate": "prefigures",
+      "documentedIn": [
+        "dictee"
+      ],
+      "schemaViolation": false
+    },
+    {
+      "source": "dict:concept/dead-time",
+      "target": "dict:concept/cyclical-time",
+      "predicate": "broader",
       "documentedIn": [
         "dictee"
       ],

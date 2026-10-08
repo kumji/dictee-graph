@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:object/yu-portrait",
+  "@type": "HumanMadeObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Yu Gwan-sun Portrait Photo",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "유관순 초상사진",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Object",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "skos:broader": [
+    {
+      "id": "http://vocab.getty.edu/aat/300046300"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Photograph of Yu Gwan-sun, taken as a Japanese police record card photograph in 1919. Reproduced in the text as a memorial image. Yu Gwan-sun was a Korean independence activist who died in colonial detention.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "schema:mentions": [
+    {
+      "id": "dict:person/yu-gwansoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

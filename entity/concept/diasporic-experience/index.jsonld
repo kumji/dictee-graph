@@ -1,0 +1,45 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/diasporic-experience",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Diasporic experience",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "디아스포라 경험",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "skos:closeMatch": [
+    {
+      "id": "https://vocab.getty.edu/aat/300417672"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "The condition of displacement and longing for return that cannot be fully realized. Draws primarily on Avtar Brah's concept of 'homing desire' (1996), which distinguishes between the mythologized idea of home and the possibility of literal return. Applied to multi-generational displacement across Manchuria, Korea, and the United States.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Synthesis"
+}

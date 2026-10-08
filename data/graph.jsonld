@@ -2,14 +2,16 @@
   "@context": [
     "https://linked.art/ns/v1/linked-art.json",
     {
-      "dict": "https://dictee-lod.wikibase.cloud/entity/",
-      "dictrel": "https://dictee-lod.wikibase.cloud/prop/direct/",
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
       "skos": "http://www.w3.org/2004/02/skos/core#",
       "schema": "https://schema.org/",
-      "dct": "http://purl.org/dc/terms/"
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
     }
   ],
-  "generatedAt": "2026-10-04T14:22:13.708847+00:00",
+  "generatedAt": "2026-10-08T15:29:25.356907+00:00",
   "@graph": [
     {
       "@id": "dict:person/cha-theresa",
@@ -42,8 +44,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical",
-      "dict:sharesNameWith": [
+      "dictrel:evidenceType": "Biographical",
+      "dictrel:sharesNameWith": [
         {
           "id": "dict:person/therese-lisieux",
           "dictrel:documentedIn": [
@@ -51,7 +53,7 @@
           ]
         }
       ],
-      "dict:performsMediation": [
+      "dictrel:performsMediation": [
         {
           "id": "dict:person/yu-gwansoon",
           "dictrel:documentedIn": [
@@ -59,7 +61,7 @@
           ]
         }
       ],
-      "dict:mythologicalParallelOf": [
+      "dictrel:mythologicalParallelOf": [
         {
           "id": "dict:person/persephone",
           "dictrel:documentedIn": [
@@ -67,7 +69,7 @@
           ]
         }
       ],
-      "dict:hasFamilyRelation": [
+      "dictrel:hasFamilyRelation": [
         {
           "id": "dict:person/huh-hyungsoon",
           "dictrel:documentedIn": [
@@ -139,8 +141,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:hasPostcolonialParallel": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:hasPostcolonialParallel": [
         {
           "id": "dict:person/jeanne-darc",
           "dictrel:documentedIn": [
@@ -148,7 +150,7 @@
           ]
         }
       ],
-      "dict:hasExchangeableIdentity": [
+      "dictrel:hasExchangeableIdentity": [
         {
           "id": "dict:person/empress-myeongseong",
           "dictrel:documentedIn": [
@@ -196,7 +198,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dictrel:evidenceType": "Textual"
     },
     {
       "@id": "dict:person/therese-lisieux",
@@ -229,8 +231,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:performsAs": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:performsAs": [
         {
           "id": "dict:person/jeanne-darc",
           "dictrel:documentedIn": [
@@ -266,11 +268,11 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "Last Empress of Korea (1851-1895). ",
+          "content": "Last Empress of Korea (1851-1895).",
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dictrel:evidenceType": "Textual"
     },
     {
       "@id": "dict:person/falconetti",
@@ -299,12 +301,12 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "French actress (1892-1946). Portrays Joan of Arc in Dreyer's silent film La Passion de Jeanne d'Arc (1928). ",
+          "content": "French actress (1892-1946). Portrays Joan of Arc in Dreyer's silent film La Passion de Jeanne d'Arc (1928).",
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:performsAs": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:performsAs": [
         {
           "id": "dict:person/jeanne-darc",
           "dictrel:documentedIn": [
@@ -339,8 +341,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical",
-      "dict:mythologicalParallelOf": [
+      "dictrel:evidenceType": "Biographical",
+      "dictrel:mythologicalParallelOf": [
         {
           "id": "dict:person/demeter",
           "dictrel:documentedIn": [
@@ -389,7 +391,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical",
+      "dictrel:evidenceType": "Biographical",
       "schema:mentions": [
         {
           "id": "dict:event/cha-family-exile-1962",
@@ -425,7 +427,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical",
+      "dictrel:evidenceType": "Biographical",
       "schema:mentions": [
         {
           "id": "dict:event/april-19-1960",
@@ -467,8 +469,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:performsMediation": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:performsMediation": [
         {
           "id": "dict:person/yu-gwansoon",
           "dictrel:documentedIn": [
@@ -479,11 +481,10 @@
           "id": "dict:concept/shamanic-mediation",
           "dictrel:documentedIn": [
             "dictee"
-          ],
-          "dictrel:schemaViolation": true
+          ]
         }
       ],
-      "dict:mythologicalParallelOf": [
+      "dictrel:mythologicalParallelOf": [
         {
           "id": "dict:person/sibyl",
           "dictrel:documentedIn": [
@@ -491,7 +492,7 @@
           ]
         }
       ],
-      "dict:embodiesPunctuation": [
+      "dictrel:embodiesPunctuation": [
         {
           "id": "dict:concept/translational-violence",
           "dictrel:documentedIn": [
@@ -499,7 +500,7 @@
           ]
         }
       ],
-      "dict:critiques": [
+      "dictrel:critiques": [
         {
           "id": "dict:concept/postcolonial-feminism",
           "dictrel:documentedIn": [
@@ -540,8 +541,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:mythologicalParallelOf": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:mythologicalParallelOf": [
         {
           "id": "dict:person/diseuse",
           "dictrel:documentedIn": [
@@ -552,8 +553,7 @@
           "id": "dict:concept/shamanic-mediation",
           "dictrel:documentedIn": [
             "dictee"
-          ],
-          "dictrel:schemaViolation": true
+          ]
         }
       ]
     },
@@ -588,7 +588,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dictrel:evidenceType": "Textual"
     },
     {
       "@id": "dict:person/demeter",
@@ -621,7 +621,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dictrel:evidenceType": "Textual"
     },
     {
       "@id": "dict:person/sibyl",
@@ -654,7 +654,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dictrel:evidenceType": "Textual"
     },
     {
       "@id": "dict:person/gertrud",
@@ -682,7 +682,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dictrel:evidenceType": "Textual"
     },
     {
       "@id": "dict:person/spivak",
@@ -708,11 +708,6 @@
           "id": "https://www.wikidata.org/wiki/Q240851"
         }
       ],
-      "skos:closeMatch": [
-        {
-          "id": "https://homosaurus.org/v3/homoit0002039"
-        }
-      ],
       "referred_to_by": [
         {
           "type": "LinguisticObject",
@@ -720,8 +715,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Scholarly",
-      "dict:critiques": [
+      "dictrel:evidenceType": "Scholarly",
+      "dictrel:critiques": [
         {
           "id": "dict:concept/translational-violence",
           "dictrel:documentedIn": [
@@ -760,17 +755,6 @@
           "id": "https://www.wikidata.org/wiki/Q13560230"
         }
       ],
-      "skos:closeMatch": [
-        {
-          "id": "https://homosaurus.org/v3/homoit0003616"
-        },
-        {
-          "id": "https://homosaurus.org/v3/homoit0002039"
-        },
-        {
-          "id": "https://homosaurus.org/v3/homoit0002270"
-        }
-      ],
       "referred_to_by": [
         {
           "type": "LinguisticObject",
@@ -778,8 +762,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Scholarly",
-      "dict:critiques": [
+      "dictrel:evidenceType": "Scholarly",
+      "dictrel:critiques": [
         {
           "id": "dict:concept/ungendering",
           "dictrel:documentedIn": [
@@ -818,14 +802,6 @@
           "id": "https://www.wikidata.org/wiki/Q6761379"
         }
       ],
-      "skos:closeMatch": [
-        {
-          "id": "https://homosaurus.org/v3/homoit0003616"
-        },
-        {
-          "id": "https://homosaurus.org/v3/homoit0002039"
-        }
-      ],
       "referred_to_by": [
         {
           "type": "LinguisticObject",
@@ -833,8 +809,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Scholarly",
-      "dict:critiques": [
+      "dictrel:evidenceType": "Scholarly",
+      "dictrel:critiques": [
         {
           "id": "dict:concept/fractured-locus",
           "dictrel:documentedIn": [
@@ -886,7 +862,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual"
+      "dictrel:evidenceType": "Textual"
     },
     {
       "@id": "dict:event/april-19-1960",
@@ -919,7 +895,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
+      "dictrel:evidenceType": "Textual",
       "schema:mentions": [
         {
           "id": "dict:person/cha-haksang",
@@ -956,12 +932,12 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "Korean War (1950–1953). Theresa Hak Kyung Cha was born during the war in Busan, where her family had taken refuge. Referenced in the text as part of the family's history of displacement.",
+          "content": "Korean War (1950?1953). Theresa Hak Kyung Cha was born during the war in Busan, where her family had taken refuge. Referenced in the text as part of the family's history of displacement.",
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:silences": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:silences": [
         {
           "id": "dict:person/huh-hyungsoon",
           "dictrel:documentedIn": [
@@ -1001,7 +977,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
+      "dictrel:evidenceType": "Textual",
       "schema:mentions": [
         {
           "id": "dict:person/cha-theresa",
@@ -1038,12 +1014,12 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "Japanese colonial rule of Korea (1910–1945). The colonial language policy — forbidding Korean while enforcing Japanese — forms a central historical context for the text's engagement with linguistic displacement and intergenerational loss.",
+          "content": "Japanese colonial rule of Korea (1910?1945). The colonial language policy ? forbidding Korean while enforcing Japanese ? forms a central historical context for the text's engagement with linguistic displacement and intergenerational loss.",
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:silences": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:silences": [
         {
           "id": "dict:person/huh-hyungsoon",
           "dictrel:documentedIn": [
@@ -1084,7 +1060,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
+      "dictrel:evidenceType": "Textual",
       "schema:mentions": [
         {
           "id": "dict:event/march-first-1919",
@@ -1120,7 +1096,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical",
+      "dictrel:evidenceType": "Biographical",
       "schema:mentions": [
         {
           "id": "dict:person/cha-theresa",
@@ -1178,7 +1154,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Direct Term"
+      "dictrel:evidenceType": "Modeling"
     },
     {
       "@id": "dict:concept/translational-violence",
@@ -1206,8 +1182,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Synthesis",
-      "dict:prefigures": [
+      "dictrel:evidenceType": "Synthesis",
+      "dictrel:prefigures": [
         {
           "id": "dict:concept/untranslatability",
           "dictrel:documentedIn": [
@@ -1215,7 +1191,7 @@
           ]
         }
       ],
-      "dict:silences": [
+      "dictrel:silences": [
         {
           "id": "dict:person/huh-hyungsoon",
           "dictrel:documentedIn": [
@@ -1275,8 +1251,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Modeling",
-      "dict:requiresExcavationBy": [
+      "dictrel:evidenceType": "Modeling",
+      "dictrel:requiresExcavationBy": [
         {
           "id": "dict:concept/cyclical-time",
           "dictrel:documentedIn": [
@@ -1315,11 +1291,11 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "Term developed by María Lugones (2010) to describe the tension between colonial designation and active subjectivity within communal memory. Refers to the space of agency available to those positioned outside dominant social categories.",
+          "content": "Term developed by Mar?a Lugones (2010) to describe the tension between colonial designation and active subjectivity within communal memory. Refers to the space of agency available to those positioned outside dominant social categories.",
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Direct Term",
+      "dictrel:evidenceType": "Modeling",
       "skos:broader": [
         {
           "id": "dict:concept/postcolonial-feminism",
@@ -1363,7 +1339,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Modeling",
+      "dictrel:evidenceType": "Modeling",
       "schema:mentions": [
         {
           "id": "dict:person/persephone",
@@ -1399,7 +1375,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Direct Term",
+      "dictrel:evidenceType": "Modeling",
       "skos:broader": [
         {
           "id": "dict:concept/postcolonial-feminism",
@@ -1448,7 +1424,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Synthesis"
+      "dictrel:evidenceType": "Synthesis"
     },
     {
       "@id": "dict:concept/untranslatability",
@@ -1472,11 +1448,11 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "The impossibility of full semantic transfer between languages. Draws on Spivak's Death of a Discipline (2003) and Apter's The Translation Zone (2006). In this dataset, refers to the deliberate use of multilingual ambiguity — including French homophones and verb tense distinctions — as a strategy of resistance in Cha's text.",
+          "content": "The remainder that resists full transfer between languages. In Dictee, untranslatability works as a textual strategy rather than a failure: French and English are set on facing pages without equivalence, so that homophones such as cygnes/signes and tense distinctions such as the imperfect j'écoutais against the simple past \"I heard\" leave a political residue that neither language can absorb. Distinct from dict:concept/translational-violence, which names the loss imposed by colonial language policy; untranslatability names what the text withholds in response. Draws on Emily Apter, Against World Literature: On the Politics of Untranslatability (2013), and Gayatri Chakravorty Spivak, \"The Politics of Translation\" (1993).",
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Direct Term"
+      "dictrel:evidenceType": "Modeling"
     },
     {
       "@id": "dict:concept/muse-subversion",
@@ -1500,11 +1476,11 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "Traditional Muses reclaimed as active channels for silenced women across colonial and gendered histories. Each Muse no longer represents a single genre but an unstable intersection of colonial history, martyrdom, and shamanism. THALIA (Comedy) opens with MELPOMENE (Tragedy) fresco — genre expectation deliberately violated.",
+          "content": "Traditional Muses reclaimed as active channels for silenced women across colonial and gendered histories. Each Muse no longer represents a single genre but an unstable intersection of colonial history, martyrdom, and shamanism. THALIA (Comedy) opens with MELPOMENE (Tragedy) fresco ? genre expectation deliberately violated.",
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Modeling",
+      "dictrel:evidenceType": "Modeling",
       "skos:broader": [
         {
           "id": "dict:concept/postcolonial-feminism",
@@ -1540,8 +1516,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:prefigures": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:prefigures": [
         {
           "id": "dict:concept/untranslatability",
           "dictrel:documentedIn": [
@@ -1581,8 +1557,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:prefigures": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:prefigures": [
         {
           "id": "dict:concept/translational-violence",
           "dictrel:documentedIn": [
@@ -1622,7 +1598,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
+      "dictrel:evidenceType": "Textual",
       "schema:mentions": [
         {
           "id": "dict:person/yu-gwansoon",
@@ -1663,7 +1639,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
+      "dictrel:evidenceType": "Textual",
       "schema:mentions": [
         {
           "id": "dict:person/huh-hyungsoon",
@@ -1704,7 +1680,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
+      "dictrel:evidenceType": "Textual",
       "schema:mentions": [
         {
           "id": "dict:event/japanese-colonization",
@@ -1745,8 +1721,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:prefigures": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:prefigures": [
         {
           "id": "dict:concept/diasporic-experience",
           "dictrel:documentedIn": [
@@ -1796,11 +1772,11 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "Photograph taken in 1895 of Saint Thérèse of Lisieux costumed as Joan of Arc in a play she performed for her sister. Reproduced in the text as a document of performative identity.",
+          "content": "Photograph taken in 1895 of Saint Th?r?se of Lisieux costumed as Joan of Arc in a play she performed for her sister. Reproduced in the text as a document of performative identity.",
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
+      "dictrel:evidenceType": "Textual",
       "schema:mentions": [
         {
           "id": "dict:person/therese-lisieux",
@@ -1841,8 +1817,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:hasPostcolonialParallel": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:hasPostcolonialParallel": [
         {
           "id": "dict:person/yu-gwansoon",
           "dictrel:documentedIn": [
@@ -1890,8 +1866,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:prefigures": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:prefigures": [
         {
           "id": "dict:concept/untranslatability",
           "dictrel:documentedIn": [
@@ -1931,7 +1907,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
+      "dictrel:evidenceType": "Textual",
       "schema:mentions": [
         {
           "id": "dict:event/gojong-funeral-1919",
@@ -1983,8 +1959,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:prefigures": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:prefigures": [
         {
           "id": "dict:concept/diasporic-experience",
           "dictrel:documentedIn": [
@@ -1992,7 +1968,7 @@
           ]
         }
       ],
-      "dict:subverts": [
+      "dictrel:subverts": [
         {
           "id": "dict:concept/muse-subversion",
           "dictrel:documentedIn": [
@@ -2032,8 +2008,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:prefigures": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:prefigures": [
         {
           "id": "dict:concept/cyclical-time",
           "dictrel:documentedIn": [
@@ -2073,8 +2049,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:subverts": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:subverts": [
         {
           "id": "dict:concept/ungendering",
           "dictrel:documentedIn": [
@@ -2122,7 +2098,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
+      "dictrel:evidenceType": "Textual",
       "schema:mentions": [
         {
           "id": "dict:person/cha-hyungsang",
@@ -2163,7 +2139,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
+      "dictrel:evidenceType": "Textual",
       "schema:mentions": [
         {
           "id": "dict:person/cha-hyungsang",
@@ -2204,8 +2180,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:prefigures": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:prefigures": [
         {
           "id": "dict:concept/translational-violence",
           "dictrel:documentedIn": [
@@ -2240,8 +2216,8 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:prefigures": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:prefigures": [
         {
           "id": "dict:concept/untranslatability",
           "dictrel:documentedIn": [
@@ -2272,12 +2248,12 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "A dictation exercise in which punctuation marks — period, comma, open quotation marks — are written out as words rather than rendered as symbols. Reproduced in the text as a document of language's regulatory function made visible through instruction.",
+          "content": "A dictation exercise in which punctuation marks ? period, comma, open quotation marks ? are written out as words rather than rendered as symbols. Reproduced in the text as a document of language's regulatory function made visible through instruction.",
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Textual",
-      "dict:prefigures": [
+      "dictrel:evidenceType": "Textual",
+      "dictrel:prefigures": [
         {
           "id": "dict:concept/translational-violence",
           "dictrel:documentedIn": [
@@ -2312,7 +2288,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical"
+      "dictrel:evidenceType": "Biographical"
     },
     {
       "@id": "dict:group/uc-press",
@@ -2341,11 +2317,11 @@
       "referred_to_by": [
         {
           "type": "LinguisticObject",
-          "content": "Published 2001 reprint/third edition of Dictee with BAMPFA. Returned book to print after 19 years out of print.",
+          "content": "Published 2001 reprint/third edition of Dictee with BAMPFA.",
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical"
+      "dictrel:evidenceType": "Biographical"
     },
     {
       "@id": "dict:group/bampfa",
@@ -2378,7 +2354,7 @@
           "classified_as": "description"
         }
       ],
-      "dict:evidenceType": "Biographical",
+      "dictrel:evidenceType": "Biographical",
       "schema:holds": [
         {
           "id": "dict:work/dictee",
@@ -2412,6 +2388,11 @@
           "id": "https://www.wikidata.org/wiki/Q5273943"
         }
       ],
+      "skos:broader": [
+        {
+          "id": "https://vocab.getty.edu/aat/300123016"
+        }
+      ],
       "referred_to_by": [
         {
           "type": "LinguisticObject",
@@ -2419,6 +2400,7 @@
           "classified_as": "description"
         }
       ],
+      "dictrel:evidenceType": "Textual",
       "dct:creator": [
         {
           "id": "dict:person/cha-theresa",
@@ -2427,7 +2409,7 @@
           ]
         }
       ],
-      "dict:hasNarrator": [
+      "dictrel:hasNarrator": [
         {
           "id": "dict:person/diseuse",
           "dictrel:documentedIn": [
@@ -2444,6 +2426,197 @@
         },
         {
           "id": "dict:group/uc-press",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ],
+      "dct:subject": [
+        {
+          "id": "dict:concept/korean-americans",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:concept/feminism-and-literature",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        },
+        {
+          "id": "dict:concept/korea-japanese-occupation",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "dict:concept/korean-americans",
+      "@type": "Type",
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Korean Americans",
+          "language": "en"
+        },
+        {
+          "type": "Name",
+          "content": "한국계 미국인",
+          "language": "ko"
+        }
+      ],
+      "dictrel:entityType": "Concept",
+      "dictrel:documentedIn": [
+        "dictee"
+      ],
+      "equivalent": [
+        {
+          "id": "http://id.loc.gov/authorities/subjects/sh85073078"
+        }
+      ],
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "content": "The diasporic condition of the author and her family after their emigration to the United States in 1962. In Dictee it appears as the experience of speaking from outside the homeland: the letter to the mother dated \"eighteen years later\" and the account of a return that is also a displacement. The heading names the position from which the work is written.",
+          "classified_as": "description"
+        }
+      ],
+      "dictrel:evidenceType": "Synthesis"
+    },
+    {
+      "@id": "dict:concept/feminism-and-literature",
+      "@type": "Type",
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Feminism and literature",
+          "language": "en"
+        },
+        {
+          "type": "Name",
+          "content": "페미니즘과 문학",
+          "language": "ko"
+        }
+      ],
+      "dictrel:entityType": "Concept",
+      "dictrel:documentedIn": [
+        "dictee"
+      ],
+      "equivalent": [
+        {
+          "id": "http://id.loc.gov/authorities/subjects/sh85047747"
+        }
+      ],
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "content": "The work's critical appropriation of a male-centered literary tradition. Dictee borrows the nine Muses, traditionally passive sources of inspiration for male poets, and turns them into frames through which silenced women speak, mediated by the Diseuse (p. 3). Women omitted from official history (Yu Gwan-sun, the author's mother, Thérèse of Lisieux) become its speaking subjects.",
+          "classified_as": "description"
+        }
+      ],
+      "dictrel:evidenceType": "Modeling"
+    },
+    {
+      "@id": "dict:concept/korea-japanese-occupation",
+      "@type": "Type",
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Korea--History--Japanese occupation, 1910-1945",
+          "language": "en"
+        },
+        {
+          "type": "Name",
+          "content": "한국사, 일제강점기(1910~1945)",
+          "language": "ko"
+        }
+      ],
+      "dictrel:entityType": "Concept",
+      "dictrel:documentedIn": [
+        "dictee"
+      ],
+      "equivalent": [
+        {
+          "id": "http://id.loc.gov/authorities/subjects/sh2019100105"
+        }
+      ],
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "content": "The historical frame of Japanese colonial rule that structures the first chapters of Dictee. It appears in the figure of Yu Gwan-sun and the 1919 independence movement and in the enforced loss of the Korean language experienced by the author's mother: \"They say you spoke in tongue forbidden.\"",
+          "classified_as": "description"
+        }
+      ],
+      "dictrel:evidenceType": "Synthesis"
+    },
+    {
+      "@id": "dict:concept/novena",
+      "@type": "Type",
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Novena",
+          "language": "en"
+        },
+        {
+          "type": "Name",
+          "content": "구일 기도",
+          "language": "ko"
+        }
+      ],
+      "dictrel:entityType": "Concept",
+      "dictrel:documentedIn": [
+        "dictee"
+      ],
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "content": "A Catholic devotion of prayer repeated over nine days. Dictee names it directly in its prologue: \"NOVENA: NINE EACH. THE RECITATION OR PRAYER AND PRACTICING OF DEVOTIONS DURING A NINE DAY PERIOD / And it begins\" (p. 19). The work frames its nine chapters, each placed under a Muse, as such a sequence of invocations.",
+          "classified_as": "description"
+        }
+      ],
+      "dictrel:evidenceType": "Direct Term",
+      "dictrel:prefigures": [
+        {
+          "id": "dict:concept/muse-subversion",
+          "dictrel:documentedIn": [
+            "dictee"
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "dict:concept/dead-time",
+      "@type": "Type",
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Dead Time",
+          "language": "en"
+        },
+        {
+          "type": "Name",
+          "content": "죽은 시간",
+          "language": "ko"
+        }
+      ],
+      "dictrel:entityType": "Concept",
+      "dictrel:documentedIn": [
+        "dictee"
+      ],
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "content": "The work's own name for time that has stopped and been buried: \"Dead time. Hollow depression interred invalid / to resurgence, resistant to memory. Waits.\" (ELITERE). Time here is not a line that passes but a site to be excavated, which the Diseuse is called upon to break open.",
+          "classified_as": "description"
+        }
+      ],
+      "dictrel:evidenceType": "Direct Term",
+      "skos:broader": [
+        {
+          "id": "dict:concept/cyclical-time",
           "dictrel:documentedIn": [
             "dictee"
           ]

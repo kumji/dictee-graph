@@ -1,0 +1,45 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:event/march-first-1919",
+  "@type": "Period",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "March First Movement",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "3·1운동",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Event",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q482525"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Korean independence uprising against Japanese colonial rule, March 1, 1919. A foundational moment of anti-colonial resistance, referenced in the text through the figure of Yu Gwan-sun.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual"
+}

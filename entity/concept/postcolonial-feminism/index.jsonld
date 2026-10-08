@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/postcolonial-feminism",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Postcolonial Feminism",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "탈식민 페미니즘",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q7234128"
+    }
+  ],
+  "skos:closeMatch": [
+    {
+      "id": "https://homosaurus.org/v3/homoit0003616"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "A critical framework that examines the intersection of colonialism, gender, and knowledge production. Associated with theorists including Spivak and Mohanty, it critiques Western feminist frameworks for their complicity in imperial structures.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Modeling"
+}

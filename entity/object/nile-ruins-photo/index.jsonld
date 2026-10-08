@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:object/nile-ruins-photo",
+  "@type": "HumanMadeObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Egypt Nile Ruins Photo",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "나일강 유적사진",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Object",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "skos:broader": [
+    {
+      "id": "http://vocab.getty.edu/aat/300046300"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Photograph by Francis Frith (1857) of Egyptian ruins along the Nile. Reproduced in the text as a visual document of ancient civilization and temporal depth.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:prefigures": [
+    {
+      "id": "dict:concept/cyclical-time",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

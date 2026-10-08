@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:event/gwangju-1980",
+  "@type": "Period",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Gwangju Uprising",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "광주항쟁",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Event",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q174990"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Pro-democracy uprising in Gwangju, South Korea, May 1980, brutally suppressed by military forces. Cha visited Korea shortly after and witnessed the aftermath. Referenced in the text as a moment of political crisis and historical repetition.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "schema:mentions": [
+    {
+      "id": "dict:person/cha-theresa",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

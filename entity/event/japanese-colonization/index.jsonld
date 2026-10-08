@@ -1,0 +1,59 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:event/japanese-colonization",
+  "@type": "Period",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Japanese Colonial Rule of Korea",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "일제강점기",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Event",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q503585"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Japanese colonial rule of Korea (1910?1945). The colonial language policy ? forbidding Korean while enforcing Japanese ? forms a central historical context for the text's engagement with linguistic displacement and intergenerational loss.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:silences": [
+    {
+      "id": "dict:person/huh-hyungsoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:person/yu-gwansoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:object/bongseonhwa",
+  "@type": "LinguisticObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Bong Sun Flower (Folk Song)",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "봉선화",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Object",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Korean folk song (봉선화) about separation from family and homeland, embedded in the text without translation. The song's untranslated presence enacts a form of linguistic and cultural resistance.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:prefigures": [
+    {
+      "id": "dict:concept/untranslatability",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:object/execution-photo",
+  "@type": "HumanMadeObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Korean Execution Photo",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "한국인 처형사진",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Object",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "skos:broader": [
+    {
+      "id": "http://vocab.getty.edu/aat/300046300"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Photograph published in the French magazine La vie illustrée in 1904, depicting a Korean execution during the Russo-Japanese War. Documents colonial violence through the medium of imperial press photography.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "schema:mentions": [
+    {
+      "id": "dict:event/japanese-colonization",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

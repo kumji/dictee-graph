@@ -1,0 +1,61 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:object/dreyer-still",
+  "@type": "HumanMadeObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Dreyer Joan of Arc Film Still",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "드레이어 스틸컷",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Object",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "skos:broader": [
+    {
+      "id": "https://vocab.getty.edu/aat/300134997"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Film still from Carl Theodor Dreyer's La Passion de Jeanne d'Arc (1928), showing Renée Jeanne Falconetti in close-up as Joan of Arc. Reproduced in the text as a visual document of silenced speech.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:hasPostcolonialParallel": [
+    {
+      "id": "dict:person/yu-gwansoon",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "schema:mentions": [
+    {
+      "id": "dict:person/gertrud",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

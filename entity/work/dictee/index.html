@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dictee — Dictée LOD</title>
+<link rel="alternate" type="application/ld+json" href="index.jsonld">
+<style>
+:root { --bg:#ffffff; --fg:#111827; --muted:#6b7280; --line:#e5e7eb; --link:#2563eb; --chip:#f3f4f6; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#111827; --fg:#f3f4f6; --muted:#9ca3af; --line:#374151; --link:#93c5fd; --chip:#1f2937; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg);
+       font:15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+nav { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+nav a { margin-right: 12px; }
+a { color: var(--link); text-decoration: none; word-break: break-all; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 26px; margin: 0; line-height: 1.3; }
+.sub { color: var(--muted); font-size: 17px; margin: 2px 0 12px; }
+.chip { display:inline-block; background:var(--chip); border-radius:999px; padding:1px 10px; font-size:12px; margin-right:6px; }
+code { font-size: 13px; word-break: break-all; }
+h2 { font-size: 15px; margin: 28px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+td, th { text-align: left; vertical-align: top; padding: 6px 8px 6px 0; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 500; width: 34%; }
+ul { padding-left: 18px; margin: 4px 0; }
+.muted { color: var(--muted); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:work/dictee",
+  "@type": "HumanMadeObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Dictee",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "딕테",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Work",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q5273943"
+    }
+  ],
+  "skos:broader": [
+    {
+      "id": "https://vocab.getty.edu/aat/300123016"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Theresa Hak Kyung Cha, Dictee. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dct:creator": [
+    {
+      "id": "dict:person/cha-theresa",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dictrel:hasNarrator": [
+    {
+      "id": "dict:person/diseuse",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dct:publisher": [
+    {
+      "id": "dict:group/tanam-press",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:group/uc-press",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dct:subject": [
+    {
+      "id": "dict:concept/korean-americans",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/feminism-and-literature",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/korea-japanese-occupation",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body><main>
+<nav><a href="../../../">그래프 뷰어</a><a href="../../../entity/">전체 엔티티</a><a href="../../../prop/">전체 predicate</a></nav>
+
+<h1>Dictee</h1>
+<p class="sub">딕테</p>
+<p><span class="chip">Work</span><span class="chip">HumanMadeObject</span></p>
+<p class="muted">URI <code>https://kumji.github.io/dictee-graph/entity/work/dictee</code> · <a href="index.jsonld">JSON-LD</a></p>
+<p>Theresa Hak Kyung Cha, Dictee. New York: Tanam Press, 1982. 179 pp. Artists&#x27; book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.</p>
+<table><tr><th>Evidence Type</th><td>Textual</td></tr><tr><th>Documented in</th><td>dictee</td></tr><tr><th>Equivalent</th><td><a href="https://www.wikidata.org/wiki/Q5273943">https://www.wikidata.org/wiki/Q5273943</a></td></tr><tr><th>Broader</th><td><ul><li><a href="https://vocab.getty.edu/aat/300123016">https://vocab.getty.edu/aat/300123016</a></li></ul></td></tr></table>
+<h2>이 엔티티에서 나가는 관계 (7)</h2><ul><li><a href="http://purl.org/dc/terms/creator"><code>dct:creator</code></a> → <a href="../../../entity/person/cha-theresa/">Theresa Hak Kyung Cha · 차학경</a></li><li><a href="../../../prop/hasNarrator/"><code>dictrel:hasNarrator</code></a> → <a href="../../../entity/person/diseuse/">Diseuse · 디쇠즈</a></li><li><a href="http://purl.org/dc/terms/publisher"><code>dct:publisher</code></a> → <a href="../../../entity/group/tanam-press/">Tanam Press · 타남 프레스</a></li><li><a href="http://purl.org/dc/terms/publisher"><code>dct:publisher</code></a> → <a href="../../../entity/group/uc-press/">University of California Press · UC 프레스</a></li><li><a href="http://purl.org/dc/terms/subject"><code>dct:subject</code></a> → <a href="../../../entity/concept/korean-americans/">Korean Americans · 한국계 미국인</a></li><li><a href="http://purl.org/dc/terms/subject"><code>dct:subject</code></a> → <a href="../../../entity/concept/feminism-and-literature/">Feminism and literature · 페미니즘과 문학</a></li><li><a href="http://purl.org/dc/terms/subject"><code>dct:subject</code></a> → <a href="../../../entity/concept/korea-japanese-occupation/">Korea--History--Japanese occupation, 1910-1945 · 한국사, 일제강점기(1910~1945)</a></li></ul>
+<h2>이 엔티티로 들어오는 관계 (1)</h2><ul><li><a href="../../../entity/group/bampfa/">Berkeley Art Museum &amp; Pacific Film Archive · BAMPFA</a> → <a href="https://schema.org/holds"><code>schema:holds</code></a></li></ul>
+
+</main></body>
+</html>

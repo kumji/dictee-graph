@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/therese-lisieux",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Saint Thérèse of Lisieux",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "리지외의 성 테레사",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q181715"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Carmelite nun (1873-1897). Author of Story of a Soul. Shares name 'Theresa' with Cha (Catholic baptismal name from Sacred Heart Convent). Performs as Joan of Arc in 1895 play.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:performsAs": [
+    {
+      "id": "dict:person/jeanne-darc",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

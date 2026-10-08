@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/dead-time",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Dead Time",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "죽은 시간",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "The work's own name for time that has stopped and been buried: \"Dead time. Hollow depression interred invalid / to resurgence, resistant to memory. Waits.\" (ELITERE). Time here is not a line that passes but a site to be excavated, which the Diseuse is called upon to break open.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Direct Term",
+  "skos:broader": [
+    {
+      "id": "dict:concept/cyclical-time",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

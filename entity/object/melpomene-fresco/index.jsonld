@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:object/melpomene-fresco",
+  "@type": "HumanMadeObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Melpomene Fresco (Getty Museum)",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "멜포메네 프레스코",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Object",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.getty.edu/art/collection/object/103SQ3"
+    }
+  ],
+  "skos:broader": [
+    {
+      "id": "http://vocab.getty.edu/aat/300177433"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Roman fresco depicting Melpomene, the Muse of Tragedy, removing a smiling mask to reveal an unsmiling face beneath. Housed at the Getty Museum. Reproduced in the text as a visual opening to a chapter structured around comedy.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:prefigures": [
+    {
+      "id": "dict:concept/diasporic-experience",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ],
+  "dictrel:subverts": [
+    {
+      "id": "dict:concept/muse-subversion",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

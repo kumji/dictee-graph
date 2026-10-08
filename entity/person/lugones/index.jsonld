@@ -1,0 +1,65 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/lugones",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "María Lugones",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "루고네스",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q6761379"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "María Lugones, decolonial feminist philosopher. Key works include 'Coloniality of Gender' (2007) and 'Toward a Decolonial Feminism' (2010), which argue that gender itself is a colonial imposition and theorize active subjectivity within decolonial practice.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Scholarly",
+  "dictrel:critiques": [
+    {
+      "id": "dict:concept/fractured-locus",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/cyclical-time",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/postcolonial-feminism",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

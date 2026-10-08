@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/gertrud",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Gertrud",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "거트루드",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Fictional character from Carl Theodor Dreyer's film Gertrud (1964). Referenced in the text through the film's narrative of an unhappy marriage.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual"
+}

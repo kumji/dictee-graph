@@ -1,0 +1,59 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:person/spillers",
+  "@type": "Person",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Hortense Spillers",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "스필러스",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Person",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q13560230"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Hortense Spillers, Black feminist theorist. Best known for 'Mama's Baby, Papa's Maybe: An American Grammar Book' (1987), which theorizes the distinction between flesh and body under conditions of slavery and colonial violence.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Scholarly",
+  "dictrel:critiques": [
+    {
+      "id": "dict:concept/ungendering",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    },
+    {
+      "id": "dict:concept/postcolonial-feminism",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

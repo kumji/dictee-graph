@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/cyclical-time",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Cyclical time",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "순환적 시간",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "A non-linear conception of time in which historical events recur as structural repetitions rather than sequential causes and effects. Draws on Lugones (2010). Applied in this dataset to the recurring pattern of colonial violence across different historical moments.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Modeling",
+  "schema:mentions": [
+    {
+      "id": "dict:person/persephone",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

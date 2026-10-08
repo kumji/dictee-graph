@@ -1,0 +1,45 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/korea-japanese-occupation",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Korea--History--Japanese occupation, 1910-1945",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "한국사, 일제강점기(1910~1945)",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/subjects/sh2019100105"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "The historical frame of Japanese colonial rule that structures the first chapters of Dictee. It appears in the figure of Yu Gwan-sun and the 1919 independence movement and in the enforced loss of the Korean language experienced by the author's mother: \"They say you spoke in tongue forbidden.\"",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Synthesis"
+}

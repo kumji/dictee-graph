@@ -1,0 +1,45 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:concept/feminism-and-literature",
+  "@type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Feminism and literature",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "페미니즘과 문학",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Concept",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/subjects/sh85047747"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "The work's critical appropriation of a male-centered literary tradition. Dictee borrows the nine Muses, traditionally passive sources of inspiration for male poets, and turns them into frames through which silenced women speak, mediated by the Diseuse (p. 3). Women omitted from official history (Yu Gwan-sun, the author's mother, Thérèse of Lisieux) become its speaking subjects.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Modeling"
+}

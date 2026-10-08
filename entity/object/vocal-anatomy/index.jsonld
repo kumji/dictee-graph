@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@id": "dict:object/vocal-anatomy",
+  "@type": "HumanMadeObject",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Vocal Organ Anatomy Diagram",
+      "language": "en"
+    },
+    {
+      "type": "Name",
+      "content": "발화기관 해부도",
+      "language": "ko"
+    }
+  ],
+  "dictrel:entityType": "Object",
+  "dictrel:documentedIn": [
+    "dictee"
+  ],
+  "skos:broader": [
+    {
+      "id": "https://vocab.getty.edu/aat/300054465"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Western anatomical diagram of the speech organs, included in the text as a visual document. Appears alongside an Eastern meridian chart, juxtaposing two distinct knowledge systems for understanding how the body produces speech.",
+      "classified_as": "description"
+    }
+  ],
+  "dictrel:evidenceType": "Textual",
+  "dictrel:prefigures": [
+    {
+      "id": "dict:concept/translational-violence",
+      "dictrel:documentedIn": [
+        "dictee"
+      ]
+    }
+  ]
+}

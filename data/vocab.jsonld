@@ -1,0 +1,148 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    {
+      "dict": "https://kumji.github.io/dictee-graph/entity/",
+      "dictrel": "https://kumji.github.io/dictee-graph/prop/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "schema": "https://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "dictrel:subverts",
+      "@type": "rdf:Property",
+      "rdfs:label": "subverts",
+      "rdfs:comment": "Domain: Object/Any / Range: Concept or Type"
+    },
+    {
+      "@id": "dictrel:isPartIn",
+      "@type": "rdf:Property",
+      "rdfs:label": "isPartOf",
+      "rdfs:comment": "Domain: Person / Range: Chapter"
+    },
+    {
+      "@id": "dictrel:critiques",
+      "@type": "rdf:Property",
+      "rdfs:label": "critiques",
+      "rdfs:comment": "Domain: Person(Scholarly) / Range: Concept"
+    },
+    {
+      "@id": "dictrel:evidenceType",
+      "@type": "rdf:Property",
+      "rdfs:label": "evidenceType",
+      "rdfs:comment": "Domain: Concept | Person | Event | Object | Group | Work / Range: Evidence Type(Q1-3)"
+    },
+    {
+      "@id": "dictrel:composedOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "composedOf",
+      "rdfs:comment": "Domain: Work / Range: Chapter"
+    },
+    {
+      "@id": "dictrel:hasNarrator",
+      "@type": "rdf:Property",
+      "rdfs:label": "hasNarrator",
+      "rdfs:comment": "Domain: Work / Range: Person(Diseuse)"
+    },
+    {
+      "@id": "dictrel:narrates",
+      "@type": "rdf:Property",
+      "rdfs:label": "narrates",
+      "rdfs:comment": "Domain: Person(Diseuse) / Range: Chapter"
+    },
+    {
+      "@id": "dictrel:hasExchangeableIdentity",
+      "@type": "rdf:Property",
+      "rdfs:label": "hasExchangeableIdentity",
+      "rdfs:comment": "Domain: Person / Range: Person"
+    },
+    {
+      "@id": "dictrel:hasPostcolonialParallel",
+      "@type": "rdf:Property",
+      "rdfs:label": "hasPostcolonialParallel",
+      "rdfs:comment": "Domain: Any / Range: Any"
+    },
+    {
+      "@id": "dictrel:performsMediation",
+      "@type": "rdf:Property",
+      "rdfs:label": "performsMediation",
+      "rdfs:comment": "Domain: Person(Diseuse) / Range: Person or Concept"
+    },
+    {
+      "@id": "dictrel:prefigures",
+      "@type": "rdf:Property",
+      "rdfs:label": "prefigures",
+      "rdfs:comment": "Domain: Any(Object/Concept) / Range: Any(Concept)"
+    },
+    {
+      "@id": "dictrel:silences",
+      "@type": "rdf:Property",
+      "rdfs:label": "silences",
+      "rdfs:comment": "Domain: Event/Concept / Range: Person"
+    },
+    {
+      "@id": "dictrel:isRecurrenceOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "isRecurrenceOf",
+      "rdfs:comment": "Domain: Event / Range: Event"
+    },
+    {
+      "@id": "dictrel:hasFamilyRelation",
+      "@type": "rdf:Property",
+      "rdfs:label": "hasFamilyRelation",
+      "rdfs:comment": "Domain: Person / Range: Person"
+    },
+    {
+      "@id": "dictrel:mythologicalParallelOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "mythologicalParallelOf",
+      "rdfs:comment": "Domain: Person / Range: Person or Concept"
+    },
+    {
+      "@id": "dictrel:sharesNameWith",
+      "@type": "rdf:Property",
+      "rdfs:label": "sharesNameWith",
+      "rdfs:comment": "Domain: Person / Range: Person"
+    },
+    {
+      "@id": "dictrel:performsAs",
+      "@type": "rdf:Property",
+      "rdfs:label": "performsAs",
+      "rdfs:comment": "Domain: Person / Range: Person"
+    },
+    {
+      "@id": "dictrel:requiresExcavationBy",
+      "@type": "rdf:Property",
+      "rdfs:label": "requiresExcavationBy",
+      "rdfs:comment": "Domain: Concept / Range: Person or Concept"
+    },
+    {
+      "@id": "dictrel:embodiesPunctuation",
+      "@type": "rdf:Property",
+      "rdfs:label": "embodiesPunctuation",
+      "rdfs:comment": "Domain: Person / Range: Concept or Type"
+    },
+    {
+      "@id": "dictrel:entityType",
+      "@type": "rdf:Property",
+      "rdfs:label": "entityType",
+      "rdfs:comment": "Entity type as entered by the researcher (Person/Event/Concept/Object/Group/Work)."
+    },
+    {
+      "@id": "dictrel:documentedIn",
+      "@type": "rdf:Property",
+      "rdfs:label": "documentedIn",
+      "rdfs:comment": "Work(s) whose analysis documents this entity or relationship (work_id from config/works.yaml)."
+    },
+    {
+      "@id": "dictrel:schemaViolation",
+      "@type": "rdf:Property",
+      "rdfs:label": "schemaViolation",
+      "rdfs:comment": "Marks a relationship whose subject/object type falls outside the predicate's Domain/Range."
+    }
+  ]
+}
