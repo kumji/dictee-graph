@@ -34,9 +34,10 @@
       "id": "https://www.wikidata.org/wiki/Q5273943"
     }
   ],
-  "skos:broader": [
+  "classified_as": [
     {
-      "id": "https://vocab.getty.edu/aat/300123016"
+      "id": "https://vocab.getty.edu/aat/300123016",
+      "type": "Type"
     }
   ],
   "referred_to_by": [

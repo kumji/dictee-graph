@@ -201,7 +201,7 @@ write_jsonld(master_entities, master_edges)     # 작품 수와 무관하게 항
 
 | Property | 네임스페이스 | Domain | Range | 비고 |
 |---|---|---|---|---|
-| `broader` | `skos:broader` | Concept | Concept 또는 외부 URI(AAT/LCSH/Homosaurus) | 엔티티 CSV의 `broader URI` 컬럼에서 생성 |
+| `broader` | `skos:broader` | Concept | Concept 또는 외부 URI(AAT/LCSH/Homosaurus) | 엔티티 CSV의 `broader URI` 컬럼(Type=Concept 행만) 또는 관계 CSV에서 생성 |
 | `subverts` | `dict:subverts` | Object/Any | Concept or Type | |
 | `isPartOf` | `dict:isPartIn` | Person | Chapter | (표시명 `isPartOf`, 네임스페이스는 `isPartIn` 그대로) |
 | `mentions` | `schema:mentions` | Any | Any | 범용 약한 연결자 (이전 `refersTo` 대체) |
@@ -231,7 +231,7 @@ write_jsonld(master_entities, master_edges)     # 작품 수와 무관하게 항
 | `Entity ID` | `@id` — reconciliation으로 기존 엔티티와 병합되면 **최초 등장한 작품의 ID를 그대로 유지** |
 | `prefLabel (en)`/`(ko)` | `identified_by: [{type:"Name", content, language}]` (이번 데이터엔 `(Q##)` 꼬리표 없음 — 확인됨, 그래도 방어적으로 정규식 제거는 유지) |
 | `Primary URI` | `equivalent: [{id: ...}]` — `Mapping Status`가 `matched`/`closeMatch`일 때만. 정식 Wikidata URI (`http(s)://www.wikidata.org/entity|wiki/Q...`) |
-| `broader URI` | `skos:broader: [{id: ...}]` |
+| `broader URI` | Type=Concept → `skos:broader: [{id: ...}]` / Type=Work·Object → Linked Art `classified_as: [{id: ..., type: "Type"}]` (AAT 유형 용어). 그 외 Type은 `classified_as`로 출력하고 로그에 남김 |
 | `closeMatch URI` | `skos:closeMatch: [{id: ...}, ...]` — 세미콜론(`;`)으로 분리해서 배열로 |
 | `Definition / Scope Note` | `referred_to_by: [{type:"LinguisticObject", content, classified_as:"description"}]` |
 | *(신규)* | `dictrel:documentedIn: ["dictee"]` — 이 엔티티가 등장하는 작품 `work_id` 배열, reconciliation 시 append |

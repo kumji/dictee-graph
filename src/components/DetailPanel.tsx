@@ -76,6 +76,24 @@ export default function DetailPanel({ lang, selection }: Props) {
               </dd>
             </div>
           )}
+          {n.classifiedAs.length > 0 && (
+            <div>
+              <dt className="font-medium text-gray-500">Classified as</dt>
+              <dd className="space-y-1">
+                {n.classifiedAs.map((uri) => (
+                  <a
+                    key={uri}
+                    href={uri}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block break-all text-blue-600 underline"
+                  >
+                    {uri}
+                  </a>
+                ))}
+              </dd>
+            </div>
+          )}
           {n.closeMatch.length > 0 && (
             <div>
               <dt className="font-medium text-gray-500">Close Match</dt>

@@ -30,7 +30,7 @@ VOCAB_PATH = DATA_DIR / "vocab.jsonld"
 NON_EDGE_KEYS = {
     "@id", "@type", "identified_by", "referred_to_by",
     "dictrel:entityType", "dictrel:documentedIn",
-    "equivalent", "skos:closeMatch", "dictrel:evidenceType",
+    "equivalent", "skos:closeMatch", "dictrel:evidenceType", "classified_as",
 }
 
 STYLE = """
@@ -170,6 +170,9 @@ def build_entity_page(site: Site, eid: str, incoming: list, root: str) -> str:
     broader = [site.entity_link(e["id"], root) for e in n.get("skos:broader") or []]
     if broader:
         rows.append(("Broader", link_list(broader)))
+    classified = [f'<a href="{esc(e["id"])}">{esc(e["id"])}</a>' for e in n.get("classified_as") or []]
+    if classified:
+        rows.append(("Classified as", link_list(classified)))
     close = [f'<a href="{esc(e["id"])}">{esc(e["id"])}</a>' for e in n.get("skos:closeMatch") or []]
     if close:
         rows.append(("Close match", link_list(close)))

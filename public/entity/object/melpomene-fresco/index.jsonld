@@ -34,9 +34,10 @@
       "id": "https://www.getty.edu/art/collection/object/103SQ3"
     }
   ],
-  "skos:broader": [
+  "classified_as": [
     {
-      "id": "http://vocab.getty.edu/aat/300177433"
+      "id": "http://vocab.getty.edu/aat/300177433",
+      "type": "Type"
     }
   ],
   "referred_to_by": [

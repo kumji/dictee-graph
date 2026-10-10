@@ -9,6 +9,7 @@ export interface GraphNode {
   evidenceType: string
   equivalentUri: string | null
   broader: string[]
+  classifiedAs: string[]
   closeMatch: string[]
   documentedIn: string[]
 }

@@ -11,7 +11,7 @@
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
     }
   ],
-  "generatedAt": "2026-10-08T15:29:25.356907+00:00",
+  "generatedAt": "2026-10-09T00:59:42.540642+00:00",
   "@graph": [
     {
       "@id": "dict:person/cha-theresa",
@@ -1545,9 +1545,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300054465"
+          "id": "https://vocab.getty.edu/aat/300054465",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -1586,9 +1587,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "http://vocab.getty.edu/aat/300046300"
+          "id": "http://vocab.getty.edu/aat/300046300",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -1627,9 +1629,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "http://vocab.getty.edu/aat/300046300"
+          "id": "http://vocab.getty.edu/aat/300046300",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -1668,9 +1671,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "http://vocab.getty.edu/aat/300046300"
+          "id": "http://vocab.getty.edu/aat/300046300",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -1709,9 +1713,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "http://vocab.getty.edu/aat/300028094"
+          "id": "http://vocab.getty.edu/aat/300028094",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -1764,9 +1769,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "http://vocab.getty.edu/aat/300046300"
+          "id": "http://vocab.getty.edu/aat/300046300",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -1805,9 +1811,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300134997"
+          "id": "https://vocab.getty.edu/aat/300134997",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -1854,9 +1861,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300080208"
+          "id": "https://vocab.getty.edu/aat/300080208",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -1895,9 +1903,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300054229"
+          "id": "https://vocab.getty.edu/aat/300054229",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -1947,9 +1956,10 @@
           "id": "https://www.getty.edu/art/collection/object/103SQ3"
         }
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "http://vocab.getty.edu/aat/300177433"
+          "id": "http://vocab.getty.edu/aat/300177433",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -1996,9 +2006,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "http://vocab.getty.edu/aat/300046300"
+          "id": "http://vocab.getty.edu/aat/300046300",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -2037,9 +2048,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300266660"
+          "id": "https://vocab.getty.edu/aat/300266660",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -2086,9 +2098,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300266660"
+          "id": "https://vocab.getty.edu/aat/300266660",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -2127,9 +2140,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300266660"
+          "id": "https://vocab.getty.edu/aat/300266660",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -2168,9 +2182,10 @@
       "dictrel:documentedIn": [
         "dictee"
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "http://vocab.getty.edu/aat/300028569"
+          "id": "http://vocab.getty.edu/aat/300028569",
+          "type": "Type"
         }
       ],
       "referred_to_by": [
@@ -2388,9 +2403,10 @@
           "id": "https://www.wikidata.org/wiki/Q5273943"
         }
       ],
-      "skos:broader": [
+      "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300123016"
+          "id": "https://vocab.getty.edu/aat/300123016",
+          "type": "Type"
         }
       ],
       "referred_to_by": [

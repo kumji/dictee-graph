@@ -222,9 +222,19 @@ def build_entity_node(row: dict, i: int, csv_name: str, work_id: str,
                        f"Mapping Status='{mapping_status}' (matched/closeMatch 아님)",
                        "equivalent에 반영하지 않음")
 
+    # broader URI 칸의 의미는 Type에 따라 다르다: Concept는 개념 계층(skos:broader),
+    # Work/Object는 AAT 유형 용어로 "무엇의 한 종류인가"를 나타내므로 Linked Art classified_as.
     broader_uri = row.get("broader URI", "").strip()
     if broader_uri:
-        node["skos:broader"] = [{"id": broader_uri}]
+        if row["Type"] == "Concept":
+            node["skos:broader"] = [{"id": broader_uri}]
+        else:
+            node["classified_as"] = [{"id": broader_uri, "type": "Type"}]
+            if row["Type"] not in ("Work", "Object"):
+                logger.log(csv_name, i, "broader URI", broader_uri,
+                           "broader URI 출력 규칙 미정의 Type",
+                           f"Type='{row['Type']}' — 규칙은 Concept->skos:broader, Work/Object->classified_as만 정의됨",
+                           "Linked Art classified_as로 출력 (연구자 검토 대기)")
 
     close_match_raw = row.get("closeMatch URI", "").strip()
     if close_match_raw:
