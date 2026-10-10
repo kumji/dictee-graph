@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T15:29:25.408920+00:00",
+  "generatedAt": "2026-10-09T00:59:42.574439+00:00",
   "nodes": [
     {
       "id": "dict:person/cha-theresa",
@@ -10,6 +10,7 @@
       "evidenceType": "Biographical",
       "equivalentUri": "http://www.wikidata.org/entity/Q7782868",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -24,6 +25,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q490020",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -38,6 +40,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "http://www.wikidata.org/entity/Q7226",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -52,6 +55,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q181715",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -66,6 +70,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q464503",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -80,6 +85,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q440600",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -94,6 +100,7 @@
       "evidenceType": "Biographical",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -108,6 +115,7 @@
       "evidenceType": "Biographical",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -122,6 +130,7 @@
       "evidenceType": "Biographical",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -136,6 +145,7 @@
       "evidenceType": "Textual",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -150,6 +160,7 @@
       "evidenceType": "Textual",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -164,6 +175,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "http://www.wikidata.org/entity/Q45967",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -178,6 +190,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "http://www.wikidata.org/entity/Q40730",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -192,6 +205,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q273320",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -206,6 +220,7 @@
       "evidenceType": "Textual",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -220,6 +235,7 @@
       "evidenceType": "Scholarly",
       "equivalentUri": "https://www.wikidata.org/wiki/Q240851",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -234,6 +250,7 @@
       "evidenceType": "Scholarly",
       "equivalentUri": "https://www.wikidata.org/wiki/Q13560230",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -248,6 +265,7 @@
       "evidenceType": "Scholarly",
       "equivalentUri": "https://www.wikidata.org/wiki/Q6761379",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -262,6 +280,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q482525",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -276,6 +295,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q489416",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -290,6 +310,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "http://www.wikidata.org/entity/Q8663",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -304,6 +325,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q174990",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -318,6 +340,7 @@
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q503585",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -332,6 +355,7 @@
       "evidenceType": "Textual",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -346,6 +370,7 @@
       "evidenceType": "Biographical",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -360,6 +385,7 @@
       "evidenceType": "Modeling",
       "equivalentUri": "https://www.wikidata.org/wiki/Q7234128",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [
         "https://homosaurus.org/v3/homoit0003616"
       ],
@@ -376,6 +402,7 @@
       "evidenceType": "Synthesis",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -390,6 +417,7 @@
       "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [
         "https://vocab.getty.edu/aat/300055999"
       ],
@@ -406,6 +434,7 @@
       "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -420,6 +449,7 @@
       "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -434,6 +464,7 @@
       "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -448,6 +479,7 @@
       "evidenceType": "Synthesis",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [
         "https://vocab.getty.edu/aat/300417672"
       ],
@@ -464,6 +496,7 @@
       "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -478,6 +511,7 @@
       "evidenceType": "Modeling",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -492,6 +526,7 @@
       "evidenceType": "Textual",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -505,7 +540,8 @@
       "description": "Western anatomical diagram of the speech organs, included in the text as a visual document. Appears alongside an Eastern meridian chart, juxtaposing two distinct knowledge systems for understanding how the body produces speech.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "https://vocab.getty.edu/aat/300054465"
       ],
       "closeMatch": [],
@@ -521,7 +557,8 @@
       "description": "Photograph of Yu Gwan-sun, taken as a Japanese police record card photograph in 1919. Reproduced in the text as a memorial image. Yu Gwan-sun was a Korean independence activist who died in colonial detention.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "http://vocab.getty.edu/aat/300046300"
       ],
       "closeMatch": [],
@@ -537,7 +574,8 @@
       "description": "Photograph of Huh Hyung Soon, Cha's mother, taken circa 1940 at approximately age eighteen. Reproduced in the text as an opening image. The same photograph also appears in Cha's 1977 video work Chronology.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "http://vocab.getty.edu/aat/300046300"
       ],
       "closeMatch": [],
@@ -553,7 +591,8 @@
       "description": "Photograph published in the French magazine La vie illustrée in 1904, depicting a Korean execution during the Russo-Japanese War. Documents colonial violence through the medium of imperial press photography.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "http://vocab.getty.edu/aat/300046300"
       ],
       "closeMatch": [],
@@ -569,7 +608,8 @@
       "description": "Map of the Korean peninsula showing the division line between North and South Korea. Reproduced in the text as a visual document of national division.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "http://vocab.getty.edu/aat/300028094"
       ],
       "closeMatch": [],
@@ -585,7 +625,8 @@
       "description": "Photograph taken in 1895 of Saint Th?r?se of Lisieux costumed as Joan of Arc in a play she performed for her sister. Reproduced in the text as a document of performative identity.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "http://vocab.getty.edu/aat/300046300"
       ],
       "closeMatch": [],
@@ -601,7 +642,8 @@
       "description": "Film still from Carl Theodor Dreyer's La Passion de Jeanne d'Arc (1928), showing Renée Jeanne Falconetti in close-up as Joan of Arc. Reproduced in the text as a visual document of silenced speech.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "https://vocab.getty.edu/aat/300134997"
       ],
       "closeMatch": [],
@@ -617,7 +659,8 @@
       "description": "Hand stencil painting from El Castillo cave, Spain, estimated at approximately 27,000 years old. One of the earliest known examples of human mark-making. Reproduced in the text as a visual document.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "https://vocab.getty.edu/aat/300080208"
       ],
       "closeMatch": [],
@@ -633,7 +676,8 @@
       "description": "Photograph published in the Osaka Asahi Shimbun on March 3, 1919, showing Koreans gathered at a memorial pavilion in Seoul following Emperor Gojong's state funeral. Reproduced in the text as a document of colonial-era public mourning.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "https://vocab.getty.edu/aat/300054229"
       ],
       "closeMatch": [],
@@ -649,7 +693,8 @@
       "description": "Roman fresco depicting Melpomene, the Muse of Tragedy, removing a smiling mask to reveal an unsmiling face beneath. Housed at the Getty Museum. Reproduced in the text as a visual opening to a chapter structured around comedy.",
       "evidenceType": "Textual",
       "equivalentUri": "https://www.getty.edu/art/collection/object/103SQ3",
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "http://vocab.getty.edu/aat/300177433"
       ],
       "closeMatch": [],
@@ -665,7 +710,8 @@
       "description": "Photograph by Francis Frith (1857) of Egyptian ruins along the Nile. Reproduced in the text as a visual document of ancient civilization and temporal depth.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "http://vocab.getty.edu/aat/300046300"
       ],
       "closeMatch": [],
@@ -681,7 +727,8 @@
       "description": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering the characters 女男 (Woman-Man). The sequence reverses the conventional Korean order of 男女 (Man-Woman). Reproduced in the text as a visual document.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "https://vocab.getty.edu/aat/300266660"
       ],
       "closeMatch": [],
@@ -697,7 +744,8 @@
       "description": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering the characters 父母 (Father-Mother). Reproduced in the text as a visual document within a chapter centered on the mother's narrative.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "https://vocab.getty.edu/aat/300266660"
       ],
       "closeMatch": [],
@@ -713,7 +761,8 @@
       "description": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering ten Daoist cosmological concepts including Taiji, written in Chinese characters. Reproduced in the text as a visual document of cosmological thought.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "https://vocab.getty.edu/aat/300266660"
       ],
       "closeMatch": [],
@@ -729,7 +778,8 @@
       "description": "Pages of English cursive handwriting with visible deletions and line breaks, reproduced in the text as a visual document. Makes visible the process of composition and revision as material labor.",
       "evidenceType": "Textual",
       "equivalentUri": null,
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "http://vocab.getty.edu/aat/300028569"
       ],
       "closeMatch": [],
@@ -746,6 +796,7 @@
       "evidenceType": "Textual",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -760,6 +811,7 @@
       "evidenceType": "Textual",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -774,6 +826,7 @@
       "evidenceType": "Biographical",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -788,6 +841,7 @@
       "evidenceType": "Biographical",
       "equivalentUri": "https://www.wikidata.org/wiki/Q1816033",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -802,6 +856,7 @@
       "evidenceType": "Biographical",
       "equivalentUri": "http://www.wikidata.org/entity/Q2900855",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -815,7 +870,8 @@
       "description": "Theresa Hak Kyung Cha, Dictee. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
       "evidenceType": "Textual",
       "equivalentUri": "https://www.wikidata.org/wiki/Q5273943",
-      "broader": [
+      "broader": [],
+      "classifiedAs": [
         "https://vocab.getty.edu/aat/300123016"
       ],
       "closeMatch": [],
@@ -832,6 +888,7 @@
       "evidenceType": "Synthesis",
       "equivalentUri": "http://id.loc.gov/authorities/subjects/sh85073078",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -846,6 +903,7 @@
       "evidenceType": "Modeling",
       "equivalentUri": "http://id.loc.gov/authorities/subjects/sh85047747",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -860,6 +918,7 @@
       "evidenceType": "Synthesis",
       "equivalentUri": "http://id.loc.gov/authorities/subjects/sh2019100105",
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -874,6 +933,7 @@
       "evidenceType": "Direct Term",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"
@@ -888,6 +948,7 @@
       "evidenceType": "Direct Term",
       "equivalentUri": null,
       "broader": [],
+      "classifiedAs": [],
       "closeMatch": [],
       "documentedIn": [
         "dictee"

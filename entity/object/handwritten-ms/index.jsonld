@@ -29,9 +29,10 @@
   "dictrel:documentedIn": [
     "dictee"
   ],
-  "skos:broader": [
+  "classified_as": [
     {
-      "id": "http://vocab.getty.edu/aat/300028569"
+      "id": "http://vocab.getty.edu/aat/300028569",
+      "type": "Type"
     }
   ],
   "referred_to_by": [
