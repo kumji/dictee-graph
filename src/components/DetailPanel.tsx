@@ -10,7 +10,7 @@ export default function DetailPanel({ lang, selection }: Props) {
   if (!selection) {
     return (
       <aside className="w-80 shrink-0 border-l border-gray-200 bg-white p-4 text-sm text-gray-400">
-        노드나 엣지를 클릭하면 상세 정보가 여기 표시됩니다.
+        Click a node or edge to see its details here.
       </aside>
     )
   }
@@ -39,7 +39,7 @@ export default function DetailPanel({ lang, selection }: Props) {
         <dl className="mt-4 space-y-2 text-sm">
           <div>
             <dt className="font-medium text-gray-500">Evidence Type</dt>
-            <dd className="text-gray-800">{n.evidenceType || '미기재'}</dd>
+            <dd className="text-gray-800">{n.evidenceType || 'Not specified'}</dd>
           </div>
           <div>
             <dt className="font-medium text-gray-500">externalAuthority</dt>
@@ -126,7 +126,7 @@ export default function DetailPanel({ lang, selection }: Props) {
       </p>
       {e.schemaViolation && (
         <p className="mt-2 text-xs text-gray-500">
-          스키마상 Domain/Range 예외 — 연구자 판단 대기 중인 관계입니다.
+          Domain/Range exception to the schema — this relation is pending the researcher's review.
         </p>
       )}
     </aside>

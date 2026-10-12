@@ -18,7 +18,7 @@ export default function App() {
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/graph.json`)
       .then((res) => {
-        if (!res.ok) throw new Error(`graph.json 로드 실패: ${res.status}`)
+        if (!res.ok) throw new Error(`could not fetch graph.json (HTTP ${res.status})`)
         return res.json()
       })
       .then((data: GraphData) => setGraph(data))
@@ -40,11 +40,11 @@ export default function App() {
   }
 
   if (error) {
-    return <div className="p-6 text-sm text-red-600">그래프 데이터를 불러오지 못했습니다: {error}</div>
+    return <div className="p-6 text-sm text-red-600">Failed to load graph data: {error}</div>
   }
 
   if (!graph) {
-    return <div className="p-6 text-sm text-gray-500">그래프 로딩 중…</div>
+    return <div className="p-6 text-sm text-gray-500">Loading graph…</div>
   }
 
   return (

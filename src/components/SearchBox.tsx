@@ -32,7 +32,7 @@ export default function SearchBox({ nodes, lang, onSelect }: Props) {
         }}
         onFocus={() => setOpen(true)}
         onBlur={() => setTimeout(() => setOpen(false), 150)}
-        placeholder="검색 🔍"
+        placeholder="Search entities…"
         className="w-full rounded border border-gray-300 px-2 py-1 text-sm"
       />
       {open && results.length > 0 && (

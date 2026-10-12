@@ -131,7 +131,7 @@ def page(title: str, root: str, body: str, jsonld: dict | None) -> str:
         script = f'<script type="application/ld+json">\n{data}\n</script>'
         alt = '<link rel="alternate" type="application/ld+json" href="index.jsonld">'
     return f"""<!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -141,7 +141,7 @@ def page(title: str, root: str, body: str, jsonld: dict | None) -> str:
 {script}
 </head>
 <body><main>
-<nav><a href="{root}">그래프 뷰어</a><a href="{root}entity/">전체 엔티티</a><a href="{root}prop/">전체 predicate</a></nav>
+<nav><a href="{root}">Graph Viewer</a><a href="{root}entity/">All Entities</a><a href="{root}prop/">All Predicates</a></nav>
 {body}
 </main></body>
 </html>
@@ -190,8 +190,8 @@ def build_entity_page(site: Site, eid: str, incoming: list, root: str) -> str:
 <p class="muted">URI <code>{esc(site.expand(eid))}</code> · <a href="index.jsonld">JSON-LD</a></p>
 {f'<p>{esc(desc)}</p>' if desc else ''}
 {f'<table>{table}</table>' if table else ''}
-{f'<h2>이 엔티티에서 나가는 관계 ({len(outgoing)})</h2>' + link_list(outgoing) if outgoing else ''}
-{f'<h2>이 엔티티로 들어오는 관계 ({len(incoming_items)})</h2>' + link_list(incoming_items) if incoming_items else ''}
+{f'<h2>Outgoing relations ({len(outgoing)})</h2>' + link_list(outgoing) if outgoing else ''}
+{f'<h2>Incoming relations ({len(incoming_items)})</h2>' + link_list(incoming_items) if incoming_items else ''}
 """
     return page(f"{en or ko or eid} — Dictée LOD", root, body, {"@context": site.context, **n})
 
@@ -204,7 +204,7 @@ def build_prop_page(site: Site, key: str, uses: list, root: str) -> str:
 <p><span class="chip">rdf:Property</span></p>
 <p class="muted">URI <code>{esc(site.expand(key))}</code> · <a href="index.jsonld">JSON-LD</a></p>
 <p>{esc(v.get("rdfs:comment", ""))}</p>
-{f'<h2>사용 사례 ({len(items)})</h2>' + link_list(items) if items else '<p class="muted">그래프의 엔티티 간 관계로는 아직 쓰이지 않음 (엔티티 속성으로만 쓰이거나 미사용).</p>'}
+{f'<h2>Usage ({len(items)})</h2>' + link_list(items) if items else '<p class="muted">Not yet used as a relation between entities in this graph (used only as an entity attribute, or not used at all).</p>'}
 """
     return page(f"{v.get('rdfs:label', key)} — Dictée LOD predicate", root, body, {"@context": site.context, **v})
 
@@ -252,18 +252,20 @@ def main():
     # 목록 페이지
     by_type: dict[str, list] = {}
     for eid, n in sorted(site.nodes.items(), key=lambda kv: site.node_label(kv[0]).lower()):
-        by_type.setdefault(n.get("dictrel:entityType", "기타"), []).append(eid)
-    body = "<h1>전체 엔티티</h1>" + "".join(
+        by_type.setdefault(n.get("dictrel:entityType", "Other"), []).append(eid)
+    body = "<h1>All Entities</h1>" + "".join(
         f"<h2>{esc(t)} ({len(ids)})</h2>" + link_list([site.entity_link(i, '../') for i in ids])
         for t, ids in sorted(by_type.items())
     )
-    write(PUBLIC / "entity" / "index.html", page("전체 엔티티 — Dictée LOD", "../", body, None))
+    write(PUBLIC / "entity" / "index.html", page("All Entities — Dictée LOD", "../", body, None))
 
-    prop_items = [f'{site.prop_link(k, "../")} <span class="muted">— 사용 {len(uses.get(k, []))}건</span>'
+    prop_items = [f'{site.prop_link(k, "../")} <span class="muted">— used {len(uses.get(k, []))} '
+                  f'{"time" if len(uses.get(k, [])) == 1 else "times"}</span>'
                   for k in sorted(site.vocab)]
-    body = "<h1>전체 predicate</h1><p class=\"muted\">이 프로젝트가 정의한 연구용 predicate. " \
-           "표준 어휘(SKOS, Schema.org, Dublin Core)는 각 기관의 정의를 따른다.</p>" + link_list(prop_items)
-    write(PUBLIC / "prop" / "index.html", page("전체 predicate — Dictée LOD", "../", body, None))
+    body = "<h1>All Predicates</h1><p class=\"muted\">Research predicates defined by this project. " \
+           "Standard vocabularies (SKOS, Schema.org, Dublin Core) follow the definitions of their " \
+           "maintaining organizations.</p>" + link_list(prop_items)
+    write(PUBLIC / "prop" / "index.html", page("All Predicates — Dictée LOD", "../", body, None))
 
     print("=" * 56)
     print("URI 페이지 생성 결과 (build-pages.py)")
