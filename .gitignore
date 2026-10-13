@@ -1,3 +1,9 @@
 node_modules
 dist
 .DS_Store
+
+# working files (kept locally, not published)
+CLAUDE.md
+CLAUDE_ex.md
+data/*_old.csv
+drafts/

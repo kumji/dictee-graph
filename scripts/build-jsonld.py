@@ -246,7 +246,16 @@ def build_entity_node(row: dict, i: int, csv_name: str, work_id: str,
         node["referred_to_by"] = [{
             "type": "LinguisticObject",
             "content": description,
-            "classified_as": "description",
+            "classified_as": [{
+                "id": "http://vocab.getty.edu/aat/300435416",
+                "type": "Type",
+                "_label": "Description",
+                "classified_as": [{
+                    "id": "http://vocab.getty.edu/aat/300418049",
+                    "type": "Type",
+                    "_label": "Brief Text",
+                }],
+            }],
         }]
 
     if evidence_type:

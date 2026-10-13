@@ -33,7 +33,20 @@
     {
       "type": "LinguisticObject",
       "content": "Traditional Muses reclaimed as active channels for silenced women across colonial and gendered histories. Each Muse no longer represents a single genre but an unstable intersection of colonial history, martyrdom, and shamanism. THALIA (Comedy) opens with MELPOMENE (Tragedy) fresco ? genre expectation deliberately violated.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Modeling",

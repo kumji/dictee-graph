@@ -39,7 +39,20 @@
     {
       "type": "LinguisticObject",
       "content": "Photograph taken in 1895 of Saint Th?r?se of Lisieux costumed as Joan of Arc in a play she performed for her sister. Reproduced in the text as a document of performative identity.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Textual",

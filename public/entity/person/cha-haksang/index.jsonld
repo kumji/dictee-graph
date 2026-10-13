@@ -33,7 +33,20 @@
     {
       "type": "LinguisticObject",
       "content": "Cha's older brother. Participated in April 19 Revolution demonstrations. His political activity is referenced in the text as a catalyst for the family's subsequent exile to the United States.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Biographical",

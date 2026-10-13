@@ -31,7 +31,7 @@
   ],
   "classified_as": [
     {
-      "id": "https://vocab.getty.edu/aat/300054229",
+      "id": "http://vocab.getty.edu/aat/300054229",
       "type": "Type"
     }
   ],
@@ -39,7 +39,20 @@
     {
       "type": "LinguisticObject",
       "content": "Photograph published in the Osaka Asahi Shimbun on March 3, 1919, showing Koreans gathered at a memorial pavilion in Seoul following Emperor Gojong's state funeral. Reproduced in the text as a document of colonial-era public mourning.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Textual",

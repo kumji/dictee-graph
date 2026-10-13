@@ -38,7 +38,20 @@
     {
       "type": "LinguisticObject",
       "content": "Student-led uprising against the Syngman Rhee government, April 19, 1960. Referenced in the text in connection with the Cha family's experience of political upheaval in Korea.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Textual",

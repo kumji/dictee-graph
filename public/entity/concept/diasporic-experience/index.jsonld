@@ -31,14 +31,27 @@
   ],
   "skos:closeMatch": [
     {
-      "id": "https://vocab.getty.edu/aat/300417672"
+      "id": "http://vocab.getty.edu/aat/300417672"
     }
   ],
   "referred_to_by": [
     {
       "type": "LinguisticObject",
       "content": "The condition of displacement and longing for return that cannot be fully realized. Draws primarily on Avtar Brah's concept of 'homing desire' (1996), which distinguishes between the mythologized idea of home and the possibility of literal return. Applied to multi-generational displacement across Manchuria, Korea, and the United States.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Synthesis"

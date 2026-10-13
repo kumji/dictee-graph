@@ -31,7 +31,7 @@
   ],
   "classified_as": [
     {
-      "id": "https://vocab.getty.edu/aat/300266660",
+      "id": "http://vocab.getty.edu/aat/300266660",
       "type": "Type"
     }
   ],
@@ -39,7 +39,20 @@
     {
       "type": "LinguisticObject",
       "content": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering ten Daoist cosmological concepts including Taiji, written in Chinese characters. Reproduced in the text as a visual document of cosmological thought.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Textual",

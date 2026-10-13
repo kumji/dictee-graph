@@ -63,14 +63,27 @@ ul { padding-left: 18px; margin: 4px 0; }
   ],
   "skos:closeMatch": [
     {
-      "id": "https://vocab.getty.edu/aat/300055999"
+      "id": "http://vocab.getty.edu/aat/300055999"
     }
   ],
   "referred_to_by": [
     {
       "type": "LinguisticObject",
       "content": "A researcher-developed interpretive concept describing the authorial strategy in Dictee whereby the speaker empties the self to channel the voices of absent or silenced women. The term draws an analogy with shamanic mediation as a structural model, though it is not a term used in Cha's text itself. ",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Modeling",
@@ -101,7 +114,7 @@ ul { padding-left: 18px; margin: 4px 0; }
 <p><span class="chip">Concept</span><span class="chip">Type</span></p>
 <p class="muted">URI <code>https://kumji.github.io/dictee-graph/entity/concept/shamanic-mediation</code> · <a href="index.jsonld">JSON-LD</a></p>
 <p>A researcher-developed interpretive concept describing the authorial strategy in Dictee whereby the speaker empties the self to channel the voices of absent or silenced women. The term draws an analogy with shamanic mediation as a structural model, though it is not a term used in Cha&#x27;s text itself. </p>
-<table><tr><th>Evidence Type</th><td>Modeling</td></tr><tr><th>Documented in</th><td>dictee</td></tr><tr><th>Broader</th><td><ul><li><a href="../../../entity/concept/postcolonial-feminism/">Postcolonial Feminism · 탈식민 페미니즘</a></li></ul></td></tr><tr><th>Close match</th><td><ul><li><a href="https://vocab.getty.edu/aat/300055999">https://vocab.getty.edu/aat/300055999</a></li></ul></td></tr></table>
+<table><tr><th>Evidence Type</th><td>Modeling</td></tr><tr><th>Documented in</th><td>dictee</td></tr><tr><th>Broader</th><td><ul><li><a href="../../../entity/concept/postcolonial-feminism/">Postcolonial Feminism · 탈식민 페미니즘</a></li></ul></td></tr><tr><th>Close match</th><td><ul><li><a href="http://vocab.getty.edu/aat/300055999">http://vocab.getty.edu/aat/300055999</a></li></ul></td></tr></table>
 <h2>Outgoing relations (2)</h2><ul><li><a href="../../../prop/requiresExcavationBy/"><code>dictrel:requiresExcavationBy</code></a> → <a href="../../../entity/concept/cyclical-time/">Cyclical time · 순환적 시간</a></li><li><a href="http://www.w3.org/2004/02/skos/core#broader"><code>skos:broader</code></a> → <a href="../../../entity/concept/postcolonial-feminism/">Postcolonial Feminism · 탈식민 페미니즘</a></li></ul>
 <h2>Incoming relations (2)</h2><ul><li><a href="../../../entity/person/diseuse/">Diseuse · 디쇠즈</a> → <a href="../../../prop/performsMediation/"><code>dictrel:performsMediation</code></a></li><li><a href="../../../entity/person/princess-bari/">Princess Bari · 바리공주</a> → <a href="../../../prop/mythologicalParallelOf/"><code>dictrel:mythologicalParallelOf</code></a></li></ul>
 

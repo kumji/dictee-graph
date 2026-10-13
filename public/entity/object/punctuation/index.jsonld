@@ -33,7 +33,20 @@
     {
       "type": "LinguisticObject",
       "content": "A dictation exercise in which punctuation marks ? period, comma, open quotation marks ? are written out as words rather than rendered as symbols. Reproduced in the text as a document of language's regulatory function made visible through instruction.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Textual",
