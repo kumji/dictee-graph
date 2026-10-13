@@ -43,7 +43,20 @@
     {
       "type": "LinguisticObject",
       "content": "A critical framework that examines the intersection of colonialism, gender, and knowledge production. Associated with theorists including Spivak and Mohanty, it critiques Western feminist frameworks for their complicity in imperial structures.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Modeling"

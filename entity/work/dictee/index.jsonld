@@ -36,7 +36,7 @@
   ],
   "classified_as": [
     {
-      "id": "https://vocab.getty.edu/aat/300123016",
+      "id": "http://vocab.getty.edu/aat/300123016",
       "type": "Type"
     }
   ],
@@ -44,7 +44,20 @@
     {
       "type": "LinguisticObject",
       "content": "Theresa Hak Kyung Cha, Dictee. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Textual",

@@ -33,7 +33,20 @@
     {
       "type": "LinguisticObject",
       "content": "Term developed by Mar?a Lugones (2010) to describe the tension between colonial designation and active subjectivity within communal memory. Refers to the space of agency available to those positioned outside dominant social categories.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Modeling",

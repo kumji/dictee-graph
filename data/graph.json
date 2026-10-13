@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T00:59:42.574439+00:00",
+  "generatedAt": "2026-10-13T18:10:38.178081+00:00",
   "nodes": [
     {
       "id": "dict:person/cha-theresa",
@@ -419,7 +419,7 @@
       "broader": [],
       "classifiedAs": [],
       "closeMatch": [
-        "https://vocab.getty.edu/aat/300055999"
+        "http://vocab.getty.edu/aat/300055999"
       ],
       "documentedIn": [
         "dictee"
@@ -481,7 +481,7 @@
       "broader": [],
       "classifiedAs": [],
       "closeMatch": [
-        "https://vocab.getty.edu/aat/300417672"
+        "http://vocab.getty.edu/aat/300417672"
       ],
       "documentedIn": [
         "dictee"
@@ -542,7 +542,7 @@
       "equivalentUri": null,
       "broader": [],
       "classifiedAs": [
-        "https://vocab.getty.edu/aat/300054465"
+        "http://vocab.getty.edu/aat/300054465"
       ],
       "closeMatch": [],
       "documentedIn": [
@@ -644,7 +644,7 @@
       "equivalentUri": null,
       "broader": [],
       "classifiedAs": [
-        "https://vocab.getty.edu/aat/300134997"
+        "http://vocab.getty.edu/aat/300134997"
       ],
       "closeMatch": [],
       "documentedIn": [
@@ -661,7 +661,7 @@
       "equivalentUri": null,
       "broader": [],
       "classifiedAs": [
-        "https://vocab.getty.edu/aat/300080208"
+        "http://vocab.getty.edu/aat/300080208"
       ],
       "closeMatch": [],
       "documentedIn": [
@@ -678,7 +678,7 @@
       "equivalentUri": null,
       "broader": [],
       "classifiedAs": [
-        "https://vocab.getty.edu/aat/300054229"
+        "http://vocab.getty.edu/aat/300054229"
       ],
       "closeMatch": [],
       "documentedIn": [
@@ -729,7 +729,7 @@
       "equivalentUri": null,
       "broader": [],
       "classifiedAs": [
-        "https://vocab.getty.edu/aat/300266660"
+        "http://vocab.getty.edu/aat/300266660"
       ],
       "closeMatch": [],
       "documentedIn": [
@@ -746,7 +746,7 @@
       "equivalentUri": null,
       "broader": [],
       "classifiedAs": [
-        "https://vocab.getty.edu/aat/300266660"
+        "http://vocab.getty.edu/aat/300266660"
       ],
       "closeMatch": [],
       "documentedIn": [
@@ -763,7 +763,7 @@
       "equivalentUri": null,
       "broader": [],
       "classifiedAs": [
-        "https://vocab.getty.edu/aat/300266660"
+        "http://vocab.getty.edu/aat/300266660"
       ],
       "closeMatch": [],
       "documentedIn": [
@@ -872,7 +872,7 @@
       "equivalentUri": "https://www.wikidata.org/wiki/Q5273943",
       "broader": [],
       "classifiedAs": [
-        "https://vocab.getty.edu/aat/300123016"
+        "http://vocab.getty.edu/aat/300123016"
       ],
       "closeMatch": [],
       "documentedIn": [

@@ -31,7 +31,7 @@
   ],
   "classified_as": [
     {
-      "id": "https://vocab.getty.edu/aat/300134997",
+      "id": "http://vocab.getty.edu/aat/300134997",
       "type": "Type"
     }
   ],
@@ -39,7 +39,20 @@
     {
       "type": "LinguisticObject",
       "content": "Film still from Carl Theodor Dreyer's La Passion de Jeanne d'Arc (1928), showing Renée Jeanne Falconetti in close-up as Joan of Arc. Reproduced in the text as a visual document of silenced speech.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Textual",

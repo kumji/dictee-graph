@@ -33,7 +33,20 @@
     {
       "type": "LinguisticObject",
       "content": "The work's own name for time that has stopped and been buried: \"Dead time. Hollow depression interred invalid / to resurgence, resistant to memory. Waits.\" (ELITERE). Time here is not a line that passes but a site to be excavated, which the Diseuse is called upon to break open.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Direct Term",

@@ -31,14 +31,27 @@
   ],
   "skos:closeMatch": [
     {
-      "id": "https://vocab.getty.edu/aat/300055999"
+      "id": "http://vocab.getty.edu/aat/300055999"
     }
   ],
   "referred_to_by": [
     {
       "type": "LinguisticObject",
       "content": "A researcher-developed interpretive concept describing the authorial strategy in Dictee whereby the speaker empties the self to channel the voices of absent or silenced women. The term draws an analogy with shamanic mediation as a structural model, though it is not a term used in Cha's text itself. ",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Modeling",

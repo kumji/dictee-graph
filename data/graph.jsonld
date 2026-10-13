@@ -11,7 +11,7 @@
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
     }
   ],
-  "generatedAt": "2026-10-09T00:59:42.540642+00:00",
+  "generatedAt": "2026-10-13T18:10:38.141174+00:00",
   "@graph": [
     {
       "@id": "dict:person/cha-theresa",
@@ -41,7 +41,20 @@
         {
           "type": "LinguisticObject",
           "content": "Author (1951-1982). Born Busan during Korean War. Not singular narrator but dispersed across Diseuse and multiple women's voice.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Biographical",
@@ -138,7 +151,20 @@
         {
           "type": "LinguisticObject",
           "content": "Korean independence activist (1902-1920). Arrested during March 1st Movement, died in Seodaemun Prison age 17. ",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -195,7 +221,20 @@
         {
           "type": "LinguisticObject",
           "content": "French martyr (1412-1431). Postcolonial parallel to Yu Gwan-sun: both young women martyred by imperial powers.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual"
@@ -228,7 +267,20 @@
         {
           "type": "LinguisticObject",
           "content": "Carmelite nun (1873-1897). Author of Story of a Soul. Shares name 'Theresa' with Cha (Catholic baptismal name from Sacred Heart Convent). Performs as Joan of Arc in 1895 play.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -269,7 +321,20 @@
         {
           "type": "LinguisticObject",
           "content": "Last Empress of Korea (1851-1895).",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual"
@@ -302,7 +367,20 @@
         {
           "type": "LinguisticObject",
           "content": "French actress (1892-1946). Portrays Joan of Arc in Dreyer's silent film La Passion de Jeanne d'Arc (1928).",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -338,7 +416,20 @@
         {
           "type": "LinguisticObject",
           "content": "Cha's mother (b.1922 Yongjing, Manchuria). Triple-language speaker under colonial rule: Korean forbidden, Japanese enforced, Chinese ambient. Her experience of linguistic displacement under colonial rule is a central narrative thread in the text.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Biographical",
@@ -388,7 +479,20 @@
         {
           "type": "LinguisticObject",
           "content": "Cha's father. Calligrapher. His brush calligraphy 女男, 父母 placed at center of pages.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Biographical",
@@ -424,7 +528,20 @@
         {
           "type": "LinguisticObject",
           "content": "Cha's older brother. Participated in April 19 Revolution demonstrations. His political activity is referenced in the text as a catalyst for the family's subsequent exile to the United States.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Biographical",
@@ -466,7 +583,20 @@
         {
           "type": "LinguisticObject",
           "content": "French: female monologue performer. Cha's textual shaman who empties self to channel 9 Muses.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -538,7 +668,20 @@
         {
           "type": "LinguisticObject",
           "content": "Korean shamanic origin myth: abandoned princess journeys to underworld for healing water to save parents, becomes first mudang (shaman)",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -585,7 +728,20 @@
         {
           "type": "LinguisticObject",
           "content": "Greek goddess of spring and the underworld. Her myth of incomplete return from the underworld serves as a structural reference in the text.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual"
@@ -618,7 +774,20 @@
         {
           "type": "LinguisticObject",
           "content": "Greek harvest goddess. Her nine-day search for her daughter is referenced in the text as a figure of waiting and maternal longing.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual"
@@ -651,7 +820,20 @@
         {
           "type": "LinguisticObject",
           "content": "Prophetess who sees truth but is not believed. Appears in the text as a figure of unheard speech.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual"
@@ -679,7 +861,20 @@
         {
           "type": "LinguisticObject",
           "content": "Fictional character from Carl Theodor Dreyer's film Gertrud (1964). Referenced in the text through the film's narrative of an unhappy marriage.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual"
@@ -712,7 +907,20 @@
         {
           "type": "LinguisticObject",
           "content": "Gayatri Chakravorty Spivak, postcolonial theorist. Best known for 'Can the Subaltern Speak?' (1988), which examines the representational limits of Western intellectual frameworks in relation to colonized subjects.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Scholarly",
@@ -759,7 +967,20 @@
         {
           "type": "LinguisticObject",
           "content": "Hortense Spillers, Black feminist theorist. Best known for 'Mama's Baby, Papa's Maybe: An American Grammar Book' (1987), which theorizes the distinction between flesh and body under conditions of slavery and colonial violence.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Scholarly",
@@ -806,7 +1027,20 @@
         {
           "type": "LinguisticObject",
           "content": "María Lugones, decolonial feminist philosopher. Key works include 'Coloniality of Gender' (2007) and 'Toward a Decolonial Feminism' (2010), which argue that gender itself is a colonial imposition and theorize active subjectivity within decolonial practice.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Scholarly",
@@ -859,7 +1093,20 @@
         {
           "type": "LinguisticObject",
           "content": "Korean independence uprising against Japanese colonial rule, March 1, 1919. A foundational moment of anti-colonial resistance, referenced in the text through the figure of Yu Gwan-sun.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual"
@@ -892,7 +1139,20 @@
         {
           "type": "LinguisticObject",
           "content": "Student-led uprising against the Syngman Rhee government, April 19, 1960. Referenced in the text in connection with the Cha family's experience of political upheaval in Korea.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -933,7 +1193,20 @@
         {
           "type": "LinguisticObject",
           "content": "Korean War (1950?1953). Theresa Hak Kyung Cha was born during the war in Busan, where her family had taken refuge. Referenced in the text as part of the family's history of displacement.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -974,7 +1247,20 @@
         {
           "type": "LinguisticObject",
           "content": "Pro-democracy uprising in Gwangju, South Korea, May 1980, brutally suppressed by military forces. Cha visited Korea shortly after and witnessed the aftermath. Referenced in the text as a moment of political crisis and historical repetition.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1015,7 +1301,20 @@
         {
           "type": "LinguisticObject",
           "content": "Japanese colonial rule of Korea (1910?1945). The colonial language policy ? forbidding Korean while enforcing Japanese ? forms a central historical context for the text's engagement with linguistic displacement and intergenerational loss.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1057,7 +1356,20 @@
         {
           "type": "LinguisticObject",
           "content": "State funeral of Emperor Gojong, March 3, 1919. The mass public gathering became a catalyst for the March 1st Movement. Referenced in the text through a contemporary newspaper photograph.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1093,7 +1405,20 @@
         {
           "type": "LinguisticObject",
           "content": "The Cha family's emigration from Korea to the United States in 1962. Theresa Hak Kyung Cha, then around age eleven, subsequently settled in San Francisco. Referenced in the text as part of the family's diasporic trajectory.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Biographical",
@@ -1151,7 +1476,20 @@
         {
           "type": "LinguisticObject",
           "content": "A critical framework that examines the intersection of colonialism, gender, and knowledge production. Associated with theorists including Spivak and Mohanty, it critiques Western feminist frameworks for their complicity in imperial structures.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Modeling"
@@ -1179,7 +1517,20 @@
         {
           "type": "LinguisticObject",
           "content": "Epistemic violence enacted through forced linguistic assimilation across generations. Draws on Spivak's concept of epistemic violence and Fanon's analysis of colonial internalization, applied to the intergenerational linguistic displacement experienced by Cha and her mother under colonial and diasporic conditions.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Synthesis",
@@ -1241,14 +1592,27 @@
       ],
       "skos:closeMatch": [
         {
-          "id": "https://vocab.getty.edu/aat/300055999"
+          "id": "http://vocab.getty.edu/aat/300055999"
         }
       ],
       "referred_to_by": [
         {
           "type": "LinguisticObject",
           "content": "A researcher-developed interpretive concept describing the authorial strategy in Dictee whereby the speaker empties the self to channel the voices of absent or silenced women. The term draws an analogy with shamanic mediation as a structural model, though it is not a term used in Cha's text itself. ",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Modeling",
@@ -1292,7 +1656,20 @@
         {
           "type": "LinguisticObject",
           "content": "Term developed by Mar?a Lugones (2010) to describe the tension between colonial designation and active subjectivity within communal memory. Refers to the space of agency available to those positioned outside dominant social categories.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Modeling",
@@ -1336,7 +1713,20 @@
         {
           "type": "LinguisticObject",
           "content": "A non-linear conception of time in which historical events recur as structural repetitions rather than sequential causes and effects. Draws on Lugones (2010). Applied in this dataset to the recurring pattern of colonial violence across different historical moments.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Modeling",
@@ -1372,7 +1762,20 @@
         {
           "type": "LinguisticObject",
           "content": "Term developed by Hortense Spillers (1987) to describe the exclusion of enslaved and colonized women from normative gender categories entirely. Distinct from gender nonconformity: ungendering refers to a structural violence rather than a chosen identity position.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Modeling",
@@ -1414,14 +1817,27 @@
       ],
       "skos:closeMatch": [
         {
-          "id": "https://vocab.getty.edu/aat/300417672"
+          "id": "http://vocab.getty.edu/aat/300417672"
         }
       ],
       "referred_to_by": [
         {
           "type": "LinguisticObject",
           "content": "The condition of displacement and longing for return that cannot be fully realized. Draws primarily on Avtar Brah's concept of 'homing desire' (1996), which distinguishes between the mythologized idea of home and the possibility of literal return. Applied to multi-generational displacement across Manchuria, Korea, and the United States.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Synthesis"
@@ -1449,7 +1865,20 @@
         {
           "type": "LinguisticObject",
           "content": "The remainder that resists full transfer between languages. In Dictee, untranslatability works as a textual strategy rather than a failure: French and English are set on facing pages without equivalence, so that homophones such as cygnes/signes and tense distinctions such as the imperfect j'écoutais against the simple past \"I heard\" leave a political residue that neither language can absorb. Distinct from dict:concept/translational-violence, which names the loss imposed by colonial language policy; untranslatability names what the text withholds in response. Draws on Emily Apter, Against World Literature: On the Politics of Untranslatability (2013), and Gayatri Chakravorty Spivak, \"The Politics of Translation\" (1993).",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Modeling"
@@ -1477,7 +1906,20 @@
         {
           "type": "LinguisticObject",
           "content": "Traditional Muses reclaimed as active channels for silenced women across colonial and gendered histories. Each Muse no longer represents a single genre but an unstable intersection of colonial history, martyrdom, and shamanism. THALIA (Comedy) opens with MELPOMENE (Tragedy) fresco ? genre expectation deliberately violated.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Modeling",
@@ -1513,7 +1955,20 @@
         {
           "type": "LinguisticObject",
           "content": "Acupuncture meridian chart from the Chinese medical tradition, included in the text as a visual document. Presents speech and emotion as physiological processes located in specific organs of the body.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1547,7 +2002,7 @@
       ],
       "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300054465",
+          "id": "http://vocab.getty.edu/aat/300054465",
           "type": "Type"
         }
       ],
@@ -1555,7 +2010,20 @@
         {
           "type": "LinguisticObject",
           "content": "Western anatomical diagram of the speech organs, included in the text as a visual document. Appears alongside an Eastern meridian chart, juxtaposing two distinct knowledge systems for understanding how the body produces speech.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1597,7 +2065,20 @@
         {
           "type": "LinguisticObject",
           "content": "Photograph of Yu Gwan-sun, taken as a Japanese police record card photograph in 1919. Reproduced in the text as a memorial image. Yu Gwan-sun was a Korean independence activist who died in colonial detention.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1639,7 +2120,20 @@
         {
           "type": "LinguisticObject",
           "content": "Photograph of Huh Hyung Soon, Cha's mother, taken circa 1940 at approximately age eighteen. Reproduced in the text as an opening image. The same photograph also appears in Cha's 1977 video work Chronology.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1681,7 +2175,20 @@
         {
           "type": "LinguisticObject",
           "content": "Photograph published in the French magazine La vie illustrée in 1904, depicting a Korean execution during the Russo-Japanese War. Documents colonial violence through the medium of imperial press photography.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1723,7 +2230,20 @@
         {
           "type": "LinguisticObject",
           "content": "Map of the Korean peninsula showing the division line between North and South Korea. Reproduced in the text as a visual document of national division.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1779,7 +2299,20 @@
         {
           "type": "LinguisticObject",
           "content": "Photograph taken in 1895 of Saint Th?r?se of Lisieux costumed as Joan of Arc in a play she performed for her sister. Reproduced in the text as a document of performative identity.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1813,7 +2346,7 @@
       ],
       "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300134997",
+          "id": "http://vocab.getty.edu/aat/300134997",
           "type": "Type"
         }
       ],
@@ -1821,7 +2354,20 @@
         {
           "type": "LinguisticObject",
           "content": "Film still from Carl Theodor Dreyer's La Passion de Jeanne d'Arc (1928), showing Renée Jeanne Falconetti in close-up as Joan of Arc. Reproduced in the text as a visual document of silenced speech.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1863,7 +2409,7 @@
       ],
       "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300080208",
+          "id": "http://vocab.getty.edu/aat/300080208",
           "type": "Type"
         }
       ],
@@ -1871,7 +2417,20 @@
         {
           "type": "LinguisticObject",
           "content": "Hand stencil painting from El Castillo cave, Spain, estimated at approximately 27,000 years old. One of the earliest known examples of human mark-making. Reproduced in the text as a visual document.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1905,7 +2464,7 @@
       ],
       "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300054229",
+          "id": "http://vocab.getty.edu/aat/300054229",
           "type": "Type"
         }
       ],
@@ -1913,7 +2472,20 @@
         {
           "type": "LinguisticObject",
           "content": "Photograph published in the Osaka Asahi Shimbun on March 3, 1919, showing Koreans gathered at a memorial pavilion in Seoul following Emperor Gojong's state funeral. Reproduced in the text as a document of colonial-era public mourning.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -1966,7 +2538,20 @@
         {
           "type": "LinguisticObject",
           "content": "Roman fresco depicting Melpomene, the Muse of Tragedy, removing a smiling mask to reveal an unsmiling face beneath. Housed at the Getty Museum. Reproduced in the text as a visual opening to a chapter structured around comedy.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -2016,7 +2601,20 @@
         {
           "type": "LinguisticObject",
           "content": "Photograph by Francis Frith (1857) of Egyptian ruins along the Nile. Reproduced in the text as a visual document of ancient civilization and temporal depth.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -2050,7 +2648,7 @@
       ],
       "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300266660",
+          "id": "http://vocab.getty.edu/aat/300266660",
           "type": "Type"
         }
       ],
@@ -2058,7 +2656,20 @@
         {
           "type": "LinguisticObject",
           "content": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering the characters 女男 (Woman-Man). The sequence reverses the conventional Korean order of 男女 (Man-Woman). Reproduced in the text as a visual document.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -2100,7 +2711,7 @@
       ],
       "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300266660",
+          "id": "http://vocab.getty.edu/aat/300266660",
           "type": "Type"
         }
       ],
@@ -2108,7 +2719,20 @@
         {
           "type": "LinguisticObject",
           "content": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering the characters 父母 (Father-Mother). Reproduced in the text as a visual document within a chapter centered on the mother's narrative.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -2142,7 +2766,7 @@
       ],
       "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300266660",
+          "id": "http://vocab.getty.edu/aat/300266660",
           "type": "Type"
         }
       ],
@@ -2150,7 +2774,20 @@
         {
           "type": "LinguisticObject",
           "content": "Brush calligraphy by Cha Hyung Sang (Cha's father) rendering ten Daoist cosmological concepts including Taiji, written in Chinese characters. Reproduced in the text as a visual document of cosmological thought.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -2192,7 +2829,20 @@
         {
           "type": "LinguisticObject",
           "content": "Pages of English cursive handwriting with visible deletions and line breaks, reproduced in the text as a visual document. Makes visible the process of composition and revision as material labor.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -2228,7 +2878,20 @@
         {
           "type": "LinguisticObject",
           "content": "Korean folk song (봉선화) about separation from family and homeland, embedded in the text without translation. The song's untranslated presence enacts a form of linguistic and cultural resistance.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -2264,7 +2927,20 @@
         {
           "type": "LinguisticObject",
           "content": "A dictation exercise in which punctuation marks ? period, comma, open quotation marks ? are written out as words rather than rendered as symbols. Reproduced in the text as a document of language's regulatory function made visible through instruction.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -2300,7 +2976,20 @@
         {
           "type": "LinguisticObject",
           "content": "Independent publisher, New York. Founded by Reese Williams. Cha worked as editor. Published Dictee (1982) and Apparatus (1981). Letterpress printing.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Biographical"
@@ -2333,7 +3022,20 @@
         {
           "type": "LinguisticObject",
           "content": "Published 2001 reprint/third edition of Dictee with BAMPFA.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Biographical"
@@ -2366,7 +3068,20 @@
         {
           "type": "LinguisticObject",
           "content": "UC Berkeley. Houses Cha's estate and archives. Rights holder for Dictee. Collaborated with UC Press on 2001 reprint.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Biographical",
@@ -2405,7 +3120,7 @@
       ],
       "classified_as": [
         {
-          "id": "https://vocab.getty.edu/aat/300123016",
+          "id": "http://vocab.getty.edu/aat/300123016",
           "type": "Type"
         }
       ],
@@ -2413,7 +3128,20 @@
         {
           "type": "LinguisticObject",
           "content": "Theresa Hak Kyung Cha, Dictee. New York: Tanam Press, 1982. 179 pp. Artists' book structured around nine chapters named after the Greek Muses, preceded by a prologue centered on the figure of the diseuse (female monologue performer). The work draws on autobiography, history, film, and religious text across multiple languages including Korean, English, French, and Latin.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Textual",
@@ -2496,7 +3224,20 @@
         {
           "type": "LinguisticObject",
           "content": "The diasporic condition of the author and her family after their emigration to the United States in 1962. In Dictee it appears as the experience of speaking from outside the homeland: the letter to the mother dated \"eighteen years later\" and the account of a return that is also a displacement. The heading names the position from which the work is written.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Synthesis"
@@ -2529,7 +3270,20 @@
         {
           "type": "LinguisticObject",
           "content": "The work's critical appropriation of a male-centered literary tradition. Dictee borrows the nine Muses, traditionally passive sources of inspiration for male poets, and turns them into frames through which silenced women speak, mediated by the Diseuse (p. 3). Women omitted from official history (Yu Gwan-sun, the author's mother, Thérèse of Lisieux) become its speaking subjects.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Modeling"
@@ -2562,7 +3316,20 @@
         {
           "type": "LinguisticObject",
           "content": "The historical frame of Japanese colonial rule that structures the first chapters of Dictee. It appears in the figure of Yu Gwan-sun and the 1919 independence movement and in the enforced loss of the Korean language experienced by the author's mother: \"They say you spoke in tongue forbidden.\"",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Synthesis"
@@ -2590,7 +3357,20 @@
         {
           "type": "LinguisticObject",
           "content": "A Catholic devotion of prayer repeated over nine days. Dictee names it directly in its prologue: \"NOVENA: NINE EACH. THE RECITATION OR PRAYER AND PRACTICING OF DEVOTIONS DURING A NINE DAY PERIOD / And it begins\" (p. 19). The work frames its nine chapters, each placed under a Muse, as such a sequence of invocations.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Direct Term",
@@ -2626,7 +3406,20 @@
         {
           "type": "LinguisticObject",
           "content": "The work's own name for time that has stopped and been buried: \"Dead time. Hollow depression interred invalid / to resurgence, resistant to memory. Waits.\" (ELITERE). Time here is not a line that passes but a site to be excavated, which the Diseuse is called upon to break open.",
-          "classified_as": "description"
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
         }
       ],
       "dictrel:evidenceType": "Direct Term",

@@ -31,7 +31,7 @@
   ],
   "classified_as": [
     {
-      "id": "https://vocab.getty.edu/aat/300080208",
+      "id": "http://vocab.getty.edu/aat/300080208",
       "type": "Type"
     }
   ],
@@ -39,7 +39,20 @@
     {
       "type": "LinguisticObject",
       "content": "Hand stencil painting from El Castillo cave, Spain, estimated at approximately 27,000 years old. One of the earliest known examples of human mark-making. Reproduced in the text as a visual document.",
-      "classified_as": "description"
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435416",
+          "type": "Type",
+          "_label": "Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dictrel:evidenceType": "Textual",
